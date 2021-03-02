@@ -1,31 +1,46 @@
+
+@font-face {
+  font-family: twcenmt;
+  src: url("../../twcenmt.woff");
+}
+
+#home {
+  /* height: max-content; */
+  background-image: url("../images/home-background-bright.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: -1;
+  /* margin-top: -8em; */
+}
+
 #header-logo {
   width: 2em;
   position: absolute;
   top: 0.8em;
 }
 
-#home-background {
-  position: relative;
-  top: 10em;
-}
-
-.responsive {
-  width: 103.1em;
-  height: auto;
-}
-
-#home {
-  position: relative;
-  top: -17em;
-  width: fit-content;
-}
-
 #ninjatech {
   color: white;
-  position: relative;
-  top: 5em;
-  font-size: 5em;
+  font-family: twcenmt;
+  font-weight: bolder;
+  font-size: 5.5em;
   z-index: 10;
+}
+
+.ml15 {
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+}
+
+.drawerContent {
+  font-family: twcenmt !important;
 }
 /* --------------------------------------- */
 html {
@@ -35,12 +50,12 @@ html {
   overflow-y: scroll;
 }
 body {
-  background-color: black !important;
+  background-color: rgb(27, 91, 110) !important;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: "Tw Cen MT";
+  font-family: twcenmt;
   font-weight: bold;
   word-wrap: break-word;
   font-kerning: normal;

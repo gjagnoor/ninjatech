@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    backgroundColor: "#0e1a2d",
+    backgroundColor: "rgba(1,26,30,0.5)",
     color: "#04d9ff",
   },
   appBarShift: {
@@ -42,7 +42,6 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     flexGrow: 1,
-    fontFamily: "Tw Cen MT",
   },
   hide: {
     display: "none",
@@ -50,14 +49,13 @@ const useStyles = makeStyles(theme => ({
   drawer: {
     // width: drawerWidth,
     flexShrink: 0,
-    backgroundColor: "#0e1a2d",
-    fontFamily: "Tw Cen MT",
+    backgroundColor: "#011a1e",
   },
   drawerPaper: {
     //   width: drawerWidth,
-    backgroundColor: "#0e1a2d",
-    color: "#04d9ff",
-    fontFamily: "Tw Cen MT",
+    backgroundColor: "rgba(1,26,30,0.5)",
+    color: "white",
+    opacity: 0.7,
   },
   drawerHeader: {
     display: "flex",
@@ -75,7 +73,6 @@ const useStyles = makeStyles(theme => ({
       duration: theme.transitions.duration.leavingScreen,
     }),
     margin: "auto",
-    fontFamily: "Tw Cen MT",
     fontSize: "1.2em",
   },
   contentShift: {
@@ -135,7 +132,7 @@ export default function PersistentDrawerRight({ children }) {
         {children}
       </main>
       <Drawer
-        className={classes.drawer}
+        className={`${classes.drawer} drawerContent`}
         variant="persistent"
         anchor="right"
         open={open}
