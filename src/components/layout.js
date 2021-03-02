@@ -29,20 +29,19 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+        {/* <center style={{
+          top: '10em',
+          position: 'relative'
+        }}>
+          <footer>
+            © {new Date().getFullYear()}, Built with
+            {` 🖤 `}
+            <span>by Ninja Tech</span>
+          </footer>
+        </center> */}
       </div>
     </>
   )
