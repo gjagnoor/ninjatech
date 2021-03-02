@@ -10,20 +10,27 @@
 }
 
 .responsive {
-  width: 91.1em;
+  width: 103.1em;
   height: auto;
 }
 
 #home {
   position: relative;
-  top: -6em;
+  top: -17em;
   width: fit-content;
+}
+
+#ninjatech {
+  color: white;
+  position: relative;
+  top: 5em;
+  font-size: 5em;
+  z-index: 10;
 }
 /* --------------------------------------- */
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
