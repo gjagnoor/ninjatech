@@ -19,6 +19,22 @@
   /* margin-top: -8em; */
 }
 
+#features {
+  /* height: max-content; */
+  /* background-color: rgba(0, 0, 0, 0.10) !important; */
+  background-image: url("../images/section-2.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  background-position: center center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: -1;
+  /* margin-top: -8em; */
+}
+
 #header-logo {
   width: 2em;
   position: absolute;
@@ -42,6 +58,14 @@
 .drawerContent {
   font-family: twcenmt !important;
 }
+
+#feature {
+  height: 859px;
+  background-image: url("../images/section-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
 /* --------------------------------------- */
 html {
   -ms-text-size-adjust: 100%;
@@ -50,7 +74,7 @@ html {
   overflow-y: scroll;
 }
 body {
-  background-color: rgb(27, 91, 110) !important;
+  background-color: rgb(0, 0, 0, 1) !important;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
