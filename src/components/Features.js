@@ -35,6 +35,15 @@ const Features = () => {
         unmountOnExit
         timeout={{ enter: 7000 }}
       >
+        <h5 id="featuresheading">The Ultimate AR Gaming Phone</h5>
+      </Fade>
+      <Fade
+        direction="up"
+        in={true}
+        mountOnEnter
+        unmountOnExit
+        timeout={{ enter: 7000 }}
+      >
         <Grid
           container
           className={classes.root}
@@ -44,8 +53,6 @@ const Features = () => {
           md={12}
           lg={12}
           xl={12}
-          id="feature-content"
-          style={{ paddingTop: "15em" }}
         >
           {features.slice(0, 4).map((value, i) => (
             <Grid item xl={3} lg={3} md={12} sm={12} xs={12}>

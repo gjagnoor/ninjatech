@@ -45,14 +45,14 @@
   color: white;
   font-family: twcenmt;
   font-weight: bolder;
-  font-size: 5.5em;
+  font-size: 5.5rem;
   z-index: 10;
 }
 
 .ml15 {
-  position: absolute;
+  /* position: absolute; */
   top: 5rem;
-  left: 2rem;
+  left: 10rem;
 }
 
 .drawerContent {
@@ -60,11 +60,186 @@
 }
 
 #feature {
-  height: 859px;
   background-image: url("../images/section-2.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+}
+
+#design {
+  /* height: 53.688em; */
+  background-image: url("../images/HTML\ USE\ IMAGE/design.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+#symmetricaldesign {
+  padding-top: 1em;
+  color: white;
+  text-align: center;
+  font-family: twcenmt;
+  font-size: 3em;
+}
+
+#degree {
+  color: white;
+  text-align: center;
+  font-family: twcenmt;
+  font-size: 2em;
+}
+
+#featuresheading {
+  padding-top: 2em;
+  color: white;
+  text-align: center;
+  font-family: twcenmt;
+  font-size: 3em;
+}
+
+#designp {
+  padding-top: 1em;
+  color: white;
+  font-family: twcenmt;
+  text-align: center;
+  font-size: 1.4em;
+  word-wrap: break-word;
+}
+
+#touchheading {
+  padding-top: 2em;
+  color: white;
+  text-align: center;
+  font-family: twcenmt;
+  font-size: 3em;
+}
+
+.touchtext {
+  padding-top: 2em;
+  color: white;
+  text-align: center;
+  font-family: twcenmt;
+  font-size: 1.5em;
+}
+
+.touchtext2 {
+  /* padding-top: 2em; */
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-family: twcenmt;
+  font-size: 1.5em;
+}
+
+#touch {
+  height: 53.688em;
+  background-image: url("../images/HTML\ USE\ IMAGE/touch-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#qualcomm {
+  height: 53.688em;
+  background-image: url("../images/HTML\ USE\ IMAGE/qualcomm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#qualcommheading {
+  padding-top: 2em;
+  color: white;
+  text-align: center;
+  font-family: twcenmt;
+  font-size: 3em;
+}
+
+.qualcommtext {
+  padding-top: 2em;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-family: twcenmt;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.qualcommp {
+  text-align: center;
+  color: white;
+  float: right;
+  width: 20em;
+  margin-top: 10rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+#ARPhone {
+  /* height: 53.688em; */
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#ARPhoneheading {
+  padding-top: 2em;
+  color: white;
+  text-align: center;
+  font-family: twcenmt;
+  font-size: 3em;
+}
+
+#arphonesp {
+  text-align: center;
+  color: white;
+  width: 50em;
+  font-size: 1em;
+  line-height: 2rem;
+}
+
+#spiderman {
+  width: 20em;
+}
+
+#charger {
+  /* background-color: rgba(0,0,0,0.7); */
+  height: 53.688em;
+  background-image: url("../images/HTML\ USE\ IMAGE/charger.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#chargerheading {
+  padding-top: 2em;
+  color: white;
+  text-align: center;
+  font-family: twcenmt;
+  font-size: 3em;
+}
+
+#chargersubheading {
+  padding-top: 2em;
+  color: white;
+  text-align: center;
+  font-family: twcenmt;
+  font-size: 1.5em;
+}
+
+#chargerp {
+  text-align: center;
+  color: white;
+  width: 20rem;
+  font-size: 1em;
+  float: right;
+  line-height: 2rem;
+  margin-right:4rem;
+  margin-top: 7rem;
+  /* border: 1px solid red; */
 }
 /* --------------------------------------- */
 html {
@@ -466,7 +641,7 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  /* margin-bottom: 1.45rem; */
 }
 pre {
   margin-left: 0;

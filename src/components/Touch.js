@@ -1,15 +1,12 @@
 import { Link } from "gatsby"
 import React, { useEffect } from "react"
-import homeBackground from "../images/home-background-bright.png"
-import anime from "animejs/lib/anime.es.js"
 import Container from "@material-ui/core/Container"
 import Slide from "@material-ui/core/Slide"
 import Fade from "@material-ui/core/Fade"
-import phonegif from "../images/phone.gif"
 
-const Home = () => {
+const Touch = () => {
   return (
-    <div id="home">
+    <div id="touch">
       <Slide
         direction="right"
         in={true}
@@ -25,13 +22,24 @@ const Home = () => {
             unmountOnExit
             timeout={{ enter: 7000 }}
           >
-            <center>
-              <div className="ml15">
-                <h5 id="ninjatech" className="word">
-                  Ninja Tech
-                </h5>
-              </div>
-            </center>
+            <h5 id="touchheading">Master Touch 2.0</h5>
+          </Fade>
+          <Fade
+            direction="up"
+            in={true}
+            mountOnEnter
+            unmountOnExit
+            timeout={{ enter: 7000 }}
+          >
+            <div>
+              <p className="touchtext">
+                Master Touch 2.O lets you set a custom touch zone,
+              </p>
+              <p className="touchtext2">
+                the ninja tech responds to pressure controls even on screen
+                edge.
+              </p>
+            </div>
           </Fade>
         </Container>
       </Slide>
@@ -39,4 +47,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Touch
