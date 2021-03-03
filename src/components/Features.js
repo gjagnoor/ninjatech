@@ -55,7 +55,7 @@ const Features = () => {
           xl={12}
         >
           {features.slice(0, 4).map((value, i) => (
-            <Grid item xl={3} lg={3} md={12} sm={12} xs={12}>
+            <Grid item xl={3} lg={3} md={3} sm={3} xs={12}>
               <p
                 style={{
                   color: "white",
@@ -68,7 +68,7 @@ const Features = () => {
             </Grid>
           ))}
           {features.slice(4).map((value, i) => (
-            <Grid item xl={3} lg={3} md={12} sm={12} xs={12}>
+            <Grid item xl={3} lg={3} md={3} sm={3} xs={12}>
               <p
                 style={{
                   color: "white",

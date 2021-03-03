@@ -26,11 +26,12 @@ const ARPhone = () => {
             <h5 id="ARPhoneheading">AR Phones</h5>
           </Fade>
           <div
+            id="arphonescontent"
             style={{
               display: "flex",
-              flexWrap: "wrap",
+              // flexWrap: "wrap",
               margin: "5rem",
-              justifyContent: "space-between",
+              justifyContent: "space-around",
             }}
           >
             <p id="arphonesp">

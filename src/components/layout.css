@@ -4,6 +4,15 @@
   src: url("../../twcenmt.woff");
 }
 
+p {
+  font-family: twcenmt !important;
+  font-size: 1.2rem !important;
+}
+
+h1, h2, h3, h4, h4, h5, h6 {
+  font-family: twcenmt !important;
+}
+
 #home {
   /* height: max-content; */
   background-image: url("../images/home-background-bright.png");
@@ -103,7 +112,18 @@
   font-family: twcenmt;
   text-align: center;
   font-size: 1.4em;
-  word-wrap: break-word;
+  /* width: 35rem; */
+  /* word-wrap: break-word; */
+}
+
+#designp2 {
+  /* padding-top: 1em; */
+  color: white;
+  font-family: twcenmt;
+  text-align: center;
+  font-size: 1.4em;
+  /* width: 35rem; */
+  /* word-wrap: break-word; */
 }
 
 #touchheading {
@@ -173,8 +193,8 @@
   float: right;
   width: 20em;
   margin-top: 10rem;
-  margin-right: 1rem;
-  font-size: 1rem;
+  margin-right: 10rem;
+  font-size: 1.5rem;
 }
 
 #ARPhone {
@@ -199,6 +219,10 @@
   width: 50em;
   font-size: 1em;
   line-height: 2rem;
+  margin: 0;
+  position: relative;
+  overflow-y: scroll;
+  /* top: 15rem; */
 }
 
 #spiderman {
@@ -233,13 +257,62 @@
 #chargerp {
   text-align: center;
   color: white;
-  width: 20rem;
+  width: 30rem;
   font-size: 1em;
   float: right;
   line-height: 2rem;
   margin-right:4rem;
   margin-top: 7rem;
   /* border: 1px solid red; */
+}
+
+/* mobile phones */
+@media screen and (max-width:480px){
+  #chargerp {
+    margin-right: 0 !important;
+    width: initial;
+    float: none !important;
+  }
+
+  #arphonesp {
+    width: initial;
+  }
+
+  #arphonescontent {
+    justify-content: initial !important;
+    margin: 1rem !important;
+  }
+
+  .qualcommp {
+    float: none;
+    width: initial;
+    /* margin-top: 10rem; */
+    margin-right: 0;
+  }
+
+  #home {
+    background-size: cover;
+    height: 30em;
+  }
+}
+
+/* tablets */
+
+@media only screen and (max-device-width: 768px){
+  .qualcommp {
+    float: none;
+    width: initial;
+    margin-right: 0;
+  }
+}
+
+/* laptops */
+@media only screen and (max-device-width: 1024px){
+  .qualcommp {
+    float: none;
+    width: initial;
+    margin-right: 0;
+  }
 }
 /* --------------------------------------- */
 html {
@@ -254,7 +327,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: twcenmt;
+  font-family: twcenmt !important;
   font-weight: bold;
   word-wrap: break-word;
   font-kerning: normal;
@@ -325,8 +398,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: twcenmt !important;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -555,12 +627,14 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: twcenmt !important;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
   line-height: 1.1;
+}
+p {
+  font-family: twcenmt !important;
 }
 h6 {
   margin-left: 0;

@@ -47,9 +47,11 @@ const Design = () => {
             <div>
               <center>
                 <h5 id="designp">
-                  Grip and control better with two diamond shaped on back of
-                  phone, improving your handling however you used your
-                  phone.Symmetrical and even, the NINJATECH.
+                  Grip and control better with two diamond shaped on back
+                </h5>
+                <h5 id="designp2">
+                  of phone, improving your handling however you used your phone.
+                  Symmetrical and even, the NINJATECH.
                 </h5>
               </center>
             </div>
