@@ -294,6 +294,31 @@ h1, h2, h3, h4, h4, h5, h6 {
     background-size: cover;
     height: 30em;
   }
+
+  #touch {
+    height: 20em;
+  }
+
+  #touchheading {
+    padding-top: initial;
+  }
+
+  #qualcomm {
+    height: 35em;
+  }
+
+  .qualcommp {
+    float: none;
+    width: initial;
+    margin-top: initial;
+    margin-right: initial;
+  }
+
+  #qualcommheading {
+    margin-top: 0;
+    padding-top: 0;
+    padding: 1rem;
+  }
 }
 
 /* tablets */

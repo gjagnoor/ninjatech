@@ -29,7 +29,7 @@ const ARPhone = () => {
             id="arphonescontent"
             style={{
               display: "flex",
-              // flexWrap: "wrap",
+              flexWrap: "wrap",
               margin: "5rem",
               justifyContent: "space-around",
             }}
