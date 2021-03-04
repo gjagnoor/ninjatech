@@ -28,7 +28,10 @@ const Home = () => {
             <center>
               <div className="ml15">
                 <h5 id="ninjatech" className="word">
-                  Augmented Reality<span><p> - The Utimate Technology</p></span>
+                  Augmented Reality
+                  <span>
+                    <p> - The Utimate Technology</p>
+                  </span>
                 </h5>
               </div>
             </center>
