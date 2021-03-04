@@ -11,25 +11,7 @@
   to {
     transform: rotate(450deg);
   }
-}
-/* 
-#convince {
-  animation: fadeIn 5s;
-  animation-delay: calc(var(--scroll) * -1s);
-
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-} */
+} 
 
 
 @font-face {
@@ -83,9 +65,9 @@ h1, h2, h3, h4, h4, h5, h6 {
 }
 
 #header-logo {
-  width: 2em;
+  width: 4em;
   position: absolute;
-  top: 2em !important;
+  top: 1.3em !important;
 }
 
 #ninjatech {

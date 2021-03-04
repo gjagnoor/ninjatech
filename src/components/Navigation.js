@@ -154,6 +154,7 @@ export default function PersistentDrawerRight({ children }) {
         <Divider />
         <List>
           {[
+            "",
             "About Us",
             "Services",
             "Products",
@@ -162,27 +163,23 @@ export default function PersistentDrawerRight({ children }) {
           ].map((text, index) => (
             <a
               href={
-                    // window.location.hostname === "localhost"
-                    // ? `/${text.split(" ")[0].toLowerCase()}`
-                    // : `/ninjatech/${text.split(" ")[0].toLowerCase()}`
-                    `/ninjatech/${text.split(" ")[0].toLowerCase()}`
+                    window.location.hostname === "localhost"
+                    ? `/${text.split(" ")[0].toLowerCase()}`
+                    : `/ninjatech/${text.split(" ")[0].toLowerCase()}`
+                    // `/ninjatech/${text.split(" ")[0].toLowerCase()}`
               }
               style={{ textDecoration: "none", color: "inherit" }}
               target={`${text === "Resume" ? "_blank" : ""}`}
             >
-              {text === "Resume" ? (
+              {text === "" ? (
                 <p
                   style={{
                     padding: "2em",
                     textAlign: "center",
                     cursor: "pointer",
-                    border: "1px solid #04d9ff",
-                    padding: "0.9em",
-                    margin: "4em",
-                    borderRadius: "25%",
                   }}
                 >
-                  {text}
+                  Home
                 </p>
               ) : (
                 <p
