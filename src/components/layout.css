@@ -6,7 +6,12 @@
 
 p {
   font-family: twcenmt !important;
-  font-size: 1.2rem !important;
+  font-size: 1.3em !important;
+  /* text-align: center !important; */
+}
+
+a {
+  font-size: 0.7rem !important;
 }
 
 h1, h2, h3, h4, h4, h5, h6 {
@@ -47,7 +52,7 @@ h1, h2, h3, h4, h4, h5, h6 {
 #header-logo {
   width: 2em;
   position: absolute;
-  top: 0.8em;
+  top: 2em !important;
 }
 
 #ninjatech {
@@ -56,6 +61,13 @@ h1, h2, h3, h4, h4, h5, h6 {
   font-weight: bolder;
   font-size: 5.5rem;
   z-index: 10;
+}
+
+#footer {
+  background-image: url("../images/HTML\ USE\ IMAGE/contactb.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .ml15 {
@@ -111,7 +123,7 @@ h1, h2, h3, h4, h4, h5, h6 {
   color: white;
   font-family: twcenmt;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
   /* width: 35rem; */
   /* word-wrap: break-word; */
 }
@@ -121,7 +133,7 @@ h1, h2, h3, h4, h4, h5, h6 {
   color: white;
   font-family: twcenmt;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
   /* width: 35rem; */
   /* word-wrap: break-word; */
 }
@@ -139,7 +151,7 @@ h1, h2, h3, h4, h4, h5, h6 {
   color: white;
   text-align: center;
   font-family: twcenmt;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .touchtext2 {
@@ -149,7 +161,7 @@ h1, h2, h3, h4, h4, h5, h6 {
   color: white;
   text-align: center;
   font-family: twcenmt;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 #touch {
@@ -190,11 +202,11 @@ h1, h2, h3, h4, h4, h5, h6 {
 .qualcommp {
   text-align: center;
   color: white;
-  float: right;
   width: 20em;
+  float: right;
   margin-top: 10rem;
-  margin-right: 10rem;
-  font-size: 1.5rem;
+  /* margin: 10rem; */
+  font-size: 1.2em;
 }
 
 #ARPhone {
@@ -217,16 +229,16 @@ h1, h2, h3, h4, h4, h5, h6 {
   text-align: center;
   color: white;
   width: 50em;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 2rem;
-  margin: 0;
+  margin-right: 1rem;
   position: relative;
   overflow-y: scroll;
   /* top: 15rem; */
 }
 
 #spiderman {
-  width: 20em;
+  width: 15rem;
 }
 
 #charger {
@@ -258,16 +270,157 @@ h1, h2, h3, h4, h4, h5, h6 {
   text-align: center;
   color: white;
   width: 30rem;
-  font-size: 1em;
+  font-size: 1.2em;
   float: right;
   line-height: 2rem;
-  margin-right:4rem;
+  /* margin-right:4rem; */
   margin-top: 7rem;
   /* border: 1px solid red; */
 }
 
+#about {
+  height: fit-content;
+  background-image: url("../images/HTML\ USE\ IMAGE/about-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#aboutheading {
+  padding-top: 2em;
+  color: white;
+  text-align: center;
+  font-family: twcenmt;
+  font-size: 3em;
+  word-wrap: break-word;
+}
+
+#aboutline {
+  width: 7em;
+}
+
+#aboutfeaturesimg {
+  width: 30.688rem;
+}
+
+#services {
+  height: fit-content;
+  background-image: url("../images/HTML\ USE\ IMAGE/services.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#servicesheading {
+  padding-top: 2em;
+  color: white;
+  text-align: center;
+  font-family: twcenmt;
+  font-size: 3em;
+  word-wrap: break-word;
+}
+
+.service {
+  width: 30rem;
+  margin-left: 5rem;
+  display: flex;
+}
+
+.services-icon {
+  width: 3.5em;
+  height: 3.5em;
+  margin-top: 5em;
+  margin-right: 2rem;
+}
+
+#service-line {
+  width: 7em;
+}
+
+.service-heading {
+  font-size: 1.5em; 
+  white-space: nowrap
+}
+
+.servicep {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+#productsheading {
+  padding-top: 2em;
+  color: white;
+  text-align: center;
+  font-family: twcenmt;
+  font-size: 3em;
+  word-wrap: break-word;
+}
+
+#products {
+  height: fit-content;
+  background-image: url("../images/HTML\ USE\ IMAGE/products.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.productheading {
+  text-align: center;
+}
+
+.productimg {
+  width: 15rem;
+}
+
+.ntech900 {
+  margin-top: 2rem;
+}
+
+#convince {
+  height: fit-content;
+  background-image: url("../images/HTML\ USE\ IMAGE/convince.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.aboutp2 {
+  width: 50%;
+}
+
+.abouticon {
+  width: 5em;
+  height: 5em;
+}
+
 /* mobile phones */
 @media screen and (max-width:480px){
+  .service {
+    /* width: 20rem; */
+    margin-left: 0;
+  }
+  #about-phone-content {
+    flex-wrap: wrap;
+  }
+  .aboutfeaturesp {
+    width: 15rem !important;
+    text-align: center !important;
+  }
+
+  #about-content {
+    margin-left: 0;
+  }
+
+  #about {
+    height: fit-content;
+  }
+  #aboutfeaturesimg {
+    width: 16rem;
+  }
+
+  #charger {
+    height: fit-content;
+  }
   #chargerp {
     margin-right: 0 !important;
     width: initial;
@@ -276,9 +429,11 @@ h1, h2, h3, h4, h4, h5, h6 {
 
   #arphonesp {
     width: initial;
+    margin-right: 0;
   }
 
   #arphonescontent {
+    flex-wrap: wrap;
     justify-content: initial !important;
     margin: 1rem !important;
   }
@@ -324,6 +479,13 @@ h1, h2, h3, h4, h4, h5, h6 {
 /* tablets */
 
 @media only screen and (max-device-width: 768px){
+  .service {
+    width: 20rem;
+    margin-left: 0;
+  }
+  #about-content {
+    margin-left: 2rem !important;
+  }
   .qualcommp {
     float: none;
     width: initial;
@@ -348,6 +510,7 @@ html {
 }
 body {
   background-color: rgb(0, 0, 0, 1) !important;
+  color: white !important;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

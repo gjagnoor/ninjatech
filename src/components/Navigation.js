@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    backgroundColor: "rgba(1,26,30,0.5)",
+    backgroundColor: "rgba(1,26,30, 0.7)",
     color: "#04d9ff",
   },
   appBarShift: {
@@ -53,9 +53,8 @@ const useStyles = makeStyles(theme => ({
   },
   drawerPaper: {
     //   width: drawerWidth,
-    backgroundColor: "rgba(1,26,30,0.5)",
+    backgroundColor: "rgba(1,26,30,1)",
     color: "white",
-    opacity: 0.7,
   },
   drawerHeader: {
     display: "flex",
@@ -159,15 +158,12 @@ export default function PersistentDrawerRight({ children }) {
             "Services",
             "Products",
             "Video Demonstration",
-            "Contacts",
+            "Contact Us",
           ].map((text, index) => (
             <a
               href={
                 text !== "Resume"
-                  ? `/portfolio/profile/#${text
-                      .split(" ")
-                      .join("")
-                      .toLowerCase()}`
+                  ? `/${text.split(" ")[0].toLowerCase()}`
                   : `https://drive.google.com/file/d/1ta6t3ewzs0lFxt740RxNtoS9HhtMOo11/view?usp=sharing`
               }
               style={{ textDecoration: "none", color: "inherit" }}

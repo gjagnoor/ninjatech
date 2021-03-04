@@ -30,7 +30,7 @@ const ARPhone = () => {
             style={{
               display: "flex",
               flexWrap: "wrap",
-              margin: "5rem",
+              margin: "2rem",
               justifyContent: "space-around",
             }}
           >

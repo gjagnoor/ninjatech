@@ -36,18 +36,9 @@ const useStyles = makeStyles({
     marginLeft: "1em",
   },
 })
-const Layout = ({ children }) => {
+const Contact = ({ children }) => {
   const classes = useStyles()
   const [name, setName] = useState("")
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   function handleSignUp() {
     alert(" Thank you for contacting us! We will get back to you shortly")
@@ -55,9 +46,7 @@ const Layout = ({ children }) => {
 
   return (
     <Container maxWidth="xl">
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
-        <main>{children}</main>
         <center
           style={{
             top: "10em",
@@ -143,7 +132,6 @@ const Layout = ({ children }) => {
                           flexDirection: "column",
                           justifyContent: "space-around",
                         }}
-                        className={classes.root}
                       >
                         <Input
                           defaultValue="Email"
@@ -166,8 +154,4 @@ const Layout = ({ children }) => {
   )
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout
+export default Contact

@@ -57,8 +57,16 @@ const Design = () => {
             </div>
           </Fade>
           <center>
-            <img src={designphone1} />
-            <img src={designphone2} />
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "center",
+              }}
+            >
+              <img src={designphone1} />
+              <img src={designphone2} />
+            </div>
           </center>
         </Container>
       </Slide>

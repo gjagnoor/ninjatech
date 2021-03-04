@@ -14,7 +14,7 @@ const Qualcomm = () => {
         unmountOnExit
         timeout={1000}
       >
-        <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
+        <Container maxWidth="xl">
           <Fade
             direction="up"
             in={true}
@@ -42,7 +42,7 @@ const Qualcomm = () => {
             unmountOnExit
             timeout={{ enter: 7000 }}
           >
-            <div>
+            <center>
               <p className="qualcommp">
                 Powered by the most advance mobile platform the Qualcomm
                 Snapdragon 835, Ninja Tech is a whole new generation of fast and
@@ -50,7 +50,7 @@ const Qualcomm = () => {
                 enables a breathtaking experience in Augmented Reality, browsing
                 and more.
               </p>
-            </div>
+            </center>
           </Fade>
         </Container>
       </Slide>
