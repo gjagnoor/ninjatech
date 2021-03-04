@@ -333,7 +333,8 @@ h1, h2, h3, h4, h4, h5, h6 {
 }
 
 #aboutfeaturesimg {
-  width: 30.688rem;
+  width: 250%;
+  margin-top: 40%;
 }
 
 #services {

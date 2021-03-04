@@ -48,26 +48,6 @@ const About = () => {
               <center>
                 <img src={aboutfeatures} id="aboutfeaturesimg" />
               </center>
-              <center>
-                <p
-                  className="aboutfeaturesp"
-                  style={{ wordBreak: "break-word", width: "25rem" }}
-                >
-                  We deal in Mobile Phones. Ninja tech deals with AR Phone,a
-                  technology which is unique and interesting. Ninja Logo
-                  represents the Skilled Fighter. Then lines are knows as traces
-                  which also represents the technology.
-                </p>
-                <p
-                  className="aboutfeaturesp"
-                  style={{ textAlign: "center", width: "25rem" }}
-                >
-                  Ninja Tech is a whole new generation of fast and intelligent.
-                  The 25% faster CPU, GPU and 100% improved system enables a
-                  breathtaking experience in Augmented Reality, browsing and
-                  more.
-                </p>
-              </center>
             </div>
           </div>
         </Container>
