@@ -163,7 +163,8 @@ export default function PersistentDrawerRight({ children }) {
             <a
               href={
                 text !== "Resume"
-                  ? window.location.hostname === "localhost" ? `/${text.split(" ")[0].toLowerCase()}` : `/ninjatech/${text.split(" ")[0].toLowerCase()}`
+                  ? `/ninjatech/${text.split(" ")[0].toLowerCase()}`
+                  // ? window.location.hostname === "localhost" ? `/${text.split(" ")[0].toLowerCase()}` : `/ninjatech/${text.split(" ")[0].toLowerCase()}`
                   : `https://drive.google.com/file/d/1ta6t3ewzs0lFxt740RxNtoS9HhtMOo11/view?usp=sharing`
               }
               style={{ textDecoration: "none", color: "inherit" }}
