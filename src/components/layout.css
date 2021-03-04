@@ -1,3 +1,36 @@
+#aboutphone {
+  animation: rotate 1s;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(450deg);
+  }
+}
+/* 
+#convince {
+  animation: fadeIn 5s;
+  animation-delay: calc(var(--scroll) * -1s);
+
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+} */
+
 
 @font-face {
   font-family: twcenmt;
@@ -165,7 +198,7 @@ h1, h2, h3, h4, h4, h5, h6 {
 }
 
 #touch {
-  height: 53.688em;
+  height: 90em;
   background-image: url("../images/HTML\ USE\ IMAGE/touch-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;

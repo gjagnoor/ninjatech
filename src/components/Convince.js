@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import Container from "@material-ui/core/Container"
 import Slide from "@material-ui/core/Slide"
 import Fade from "@material-ui/core/Fade"
@@ -9,8 +9,23 @@ import aboutfeatures from "../images/HTML USE IMAGE/about-lines.png"
 import personalization from "../images/HTML USE IMAGE/personalization.png"
 import setup from "../images/HTML USE IMAGE/setup.png"
 import online from "../images/HTML USE IMAGE/online.png"
+// import VizSensor from 'react-visibility-sensor';
 
 const About = () => {
+  const [visible, setVisible] = useState(false)
+
+  // useEffect(() => {
+  //     window.addEventListener(
+  //       "scroll",
+  //       () => {
+  //         document.body.style.setProperty(
+  //           "--scroll",
+  //           document.body.pageYOffset / (document.getElementById("convince").offsetHeight - window.innerHeight)
+  //         )
+  //       },
+  //       false
+  //     )
+  //   }, [])
   return (
     <div id="convince">
       <Slide
@@ -45,6 +60,7 @@ const About = () => {
               display: "flex",
               justifyContent: "space-around",
               flexWrap: "wrap",
+              marginTop: "5%"
             }}
           >
             <div>

@@ -12,18 +12,18 @@ import line from "../images/HTML USE IMAGE/line-about.png"
 const Services = () => {
   return (
     <div id="services">
-        <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
-          <h5 id="servicesheading">Services</h5>
-          <center>
-            <img src={line} id="service-line" />
+      <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
+        <h5 id="servicesheading">Services</h5>
+        <center>
+          <img src={line} id="service-line" />
         </center>
         <Slide
-        direction="right"
-        in={true}
-        mountOnEnter
-        unmountOnExit
+          direction="right"
+          in={true}
+          mountOnEnter
+          unmountOnExit
           timeout={3000}
-      >
+        >
           <div
             style={{
               display: "flex",
@@ -58,12 +58,12 @@ const Services = () => {
           </div>
         </Slide>
         <Slide
-        direction="left"
-        in={true}
-        mountOnEnter
-        unmountOnExit
-        timeout={3000}
-      >
+          direction="left"
+          in={true}
+          mountOnEnter
+          unmountOnExit
+          timeout={3000}
+        >
           <div
             style={{
               display: "flex",
@@ -96,8 +96,8 @@ const Services = () => {
               </div>
             </div>
           </div>
-          </Slide>
-        </Container>
+        </Slide>
+      </Container>
     </div>
   )
 }

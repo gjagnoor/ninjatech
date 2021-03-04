@@ -8,6 +8,18 @@ import lineAbout from "../images/HTML USE IMAGE/line-about.png"
 import aboutfeatures from "../images/HTML USE IMAGE/about-lines.png"
 
 const About = () => {
+  useEffect(() => {
+    window.addEventListener(
+      "scroll",
+      () => {
+        document.body.style.setProperty(
+          "--scroll",
+          window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+        )
+      },
+      false
+    )
+  }, [])
   return (
     <div id="about">
       <Slide
@@ -31,7 +43,7 @@ const About = () => {
             }}
             id="about-phone-content"
           >
-            <img src={aboutPhone} />
+            <img src={aboutPhone} id="aboutphone" />
             <div id="about-content">
               <center>
                 <img src={aboutfeatures} id="aboutfeaturesimg" />
