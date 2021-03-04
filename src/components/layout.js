@@ -17,7 +17,6 @@ import "./layout.css"
 import { SettingsSystemDaydreamRounded } from "@material-ui/icons"
 import { white } from "@material-ui/core/colors"
 import { Button } from "@material-ui/core"
-import ScrollAnimation from "react-animate-on-scroll"
 
 const useStyles = makeStyles({
   root: {
