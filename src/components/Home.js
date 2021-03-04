@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import React, { useEffect } from "react"
 import homeBackground from "../images/home-background-bright.png"
-import anime from "animejs/lib/anime.es.js"
 import Container from "@material-ui/core/Container"
 import Slide from "@material-ui/core/Slide"
 import Fade from "@material-ui/core/Fade"
