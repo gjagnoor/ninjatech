@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useRef } from "react"
 import Container from "@material-ui/core/Container"
 import Slide from "@material-ui/core/Slide"
 import Fade from "@material-ui/core/Fade"
@@ -9,82 +9,77 @@ import aboutfeatures from "../images/HTML USE IMAGE/about-lines.png"
 import personalization from "../images/HTML USE IMAGE/personalization.png"
 import setup from "../images/HTML USE IMAGE/setup.png"
 import online from "../images/HTML USE IMAGE/online.png"
-// import VizSensor from 'react-visibility-sensor';
+import useVisibility from 'react-use-visibility';
+
 
 const About = () => {
-  const [visible, setVisible] = useState(false)
+  // Use a ref to attach to the element whose visibility you want to keep track of.
+  const imgRef = useRef();
 
-  // useEffect(() => {
-  //     window.addEventListener(
-  //       "scroll",
-  //       () => {
-  //         document.body.style.setProperty(
-  //           "--scroll",
-  //           document.body.pageYOffset / (document.getElementById("convince").offsetHeight - window.innerHeight)
-  //         )
-  //       },
-  //       false
-  //     )
-  //   }, [])
+  // `current` points to the mounted img element.
+  const isVisible = useVisibility(imgRef.current, {
+    partial: true
+  });
+  
   return (
-    <div id="convince">
-      <Slide
-        direction="right"
-        in={true}
-        mountOnEnter
-        unmountOnExit
-        timeout={1000}
-      >
-        <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
-          <h5 id="aboutheading">Buy an NTech Model Today</h5>
-          <center>
-            <img src={lineAbout} id="aboutline" />
-          </center>
-          <center>
-            <p className="aboutp2">
-              We deal in Mobile Phones.Ninja tech deals with AR Phone,a
-              technology which is unique and interesting. Ninja Logo represents
-              the Skilled Fighter.Then lines are knows as traces which also
-              represents the technology.
-            </p>
-          </center>
-          <center>
-            <p className="aboutp2">
-              Ninja Tech is a whole new generation of fast and intelligent. The
-              25% faster CPU, GPU and 100% improved system enables a
-              breathtaking experience in Augmented Reality, browsing and more.
-            </p>
-          </center>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-around",
-              flexWrap: "wrap",
-              marginTop: "5%"
-            }}
-          >
-            <div>
-              <center>
-                <img src={setup} className="abouticon" />
-                <p>Quick Setup</p>
-              </center>
-            </div>
-            <div>
-              <center>
-                <img src={online} className="abouticon" />
-                <p>Be online. Always</p>
-              </center>
-            </div>
-            <div>
-              <center>
-                <img src={personalization} className="abouticon" />
-                <p>Better personalization</p>
-              </center>
-            </div>
+    <div id="convince" ref={imgRef} className={isVisible ? 'excited' : ''}>
+          <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
+            <h5 id="aboutheading">Buy an NTech Model Today</h5>
+            <center>
+              <img src={lineAbout} id="aboutline" />
+            </center>
+            <center>
+              <p className="aboutp2">
+                We deal in Mobile Phones.Ninja tech deals with AR Phone,a
+                technology which is unique and interesting. Ninja Logo represents
+                the Skilled Fighter.Then lines are knows as traces which also
+                represents the technology.
+              </p>
+            </center>
+            <center>
+              <p className="aboutp2">
+                Ninja Tech is a whole new generation of fast and intelligent. The
+                25% faster CPU, GPU and 100% improved system enables a
+                breathtaking experience in Augmented Reality, browsing and more.
+              </p>
+        </center>
+        <Slide
+          direction="right"
+          in={isVisible}
+          mountOnEnter
+          unmountOnExit
+          timeout={1000}
+        >
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-around",
+                flexWrap: "wrap",
+                marginTop: "5%"
+              }}
+            >
+              <div>
+                <center>
+                  <img src={setup} className="abouticon" />
+                  <p>Quick Setup</p>
+                </center>
+              </div>
+              <div>
+                <center>
+                  <img src={online} className="abouticon" />
+                  <p>Be online. Always</p>
+                </center>
+              </div>
+              <div>
+                <center>
+                  <img src={personalization} className="abouticon" />
+                  <p>Better personalization</p>
+                </center>
+              </div>
           </div>
-        </Container>
-      </Slide>
-    </div>
+          </Slide>
+          </Container>
+        </div>
   )
 }
 
