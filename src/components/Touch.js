@@ -27,7 +27,7 @@ const Touch = () => {
               in={isVisible}
               mountOnEnter
               unmountOnExit
-              timeout={{ enter: 7000 }}
+              timeout={{ enter: 1000 }}
             >
               <h5 id="touchheading">Master Touch 2.0</h5>
             </Fade>
@@ -36,7 +36,7 @@ const Touch = () => {
               in={isVisible}
               mountOnEnter
               unmountOnExit
-              timeout={{ enter: 7000 }}
+              timeout={{ enter: 1000 }}
             >
               <div>
                 <p className="touchtext">

@@ -74,7 +74,7 @@ const Layout = ({ children }) => {
               id="footer"
             >
               <div>
-                <img src={map} />
+                <img src={map} id="map" />
               </div>
               <div style={{ marginLeft: "3%" }}>
                 <h5

@@ -13,36 +13,36 @@ const ARPhone = () => {
     setVisibility(visiblity)
   }
   return (
-    <VisibilitySensor partialVisibility onChange={onChange}>
+    <VisibilitySensor partialVisibility onChange={onChange} scrollCheck={true}>
       <div id="ARPhone">
-        <Grow in={isVisible} timeout={1000}>
-          <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
-            <h5 id="ARPhoneheading">AR Phones</h5>
-            <div
-              id="arphonescontent"
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                margin: "2rem",
-                justifyContent: "space-around",
-              }}
-            >
-              <p id="arphonesp">
-                Augmented reality is used to enhance natural environments or
-                situations and offer perceptually enriched experiences. With the
-                help of advanced AR Technologies . The information about the
-                surrounding real world of the user becomes interactive and
-                digitally manipulated. The AR phone can create a virtual
-                environment with a projection technology giving a feel of
-                futuristic entertainment. NinjaTech specializes in new-age
-                technology, it designs, develops, manufactures, and sells Tech
-                enabled smartphones. Working with the ethos of ‘Smarter
-                Technology for All
-              </p>
+        <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
+          <h5 id="ARPhoneheading">AR Phones</h5>
+          <div
+            id="arphonescontent"
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              margin: "2rem",
+              justifyContent: "space-around",
+            }}
+          >
+            <p id="arphonesp">
+              Augmented reality is used to enhance natural environments or
+              situations and offer perceptually enriched experiences. With the
+              help of advanced AR Technologies . The information about the
+              surrounding real world of the user becomes interactive and
+              digitally manipulated. The AR phone can create a virtual
+              environment with a projection technology giving a feel of
+              futuristic entertainment. NinjaTech specializes in new-age
+              technology, it designs, develops, manufactures, and sells Tech
+              enabled smartphones. Working with the ethos of ‘Smarter
+              Technology' for All
+            </p>
+            <Grow in={isVisible} timeout={{ enter: 3000 }}>
               <img src={spiderman} id="spiderman" />
-            </div>
-          </Container>
-        </Grow>
+            </Grow>
+          </div>
+        </Container>
       </div>
     </VisibilitySensor>
   )

@@ -90,9 +90,9 @@ h1, h2, h3, h4, h4, h5, h6 {
 }
 
 #header-logo {
-  width: 4em;
+  width: 6em;
   position: absolute;
-  top: 1.3em !important;
+  top: 0.7em !important;
 }
 
 #ninjatech {
@@ -267,10 +267,12 @@ h1, h2, h3, h4, h4, h5, h6 {
   text-align: center;
   color: white;
   width: 20em;
-  float: right;
-  margin-top: 10rem;
-  /* margin: 10rem; */
+  /* float: right; */
+  /* margin-top: 10rem; */
+  margin-right: 10rem;
+  margin-bottom: 0;
   font-size: 1.2em;
+  line-height: 2em;
 }
 
 #ARPhone {
@@ -291,14 +293,13 @@ h1, h2, h3, h4, h4, h5, h6 {
 
 #arphonesp {
   text-align: center;
-  color: white;
-  width: 50em;
-  font-size: 1.2em;
-  line-height: 2rem;
-  margin-right: 1rem;
-  position: relative;
-  overflow-y: scroll;
-  /* top: 15rem; */
+    color: white;
+    width: 30em;
+    font-size: 1.2em;
+    line-height: 4rem;
+    margin-right: 1rem;
+    position: relative;
+    overflow-y: scroll;
 }
 
 #spiderman {
@@ -337,7 +338,7 @@ h1, h2, h3, h4, h4, h5, h6 {
   font-size: 1.2em;
   float: right;
   line-height: 2rem;
-  /* margin-right:4rem; */
+  margin-right: 8rem;
   margin-top: 7rem;
   /* border: 1px solid red; */
 }
@@ -516,14 +517,25 @@ h1, h2, h3, h4, h4, h5, h6 {
   }
 
   #arphonesp {
-    width: initial;
+    width: 15em;
     margin-right: 0;
+    font-size: 1.2em !important;
+    line-height: 1.5em;
+  }
+
+  #spiderman {
+    width: 8em;
+  }
+
+  #map {
+    height: 10em;
   }
 
   #arphonescontent {
     flex-wrap: wrap;
     justify-content: initial !important;
     margin: 1rem !important;
+    flex-direction: column;
   }
 
   .qualcommp {
@@ -531,6 +543,7 @@ h1, h2, h3, h4, h4, h5, h6 {
     width: initial;
     /* margin-top: 10rem; */
     margin-right: 0;
+    font-size: 0.9em;
   }
 
   #home {
@@ -1190,8 +1203,19 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
+
+/* h1, h2, h4 {
+  font-family: twcenmt !important;
+  font-size: 3em !important;
 }
+
+h3, h5, h6 {
+  font-family: twcenmt !important;
+  font-size: 2em !important;
+} */
+
+p {
+  font-family: twcenmt !important;
+}
+
+

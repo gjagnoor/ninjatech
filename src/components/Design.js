@@ -40,9 +40,9 @@ const Design = () => {
             unmountOnExit
             timeout={{ enter: 7000 }}
           >
-            <h5 id="degree">
+            <p id="degree">
               360<span>°</span>
-            </h5>
+            </p>
           </Fade>
           <Fade
             direction="up"
@@ -53,13 +53,13 @@ const Design = () => {
           >
             <div>
               <center>
-                <h5 id="designp">
+                <p id="designp">
                   Grip and control better with two diamond shaped on back
-                </h5>
-                <h5 id="designp2">
+                </p>
+                <p id="designp2">
                   of phone, improving your handling however you used your phone.
                   Symmetrical and even, the NINJATECH.
-                </h5>
+                </p>
               </center>
             </div>
           </Fade>

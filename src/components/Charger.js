@@ -13,7 +13,7 @@ const Charger = () => {
     setVisibility(visiblity)
   }
   return (
-    <VisibilitySensor partialVisibility onChange={onChange}>
+    <VisibilitySensor partialVisibility onChange={onChange} scrollCheck={true}>
       <div id="charger">
         <Slide
           direction="right"
@@ -28,7 +28,7 @@ const Charger = () => {
               in={isVisible}
               mountOnEnter
               unmountOnExit
-              timeout={{ enter: 7000 }}
+              timeout={{ enter: 3000 }}
             >
               <h5 id="chargerheading">Hyper Charger</h5>
             </Fade>
@@ -37,7 +37,7 @@ const Charger = () => {
               in={isVisible}
               mountOnEnter
               unmountOnExit
-              timeout={{ enter: 7000 }}
+              timeout={{ enter: 3000 }}
             >
               <h5 id="chargersubheading">3300mAh Polymer Battery</h5>
             </Fade>
@@ -46,7 +46,7 @@ const Charger = () => {
               in={isVisible}
               mountOnEnter
               unmountOnExit
-              timeout={{ enter: 7000 }}
+              timeout={{ enter: 3000 }}
             >
               <center>
                 <p id="chargerp">
