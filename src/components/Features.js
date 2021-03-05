@@ -65,6 +65,7 @@ const Features = () => {
               >
                 {value}
               </p>
+              {<p className="line"></p>}
             </Grid>
           ))}
           {features.slice(4).map((value, i) => (
@@ -78,6 +79,7 @@ const Features = () => {
               >
                 {value}
               </p>
+              {<p className="line"></p>}
             </Grid>
           ))}
         </Grid>

@@ -1,43 +1,69 @@
 import { Link } from "gatsby"
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import homeBackground from "../images/home-background-bright.png"
 import Container from "@material-ui/core/Container"
 import Slide from "@material-ui/core/Slide"
 import Fade from "@material-ui/core/Fade"
 import phonegif from "../images/phone.gif"
+import phonel from "../images/HTML USE IMAGE/phonel.png"
+import phoner from "../images/HTML USE IMAGE/phoner.png"
+import phonemid from "../images/HTML USE IMAGE/phone-middle.png"
+import VisibilitySensor from "react-visibility-sensor"
 
 const Home = () => {
+  const [isVisible, setVisibility] = useState(false)
+
+  const onChange = visiblity => {
+    setVisibility(visiblity)
+  }
   return (
-    <div id="home">
-      <Slide
-        direction="right"
-        in={true}
-        mountOnEnter
-        unmountOnExit
-        timeout={1000}
-      >
-        <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
-          <Fade
-            direction="up"
-            in={true}
-            mountOnEnter
-            unmountOnExit
-            timeout={{ enter: 7000 }}
-          >
-            <center>
-              <div className="ml15">
-                <h5 id="ninjatech" className="word">
-                  Augmented Reality
-                  <span>
-                    <p> - The Utimate Technology</p>
-                  </span>
-                </h5>
-              </div>
-            </center>
-          </Fade>
+    <VisibilitySensor partialVisibility onChange={onChange}>
+      <div id="home">
+        <Container>
+          <center>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "center",
+              }}
+              id="home_"
+            >
+              <Slide
+                direction="right"
+                in={isVisible}
+                mountOnEnter
+                unmountOnExit
+                timeout={2000}
+              >
+                <img src={phonel} className="homephone" />
+              </Slide>
+              <Slide
+                direction="down"
+                in={isVisible}
+                mountOnEnter
+                unmountOnExit
+                timeout={1000}
+              >
+                <img src={phonemid} className="homephonemid" />
+              </Slide>
+              <Slide
+                direction="left"
+                in={isVisible}
+                mountOnEnter
+                unmountOnExit
+                timeout={2000}
+              >
+                <img src={phoner} className="homephone" />
+              </Slide>
+            </div>
+          </center>
         </Container>
-      </Slide>
-    </div>
+        <Container>
+          <h4 id="heading">Augmented Reality - The Ultimate Technology </h4>
+        </Container>
+      </div>
+    </VisibilitySensor>
   )
 }
 

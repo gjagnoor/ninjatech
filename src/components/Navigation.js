@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    backgroundColor: "rgba(1,26,30, 0.7)",
+    backgroundColor: "rgba(0,0,0, 0.7)",
     color: "#04d9ff",
   },
   appBarShift: {
@@ -105,6 +105,7 @@ export default function PersistentDrawerRight({ children }) {
           [classes.appBarShift]: open,
         })}
         xs={12}
+        id="nav"
       >
         <Toolbar>
           <Typography variant="h6" noWrap className={classes.title}>
@@ -163,10 +164,10 @@ export default function PersistentDrawerRight({ children }) {
           ].map((text, index) => (
             <a
               href={
-                    window.location.hostname === "localhost"
-                    ? `/${text.split(" ")[0].toLowerCase()}`
-                    : `/ninjatech/${text.split(" ")[0].toLowerCase()}`
-                    // `/ninjatech/${text.split(" ")[0].toLowerCase()}`
+                window.location.hostname === "localhost"
+                  ? `/${text.split(" ")[0].toLowerCase()}`
+                  : `/ninjatech/${text.split(" ")[0].toLowerCase()}`
+                // `/ninjatech/${text.split(" ")[0].toLowerCase()}`
               }
               style={{ textDecoration: "none", color: "inherit" }}
               target={`${text === "Resume" ? "_blank" : ""}`}

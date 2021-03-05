@@ -13,6 +13,18 @@
   }
 } 
 
+#animate {
+  animation: drop 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes drop {
+  to {
+    transform: rotate(90deg);
+  }
+} 
+
 
 @font-face {
   font-family: twcenmt;
@@ -35,17 +47,30 @@ h1, h2, h3, h4, h4, h5, h6 {
 
 #home {
   /* height: max-content; */
-  background-image: url("../images/home-background-bright.png");
+  background-image: url("../images/HTML\ USE\ IMAGE/contactb.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  height: fit-content;
   background-repeat: no-repeat;
   overflow: hidden;
   z-index: -1;
+  margin-top: 6em;
   /* margin-top: -8em; */
+}
+
+#nav:hover {
+  background-color: rgba(1,26,30);
+}
+
+.homephonemid {
+  width: 15em;
+}
+
+.homephone {
+  width: 5em;
 }
 
 #features {
@@ -177,6 +202,30 @@ h1, h2, h3, h4, h4, h5, h6 {
   text-align: center;
   font-family: twcenmt;
   font-size: 1.2em;
+}
+
+#heading {
+  text-align: center;
+  font-size: 3em;
+  font-family: twcenmt !important;
+  margin-top: 2em;
+}
+
+#servicepoints {
+  height: 61em;
+}
+
+.line {
+  border-width: 2px;
+  border-color: rgb(90, 149, 149);
+  border-style: solid;
+  /* position: absolute; */
+  /* left: 462px; */
+  /* top: 1143px; */
+  margin-top: -3em;
+  width: 0px;
+  height: 72px;
+  /* z-index: 56; */
 }
 
 #touch {
@@ -355,7 +404,8 @@ h1, h2, h3, h4, h4, h5, h6 {
 
 .service-heading {
   font-size: 1.5em; 
-  white-space: nowrap
+  white-space: nowrap;
+  font-weight: bolder;
 }
 
 .servicep {
@@ -409,8 +459,30 @@ h1, h2, h3, h4, h4, h5, h6 {
   height: 5em;
 }
 
+.productdesc {
+  width: 25em;
+  word-wrap: break-word;
+}
+
+.carouselphone {
+  width: 15em;
+}
+
 /* mobile phones */
 @media screen and (max-width:480px){
+  .productdesc {
+    width: 15em;
+    word-wrap: break-word;
+  }
+  #servicepoints {
+    height: 30em;
+  }
+  .line {
+    transform: rotate(90deg);
+    justify-content: center;
+    margin-top: 0;
+    margin-left: 50%;
+  }
   .service {
     /* width: 20rem; */
     margin-left: 0;
@@ -463,7 +535,7 @@ h1, h2, h3, h4, h4, h5, h6 {
 
   #home {
     background-size: cover;
-    height: 30em;
+    height: fit-content;
   }
 
   #touch {
@@ -506,6 +578,12 @@ h1, h2, h3, h4, h4, h5, h6 {
     float: none;
     width: initial;
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width:480px){
+  #home_ {
+    flex-wrap: initial !important;
   }
 }
 

@@ -4,14 +4,17 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import Home from "../components/Home.js"
+import PagesHome from "../components/PagesHome.js"
 import Products from "../components/Products.js"
+import ProductsSlider from "../components/ProductsSlider.js"
 
 const Products_ = () => (
   <Layout>
     <SEO title="Home" />
-    <Home />
+    <h4 id="heading">Products</h4>
+    <PagesHome />
     <Products />
+    <ProductsSlider />
   </Layout>
 )
 
