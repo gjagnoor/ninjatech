@@ -22,7 +22,7 @@ const PagesHome = () => {
 
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
-      <div id="home">
+      <div>
         <Container>
           <Carousel>
             <div>

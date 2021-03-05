@@ -1,14 +1,16 @@
 import { Link } from "gatsby"
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import Container from "@material-ui/core/Container"
 import Slide from "@material-ui/core/Slide"
-import Fade from "@material-ui/core/Fade"
+import Grow from "@material-ui/core/Grow"
 import line from "../images/HTML USE IMAGE/line-about.png"
 import productsimg from "../images/HTML USE IMAGE/products.png"
 import ntech900 from "../images/HTML USE IMAGE/ntech900.png"
 import plus from "../images/HTML USE IMAGE/900plus.png"
 import Button from "@material-ui/core/Button"
 import { makeStyles } from "@material-ui/core"
+import VisibilitySensor from "react-visibility-sensor"
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,8 +23,14 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const Products = () => {
+  const [isVisible, setVisibility] = useState(false)
+
+  const onChange = visiblity => {
+    setVisibility(visiblity)
+  }
   const classes = useStyles()
   return (
+    <VisibilitySensor partialVisibility onChange={onChange}>
     <div id="products">
       <Slide
         direction="right"
@@ -46,8 +54,10 @@ const Products = () => {
               }}
             >
               <div className="ntech900 product">
-                <p className="productheading">NTech 900</p>
-                <img src={ntech900} className="productimg" />
+                  <p className="productheading">NTech 900</p>
+                  <Grow in={isVisible} timeout={{enter: 3000}}>
+                  <img src={ntech900} className="productimg" />
+                  </Grow>
                 <center>
                   <Button variant="contained">Buy now</Button>
                 </center>
@@ -82,8 +92,11 @@ const Products = () => {
                 </center>
               </div>
               <div className="ntech900 product">
-                <p className="productheading">NTech 900+</p>
-                <img src={plus} className="productimg" />
+                  <p className="productheading">NTech 900+</p>
+                  <Grow in={isVisible} timeout={{enter: 3000}}> 
+                  <img src={plus} className="productimg" />
+
+                  </Grow>
                 <center>
                   <Button variant="contained">Buy now</Button>
                 </center>
@@ -92,7 +105,9 @@ const Products = () => {
           </center>
         </Container>
       </Slide>
-    </div>
+      </div>
+      </VisibilitySensor>
+
   )
 }
 

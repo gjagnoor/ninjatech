@@ -23,7 +23,7 @@ const Qualcomm = () => {
             in={isVisible}
             mountOnEnter
             unmountOnExit
-            timeout={{ enter: 3000 }}
+            timeout={{ enter: 1000 }}
           >
             <div>
               <p className="qualcommtext">Augmented Reality</p>
@@ -48,7 +48,7 @@ const Qualcomm = () => {
               in={isVisible}
               mountOnEnter
               unmountOnExit
-              timeout={{ enter: 2000 }}
+              timeout={{ enter: 1000 }}
             >
               <center>
                 <span className="qualcommp">
@@ -61,7 +61,7 @@ const Qualcomm = () => {
               in={isVisible}
               mountOnEnter
               unmountOnExit
-              timeout={{ enter: 3000 }}
+              timeout={{ enter: 1000 }}
             >
               <center>
                 <span className="qualcommp whole">
@@ -74,7 +74,7 @@ const Qualcomm = () => {
               in={isVisible}
               mountOnEnter
               unmountOnExit
-              timeout={{ enter: 4000 }}
+              timeout={{ enter: 1000 }}
             >
               <center>
                 <span className="qualcommp">
@@ -87,7 +87,7 @@ const Qualcomm = () => {
               in={isVisible}
               mountOnEnter
               unmountOnExit
-              timeout={{ enter: 5000 }}
+              timeout={{ enter: 1000 }}
             >
               <center>
                 <span className="qualcommp">
@@ -100,7 +100,7 @@ const Qualcomm = () => {
               in={isVisible}
               mountOnEnter
               unmountOnExit
-              timeout={{ enter: 6000 }}
+              timeout={{ enter: 1000 }}
             >
               <center>
                 <span className="qualcommp">
