@@ -1,3 +1,22 @@
+#map {
+  animation: 2s infinite alternate circle;
+}
+
+#map:hover {
+  animation-play-state: paused;
+}
+
+@keyframes circle {
+  from {
+    -webkit-clip-path: circle(0%);
+    clip-path: circle(0%);
+  }
+  to {
+    -webkit-clip-path: circle(300px);
+    clip-path: circle(300px);
+  }
+}
+
 #aboutphone {
   animation: rotate 1s;
   animation-play-state: paused;
@@ -47,7 +66,7 @@ h1, h2, h3, h4, h4, h5, h6 {
 
 #home {
   /* height: max-content; */
-  background-image: url("../images/HTML\ USE\ IMAGE/contactb.png");
+  background-image: url("../images/HTML\ USE\ IMAGE/banner.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -57,7 +76,7 @@ h1, h2, h3, h4, h4, h5, h6 {
   background-repeat: no-repeat;
   overflow: hidden;
   z-index: -1;
-  margin-top: 6em;
+  padding-top: 6em;
   /* margin-top: -8em; */
 }
 
@@ -68,7 +87,6 @@ h1, h2, h3, h4, h4, h5, h6 {
 .homephonemid {
   width: 15em;
   height: 380px;
-  margin: 57px;
   /* padding-bottom: 2em; */
 }
 
@@ -337,14 +355,13 @@ h1, h2, h3, h4, h4, h5, h6 {
 
 #chargerp {
   text-align: center;
-  color: white;
-  width: 30rem;
-  font-size: 1.2em;
-  float: right;
-  line-height: 2rem;
-  margin-right: 8rem;
-  margin-top: 7rem;
-  /* border: 1px solid red; */
+    color: white;
+    width: 29rem;
+    font-size: 1.2em;
+    float: right;
+    line-height: 2rem;
+    margin-right: 2%;
+    margin-top: 7rem;
 }
 
 #about {
@@ -603,6 +620,26 @@ h1, h2, h3, h4, h4, h5, h6 {
     flex-wrap: initial !important;
   }
 }
+
+@media screen and (max-width:596px){
+  .line {
+    transform: rotate(90deg);
+    justify-content: center;
+    margin-top: 0;
+    margin-left: 50%;
+  }
+
+  .qualcommp {
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 5em;
+  }
+
+  .whole {
+    font-size: 1.18em;
+  }
+}
+
 
 /* laptops */
 @media only screen and (max-device-width: 1024px){

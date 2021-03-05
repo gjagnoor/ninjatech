@@ -64,7 +64,7 @@ const Qualcomm = () => {
               timeout={{ enter: 3000 }}
             >
               <center>
-                <span className="qualcommp">
+                <span className="qualcommp whole">
                   whole new generation of fast and intelligent. The
                 </span>
               </center>

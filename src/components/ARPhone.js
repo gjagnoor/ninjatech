@@ -39,7 +39,9 @@ const ARPhone = () => {
               Technology' for All
             </p>
             <Grow in={isVisible} timeout={{ enter: 3000 }}>
-              <img src={spiderman} id="spiderman" />
+              <center>
+                <img src={spiderman} id="spiderman" />
+              </center>
             </Grow>
           </div>
         </Container>

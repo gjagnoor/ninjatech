@@ -62,6 +62,7 @@ const Features = () => {
                   textAlign: "center",
                   paddingTop: "5em",
                 }}
+                className="featuretext"
               >
                 {value}
               </p>
@@ -76,6 +77,7 @@ const Features = () => {
                   textAlign: "center",
                   paddingTop: "5em",
                 }}
+                className="featuretext"
               >
                 {value}
               </p>
