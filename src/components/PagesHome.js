@@ -11,7 +11,7 @@ import phonemid from "../images/HTML USE IMAGE/phone-middle.png"
 import VisibilitySensor from "react-visibility-sensor"
 import Carousel from "react-material-ui-carousel"
 import Home from "./Home.js"
-import PagesWallpaper from "../images/HTML USE IMAGE/pageswallpaper.jpg"
+import PagesWallpaper from "../images/HTML USE IMAGE/pageswallpaper.png"
 
 const PagesHome = () => {
   const [isVisible, setVisibility] = useState(false)
@@ -23,14 +23,18 @@ const PagesHome = () => {
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
       <div>
-        <Container>
+        <Container maxWidth="xl">
           <Carousel>
-            <div>
+            <center>
+            <div className="slide">
               <Home />
-            </div>
-            <div>
-              <img src={PagesWallpaper} />
-            </div>
+              </div>
+            </center>
+            <center>
+            <div className="slide">
+              <img src={PagesWallpaper} id="wallpaper" />
+              </div>
+              </center>
           </Carousel>
         </Container>
       </div>

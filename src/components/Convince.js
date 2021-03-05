@@ -51,33 +51,36 @@ const About = () => {
             // unmountOnExit
             timeout={1000}
           >
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-around",
-                flexWrap: "wrap",
-                marginTop: "5%",
-              }}
-            >
-              <div>
-                <center>
-                  <img src={setup} className="abouticon" />
-                  <p>Quick Setup</p>
-                </center>
+            <center>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-around",
+                  flexWrap: "wrap",
+                  marginTop: "5%",
+                }}
+                id="convinceicons"
+              >
+                <div>
+                  <center>
+                    <img src={setup} className="abouticon" />
+                    <p>Quick Setup</p>
+                  </center>
+                </div>
+                <div>
+                  <center>
+                    <img src={online} className="abouticon" />
+                    <p>Be online. Always</p>
+                  </center>
+                </div>
+                <div>
+                  <center>
+                    <img src={personalization} className="abouticon" />
+                    <p>Better personalization</p>
+                  </center>
+                </div>
               </div>
-              <div>
-                <center>
-                  <img src={online} className="abouticon" />
-                  <p>Be online. Always</p>
-                </center>
-              </div>
-              <div>
-                <center>
-                  <img src={personalization} className="abouticon" />
-                  <p>Better personalization</p>
-                </center>
-              </div>
-            </div>
+            </center>
           </Slide>
         </Container>
       </div>

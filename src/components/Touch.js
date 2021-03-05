@@ -14,18 +14,17 @@ const Touch = () => {
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
       <div id="touch" className={isVisible ? "fadein" : ""}>
-          <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
-              <h5 id="touchheading">Master Touch 2.0</h5>
-              <div>
-                <p className="touchtext">
-                  Master Touch 2.O lets you set a custom touch zone,
-                </p>
-                <p className="touchtext2">
-                  the ninja tech responds to pressure controls even on screen
-                  edge.
-                </p>
-              </div>
-          </Container>
+        <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
+          <h5 id="touchheading">Master Touch 2.0</h5>
+          <div>
+            <p className="touchtext">
+              Master Touch 2.O lets you set a custom touch zone,
+            </p>
+            <p className="touchtext2">
+              the ninja tech responds to pressure controls even on screen edge.
+            </p>
+          </div>
+        </Container>
       </div>
     </VisibilitySensor>
   )

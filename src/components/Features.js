@@ -27,7 +27,7 @@ const Features = () => {
   ])
   const classes = useStyles()
   return (
-    <Container maxWidth="xl" style={{ margin: 0, padding: 0 }} id="feature"> 
+    <Container maxWidth="xl" style={{ margin: 0, padding: 0 }} id="feature">
       <Fade
         direction="up"
         in={true}
@@ -89,7 +89,7 @@ const Features = () => {
       <div style={{ textAlign: "center", marginTop: "4em" }}>
         <img src={signature} />
       </div>
-      </Container>
+    </Container>
   )
 }
 

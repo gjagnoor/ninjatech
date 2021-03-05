@@ -38,9 +38,13 @@ const ARPhone = () => {
               enabled smartphones. Working with the ethos of ‘Smarter
               Technology' for All
             </p>
-              <center>
-                <img src={spiderman} id="spiderman" className={isVisible ? "zoom" : ""} />
-              </center>
+            <center>
+              <img
+                src={spiderman}
+                id="spiderman"
+                className={isVisible ? "zoom" : ""}
+              />
+            </center>
           </div>
         </Container>
       </div>

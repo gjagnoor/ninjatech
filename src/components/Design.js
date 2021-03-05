@@ -73,7 +73,10 @@ const Design = () => {
             >
               <img src={designphone1} />
               <VisibilitySensor partialVisibility onChange={onChange}>
-                <img src={designphone2} id={isVisible ? "animate" : "stopanimation"} />
+                <img
+                  src={designphone2}
+                  id={isVisible ? "animate" : "stopanimation"}
+                />
               </VisibilitySensor>
             </div>
           </center>

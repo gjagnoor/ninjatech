@@ -20,6 +20,7 @@
 }
 
 #map {
+  /* position: fixed; */
   animation: 2s infinite alternate circle;
 }
 
@@ -111,12 +112,14 @@ h1, h2, h3, h4, h4, h5, h6 {
 .homephonemid {
   width: 15em;
   height: 380px;
+  margin-top: 10em;
   /* padding-bottom: 2em; */
 }
 
 .homephone {
   width: 5em;
   height: 320px;
+  margin-top: 10em;
 }
 
 #features {
@@ -514,8 +517,52 @@ h1, h2, h3, h4, h4, h5, h6 {
   width: 15em;
 }
 
+.slide {
+  height: 52.3em;
+}
+
+#wallpaper {
+  width: 100em;
+  height: 56em;
+  background-image: url("../images/HTML\ USE\ IMAGE/pageswallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
 /* mobile phones */
 @media screen and (max-width:480px){
+  .slide {
+    height: 30em;
+  }
+
+  .homephonemid{
+    height: 50%;
+    width: 50%;
+    margin-top: initial;
+  }
+
+  .homephone {
+    height: 25%;
+    width: 25%;
+    margin-top: initial;
+  }
+  
+  #wallpaper {
+    width: initial;
+    background-size: cover;
+    height: 30em;
+  }
+
+  #convinceicons {
+    max-width: min-content;
+    height: 100%;
+  }
+  #aboutphone {
+    width: 7em;
+    height: 100%;
+  }
   .productdesc {
     width: 15em;
     word-wrap: break-word;
