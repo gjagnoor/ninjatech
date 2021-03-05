@@ -1,3 +1,24 @@
+.fadein {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+.zoom {
+  transition: transform 1s;
+}
+
+.zoom {
+  transform: scale(1.5);
+}
+
 #map {
   animation: 2s infinite alternate circle;
 }
@@ -37,6 +58,8 @@
   animation-iteration-count: 1;
   animation-fill-mode: both;
   animation-delay: 1s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform : translate3d(0, 0, 0);
 }
 
 @keyframes drop {

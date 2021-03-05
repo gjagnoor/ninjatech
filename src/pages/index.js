@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -12,18 +12,20 @@ import Qualcomm from "../components/Qualcomm.js"
 import ARPhone from "../components/ARPhone.js"
 import Charger from "../components/Charger.js"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Home />
-    <Features />
-    <br />
-    <Design />
-    <Touch />
-    <Qualcomm />
-    <ARPhone />
-    <Charger />
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <Home />
+      <Features />
+      <br />
+      <Design />
+      <Touch />
+      <Qualcomm />
+      <ARPhone />
+      <Charger />
+    </Layout>
+  )
+}
 
 export default IndexPage

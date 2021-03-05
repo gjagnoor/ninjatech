@@ -38,11 +38,9 @@ const ARPhone = () => {
               enabled smartphones. Working with the ethos of ‘Smarter
               Technology' for All
             </p>
-            <Grow in={isVisible} timeout={{ enter: 3000 }}>
               <center>
-                <img src={spiderman} id="spiderman" />
+                <img src={spiderman} id="spiderman" className={isVisible ? "zoom" : ""} />
               </center>
-            </Grow>
           </div>
         </Container>
       </div>
