@@ -51,7 +51,7 @@ h1, h2, h3, h4, h4, h5, h6 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  /* background-size: cover; */
   background-position: center center;
   /* height: fit-content; */
   background-repeat: no-repeat;
@@ -67,10 +67,14 @@ h1, h2, h3, h4, h4, h5, h6 {
 
 .homephonemid {
   width: 15em;
+  height: 380px;
+  margin: 57px;
+  /* padding-bottom: 2em; */
 }
 
 .homephone {
   width: 5em;
+  height: 320px;
 }
 
 #features {
@@ -548,7 +552,7 @@ h1, h2, h3, h4, h4, h5, h6 {
 
   #home {
     background-size: contain;
-    /* height: fit-content; */
+    height: 30em;
   }
 
   #touch {
