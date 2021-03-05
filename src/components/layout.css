@@ -53,7 +53,7 @@ h1, h2, h3, h4, h4, h5, h6 {
   -o-background-size: cover;
   background-size: cover;
   background-position: center center;
-  height: fit-content;
+  /* height: fit-content; */
   background-repeat: no-repeat;
   overflow: hidden;
   z-index: -1;
@@ -548,7 +548,7 @@ h1, h2, h3, h4, h4, h5, h6 {
 
   #home {
     background-size: cover;
-    height: fit-content;
+    /* height: fit-content; */
   }
 
   #touch {
