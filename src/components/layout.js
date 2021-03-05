@@ -65,6 +65,18 @@ const Layout = ({ children }) => {
           }}
         >
           <footer>
+            <center>
+              <h5
+                style={{
+                  textAlign: "center",
+                  fontSize: "2em",
+                  fontFamily: "twcenmt",
+                }}
+              >
+                How to Contact Us
+              </h5>
+            </center>
+
             <div
               style={{
                 display: "flex",
@@ -77,15 +89,6 @@ const Layout = ({ children }) => {
                 <img src={map} id="map" />
               </div>
               <div style={{ marginLeft: "3%" }}>
-                <h5
-                  style={{
-                    textAlign: "left",
-                    fontSize: "1.3em",
-                    fontFamily: "twcenmt",
-                  }}
-                >
-                  How to Contact Us
-                </h5>
                 <p style={{ textAlign: "left", marginBottom: 0 }}>
                   leave your contact details we will contact you
                 </p>

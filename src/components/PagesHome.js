@@ -26,15 +26,15 @@ const PagesHome = () => {
         <Container maxWidth="xl">
           <Carousel>
             <center>
-            <div className="slide">
-              <Home />
+              <div className="slide">
+                <Home />
               </div>
             </center>
             <center>
-            <div className="slide">
-              <img src={PagesWallpaper} id="wallpaper" />
+              <div className="slide">
+                <img src={PagesWallpaper} id="wallpaper" />
               </div>
-              </center>
+            </center>
           </Carousel>
         </Container>
       </div>

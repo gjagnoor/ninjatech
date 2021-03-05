@@ -34,6 +34,7 @@ const PagesHome = () => {
             }
             changeOnFirstRender={false}
             indicators={false}
+            className="productsslider"
           >
             <center>
               <div>

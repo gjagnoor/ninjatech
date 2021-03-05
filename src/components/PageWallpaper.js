@@ -24,8 +24,8 @@ const PagesWallpaper = () => {
               Snapdragon 821|128 GB ROM, 14.48 cm (5.7 inch) Display| 23MP Rear
               Camera|8MP Front Camera| 3300 mAh Polymer Battery
               <span>
-                              <br />
-                              <br />
+                <br />
+                <br />
                 <span>
                   {" "}
                   <Button variant="contained">Learn More</Button>

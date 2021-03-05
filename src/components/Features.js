@@ -7,6 +7,14 @@ import battery from "../images/section-2.png"
 import Grid from "@material-ui/core/Grid"
 import { makeStyles } from "@material-ui/core/styles"
 import signature from "../images/HTML USE IMAGE/signature.png"
+import battery_ from "../images/HTML USE IMAGE/battery.png"
+import display from "../images/HTML USE IMAGE/display.png"
+import snapdragon from "../images/HTML USE IMAGE/snapdragon.png"
+import rate from "../images/HTML USE IMAGE/rate.png"
+import reportingrate from "../images/HTML USE IMAGE/reportingrate.png"
+import coolingsystem from "../images/HTML USE IMAGE/coolingsystem.png"
+import touch from "../images/HTML USE IMAGE/touch.png"
+import wifi from "../images/HTML USE IMAGE/online.png"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -16,14 +24,14 @@ const useStyles = makeStyles(theme => ({
 
 const Features = () => {
   const [features, setFeatures] = useState([
-    "3300 mAh Polymer Battery",
-    '5.7" 2K+ Immersive Display',
-    "Qualcomm Snapdragon 821",
-    "60Hz Higher Refer Rate",
-    "120Hz Touch Reporting Rate",
-    "Liquid Cooling System",
-    "Master Touch",
-    "SA+NSA 4G WiFi6",
+    ["3300 mAh Polymer Battery", battery_],
+    ['5.7" 2K+ Immersive Display', display],
+    ["Qualcomm Snapdragon 821", snapdragon],
+    ["60Hz Higher Refer Rate", rate],
+    ["120Hz Touch Reporting Rate", reportingrate],
+    ["Liquid Cooling System", coolingsystem],
+    ["Master Touch", touch],
+    ["SA+NSA 4G WiFi6", wifi],
   ])
   const classes = useStyles()
   return (
@@ -47,7 +55,7 @@ const Features = () => {
         <Grid
           container
           className={classes.root}
-          spacing={1}
+          spacing={2}
           xs={12}
           sm={12}
           md={12}
@@ -56,31 +64,64 @@ const Features = () => {
         >
           {features.slice(0, 4).map((value, i) => (
             <Grid item xl={3} lg={3} md={3} sm={3} xs={12}>
-              <p
-                style={{
-                  color: "white",
-                  textAlign: "center",
-                  paddingTop: "5em",
-                }}
-                className="featuretext"
-              >
-                {value}
-              </p>
+              <div style={{marginTop: "5em"}}>
+                <center>
+                  <div className={i === 2 ? "snapdragon" : "feature-icon"}>
+                    <img src={value[1]} />
+                  </div>
+                </center>
+
+                <p
+                  style={{
+                    color: "white",
+                    textAlign: "center",
+                    paddingTop: "5em",
+                  }}
+                  className={i === 2 ? "snapdragonp" : "featuretext"}
+                >
+                  {value[0]}
+                </p>
+              </div>
               {<p className="line"></p>}
             </Grid>
           ))}
           {features.slice(4).map((value, i) => (
             <Grid item xl={3} lg={3} md={3} sm={3} xs={12}>
-              <p
-                style={{
-                  color: "white",
-                  textAlign: "center",
-                  paddingTop: "5em",
-                }}
-                className="featuretext"
-              >
-                {value}
-              </p>
+              <div>
+                <center>
+                  <div
+                    className={
+                      i === 0
+                        ? "reportingrate"
+                        : i === 1
+                        ? "cooling"
+                        : i === 2
+                        ? "touch"
+                        : "wifi"
+                    }
+                  >
+                    <img src={value[1]} />
+                  </div>
+                </center>
+                <p
+                  style={{
+                    color: "white",
+                    textAlign: "center",
+                    paddingTop: "5em",
+                  }}
+                  className={
+                    i === 0
+                      ? "reportingratep"
+                      : i === 1
+                      ? "coolingp"
+                      : i === 3
+                      ? "wifip"
+                      : "featuretext"
+                  }
+                >
+                  {value[0]}
+                </p>
+              </div>
               {<p className="line"></p>}
             </Grid>
           ))}

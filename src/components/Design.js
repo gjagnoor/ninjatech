@@ -6,7 +6,6 @@ import Fade from "@material-ui/core/Fade"
 import designphone1 from "../images/HTML USE IMAGE/designphone1.png"
 import designphone2 from "../images/HTML USE IMAGE/designphone2.png"
 import VisibilitySensor from "react-visibility-sensor"
-import { Rotate90DegreesCcw } from "@material-ui/icons"
 
 const Design = () => {
   const [isVisible, setVisibility] = useState(false)
@@ -71,11 +70,12 @@ const Design = () => {
                 justifyContent: "center",
               }}
             >
-              <img src={designphone1} />
+              <img src={designphone1} className="designphone" />
               <VisibilitySensor partialVisibility onChange={onChange}>
                 <img
                   src={designphone2}
                   id={isVisible ? "animate" : "stopanimation"}
+                  className="designphone"
                 />
               </VisibilitySensor>
             </div>
