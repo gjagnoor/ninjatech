@@ -90,18 +90,16 @@ h1, h2, h3, h4, h4, h5, h6 {
 }
 
 #home {
-  /* height: max-content; */
   background-image: url("../images/HTML\ USE\ IMAGE/banner.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  /* background-size: cover; */
+  background-size: cover;
   background-position: center center;
   /* height: fit-content; */
   background-repeat: no-repeat;
   overflow: hidden;
-  z-index: -1;
-  padding-top: 6em;
+  /* padding-top: 6em; */
   /* margin-top: -8em; */
 }
 
@@ -254,6 +252,13 @@ h1, h2, h3, h4, h4, h5, h6 {
 }
 
 #heading {
+  text-align: center;
+  font-size: 3em;
+  font-family: twcenmt !important;
+  margin-top: 2em;
+}
+
+#heading_ {
   text-align: center;
   font-size: 3em;
   font-family: twcenmt !important;
@@ -544,17 +549,52 @@ h1, h2, h3, h4, h4, h5, h6 {
 }
 
 #wallpaper {
-  width: 100em;
+  /* width: 200em !important; */
   height: 56em;
   background-image: url("../images/HTML\ USE\ IMAGE/pageswallpaper.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
   background-position: center center;
+  /* height: fit-content; */
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: -1;
+  /* padding-top: 6em; */
+  /* margin-top: -8em; */
+}
+
+#wallpaperp {
+  float: right;
+  width: 30em;
+  margin-top: 15em;
 }
 
 
 /* mobile phones */
 @media screen and (max-width:480px){
+  #heading_ {
+    text-align: center;
+    font-size: 3em;
+    font-family: twcenmt !important;
+    margin-top: 2em;
+    position: relative;
+    top: -7em;
+  }
+  #wallpaperp {
+    position: relative;
+    top: -17em;
+    font-size: 1em !important;
+    width: 18em;
+  }
+
+  #wallpaper {
+    width: auto;
+    background-size: cover;
+    height: auto;
+  }
+
   .touch {
     padding: 0;
     margin: 0;
@@ -580,26 +620,21 @@ h1, h2, h3, h4, h4, h5, h6 {
   #arphonesp {
       margin-right: 0;
   }
+
   .slide {
     height: 30em;
   }
 
   .homephonemid{
-    height: 50%;
-    width: 50%;
-    margin-top: initial;
+    height: 25%;
+    width: 25%;
+    padding-top: 10em;
   }
 
   .homephone {
-    height: 25%;
-    width: 25%;
-    margin-top: initial;
-  }
-  
-  #wallpaper {
-    width: initial;
-    background-size: cover;
-    height: 30em;
+    height: 15%;
+    width: 15%;
+    padding-top: 10em;
   }
 
   #convinceicons {
@@ -717,6 +752,17 @@ h1, h2, h3, h4, h4, h5, h6 {
 /* tablets */
 
 @media only screen and (max-device-width: 768px){
+
+  #home {
+    height: auto;
+  }
+  #wallpaper {
+    width: auto;
+    background-size: contain;
+    padding-top: 20em;
+    height: auto;
+  }
+
   .line {
     transform: rotate(90deg);
     justify-content: center;

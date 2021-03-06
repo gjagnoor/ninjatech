@@ -19,7 +19,6 @@ const Home = () => {
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
       <div id="home">
-        <Container>
           <center>
             <div
               style={{
@@ -55,13 +54,10 @@ const Home = () => {
                 timeout={2000}
               >
                 <img src={phoner} className="homephone" />
-              </Slide>
-            </div>
+            </Slide>
+          </div>
+          <h4 id="heading_">Augmented Reality - The Ultimate Technology </h4>
           </center>
-        </Container>
-        <Container>
-          <h4 id="heading">Augmented Reality - The Ultimate Technology </h4>
-        </Container>
       </div>
     </VisibilitySensor>
   )
