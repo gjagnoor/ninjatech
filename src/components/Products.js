@@ -64,8 +64,8 @@ const Products = () => {
                 <div className="ntech900 product">
                   <center>
                     <p className="productdesc">
-                      Snapdragon 821 | 6 GB RAM, 128 GB ROM (Expandable Upto 2
-                      TB),14.48 cm (5.7 inch) Quad HD Display, 12MP + 13MP, 5MP
+                      Snapdragon 835 | 6 GB RAM, 128 GB ROM (Expandable Upto 2
+                      TB), 13.97 cm (5.5 inch) Quad HD Display, 12MP + 13MP, 5MP
                       Front Camera, 3260 mAh Polymer Battery,
                     </p>
                   </center>
@@ -81,11 +81,11 @@ const Products = () => {
                   flexWrap: "wrap",
                 }}
               >
-                <div className="ntech900 product">
+                <div className="ntech900 product" id="products">
                   <center>
                     <p className="productdesc">
-                      Snapdragon 835 | 8 GB RAM, 128 GB ROM (Expandable Upto 2
-                      TB),14.48 cm (5.7 inch) Quad HD Display, 23MP Real Camera,
+                      Snapdragon 821 | 8 GB RAM, 128 GB ROM (Expandable Upto 2
+                      TB), 14.48 cm (5.7 inch) Quad HD Display, 23MP Real Camera,
                       8MP Front Camera, 3300 mAh Polymer Battery,
                     </p>
                   </center>

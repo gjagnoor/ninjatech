@@ -25,8 +25,8 @@ const About = () => {
           </center>
           <center>
             <iframe
-              width="560"
-              height="315"
+              width="auto"
+              height="auto"
               src="https://www.youtube.com/embed/eVIozKR9p50"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

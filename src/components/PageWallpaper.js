@@ -22,8 +22,10 @@ const PagesWallpaper = () => {
                 <br />
                 <br />
                 <span>
-                  {" "}
+                {" "}
+                <Link to="/products#products">
                   <Button variant="contained">Learn More</Button>
+                </Link>
                 </span>
               </span>
             </p>

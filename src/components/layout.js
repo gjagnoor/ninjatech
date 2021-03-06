@@ -89,10 +89,10 @@ const Layout = ({ children }) => {
                 <img src={map} id="map" />
               </div>
               <div style={{ marginLeft: "3%" }}>
-                <p style={{ textAlign: "left", marginBottom: 0 }}>
+                <p style={{ textAlign: "center", marginBottom: 0 }}>
                   leave your contact details we will contact you
                 </p>
-                <p style={{ textAlign: "left" }}>
+                <p style={{ textAlign: "center" }}>
                   within an hour for a detailed consultation.
                 </p>
                 <form

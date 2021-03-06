@@ -24,7 +24,7 @@ const PagesHome = () => {
 
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
-      <div style={{ marginTop: "5em" }}>
+      <div style={{ marginTop: "5em" }} id="productsslider">
         <Container>
           <Carousel
             onChange={i =>
