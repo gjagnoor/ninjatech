@@ -21,12 +21,14 @@
     "gatsby-plugin-sharp": "^2.14.3",
     "gatsby-source-filesystem": "^2.11.1",
     "gatsby-transformer-sharp": "^2.12.0",
+    "jquery": "^3.6.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-material-ui-carousel": "^2.2.1",
-    "react-visibility-sensor": "^5.1.1"
+    "react-visibility-sensor": "^5.1.1",
+    "skrollr": "^0.6.26"
   },
   "devDependencies": {
     "gh-pages": "^3.1.0",
