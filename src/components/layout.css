@@ -16,7 +16,7 @@
 }
 
 .zoom {
-  transform: scale(1.5);
+  transform: scale(2);
 }
 
 #map {
@@ -272,9 +272,18 @@ h1, h2, h3, h4, h4, h5, h6 {
   /* left: 462px; */
   /* top: 1143px; */
   margin-top: -3em;
+  margin-left: 1em;
   width: 0px;
   height: 72px;
   /* z-index: 56; */
+}
+
+.featureicon {
+  color: #3a8ea1;
+}
+
+.featureicon:hover {
+  color: white;
 }
 
 #touch {
@@ -352,7 +361,7 @@ h1, h2, h3, h4, h4, h5, h6 {
 }
 
 #spiderman {
-  width: 15rem;
+  width: 10rem;
 }
 
 #charger {
@@ -416,6 +425,20 @@ h1, h2, h3, h4, h4, h5, h6 {
   margin-top: 40%;
 }
 
+.snapdragon {
+  width: 8em;
+}
+
+.snapdragonp {
+  margin-top: -1em;
+}
+
+.touch {
+  width: 4em;
+  margin-top: -2em;
+}
+
+
 #services {
   height: fit-content;
   background-image: url("../images/HTML\ USE\ IMAGE/services.png");
@@ -445,67 +468,6 @@ h1, h2, h3, h4, h4, h5, h6 {
   margin-top: 5em;
   margin-right: 2rem;
 }
-
-.feature-icon img {
-  width:  5vh;
-  height: 5vh;
-  object-fit:cover;
-}
-
-.snapdragon img {
-  width: 35vh;
-    height: 35vh;
-    -o-object-fit: contain;
-    object-fit: contain;
-    margin-top: -6.5em;
-}
-
-.snapdragonp {
-  margin-top: -6em;
-}
-
-.reportingrate img {
-  width: 18vh;
-  height: 18vh;
-  object-fit: cover;
-}
-
-.reportingratep {
-  padding-top: 3.5em !important;
-}
-
-.productsslider {
-  height: 24em;
-}
-
-.cooling {
-  margin-top: -14em;
-}
-
-.coolingp {
-  margin-top: -12em;
-}
-
-.wifi {
-  width: 5vh;
-  height: 5vh;
-  object-fit: cover;
-  margin-top: 3em;
-}
-
-.wifip {
-  padding-top: 7.5em !important;
-}
-
-.touchp {
-  padding-top: 6em;
-}
-.touch img {
-  width: 14vh;
-  height: 14vh;
-  object-fit: cover;
-}
-
 
 #service-line {
   width: 7em;
@@ -593,6 +555,23 @@ h1, h2, h3, h4, h4, h5, h6 {
 
 /* mobile phones */
 @media screen and (max-width:480px){
+  .touch {
+    padding: 0;
+    margin: 0;
+  }
+
+  .feature-icon_ {
+    margin-top: 0 !important;
+  }
+
+  #featuresheading {
+    margin-bottom: 2em;
+  }
+
+  .featuretext {
+    margin-top: 0;
+    padding-top: 2em !important;
+  }
   .designphone {
     height: 20%;
     width: 20%;
@@ -738,6 +717,12 @@ h1, h2, h3, h4, h4, h5, h6 {
 /* tablets */
 
 @media only screen and (max-device-width: 768px){
+  .line {
+    transform: rotate(90deg);
+    justify-content: center;
+    margin-top: 0;
+    margin-left: 50%;
+  }
   .service {
     width: 20rem;
     margin-left: 0;
