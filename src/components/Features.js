@@ -69,7 +69,7 @@ const Features = () => {
               <div style={{marginTop: "5em"}} className="feature-icon_">
                 <center>
                   <div>
-                    <FontAwesomeIcon icon={value[1]} size="2x" className="featureicon" /> 
+                    <FontAwesomeIcon icon={value[1]} size="3x" className="featureicon" /> 
                   </div>
                 </center>
 
@@ -94,7 +94,7 @@ const Features = () => {
               <div>
                 <center>
                   <div>
-<FontAwesomeIcon icon={value[1]} size="2x" className="featureicon" /> 
+<FontAwesomeIcon icon={value[1]} size="3x" className="featureicon" /> 
                   </div>
                 </center>
                 <p
