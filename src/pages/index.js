@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { Button } from "@material-ui/core"
 import Loadable from "@loadable/component"
 
-const Masking = Loadable(() => import("../components/Masking.js"))
+const Masking = Loadable(() => import("../components/Masking.js"), { ssr: false })
 
 const IndexPage = () => {
   return (
