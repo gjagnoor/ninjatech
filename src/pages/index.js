@@ -16,7 +16,7 @@ const IndexPage = () => {
   return (
     // <div id="headcontainer">
 
-    <div class="container">
+    <div className="container">
       <div
         id="landingimg"
         style={{ display: "flex", justifyContent: "space-around" }}
