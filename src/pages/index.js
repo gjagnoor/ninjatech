@@ -1,12 +1,22 @@
 import React, { useEffect } from "react"
 import { Link } from "gatsby"
-// import Masking from "../components/Masking.js";
+import Masking from "../components/Masking.js";
 import { Button } from "@material-ui/core"
-import Loadable from "@loadable/component"
-
-const Masking = Loadable(() => import("../components/Masking.js"), { ssr: true })
 
 const IndexPage = () => {
+  useEffect(() => {
+    window.addEventListener(
+      "scroll",
+      () => {
+        console.log('scrollin')
+        document.body.style.setProperty(
+          "--scroll__",
+          window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+        )
+      },
+      false
+    )
+  }, [])
   return (
     // <div id="headcontainer">
     <div className="container">

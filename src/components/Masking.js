@@ -1,46 +1,26 @@
 import React, { useEffect, useState } from "react"
-// import skrollr from "skrollr"
-import { ParallaxProvider, Parallax } from "react-skrollr"
-// import { Helmet } from "react-helmet"
 
 
 const IndexPage = () => {
-    const [s, setS] = useState(null)
-    // useEffect(() => {
-    //     const s_ = skrollr.init()
-        
-    //     setS(s_)
-    // }, [])
-    // useEffect(() => {
-    //     const s_ = skrollr.init();
-    //     setS(s_)
-    // }, [])
+    const [class_, setClass] = useState("translate(0.49px,0.55px) scale(0.0015) translate(-49px,-49px)") 
+    console.log(class_, "class")
   return (
     <React.Fragment>
-           {/* <Helmet>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js" />
-          </Helmet> */}
-          <ParallaxProvider>
-          <svg
+          <div>
+              <svg
+                  id="hello"
         className="overlay"
         viewBox="0 0 100 100"
-        preserveAspectRatio="xMidYMid slice"
-      >
+              preserveAspectRatio="xMidYMid slice"
+
+         >
         <defs>
           <mask id="knockout" maskContentUnits="objectBoundingBox">
             <rect x="0" y="0" width="1" height="1" fill="white" />
-            {/* <Parallax
-                data={{
-                  "data-0":
-                    "transform: translate(0.49px,0.5px) scale(0.0015) translate(-49px,-49px);",
-                  "data-50p":
-                    "transform: translate(0.5px,0.5px) scale(0.2) translate(-49px,-60px);",
-                }}
-              > */}
-            <g
-              fill="black"
-              data-0="transform: translate(0.49px,0.5px) scale(0.0015) translate(-49px,-49px);"
-              data-50p="transform: translate(0.5px,0.5px) scale(0.2) translate(-49px,-60px);"
+                          <g
+                              fill="black"
+                              style={{ transform: class_ }}
+                              className="testing"
             >
               <svg
                 version="1.0"
@@ -48,12 +28,13 @@ const IndexPage = () => {
                 width="100%"
                 height="100%"
                 viewBox="0 0 980.000000 650.000000"
-                preserveAspectRatio="xMidYMid meet"
+                              preserveAspectRatio="xMidYMid meet"
+
               >
                 <g
                   transform="translate(0.000000,650.000000) scale(0.100000,-0.100000)"
                   fill="#000000"
-                  stroke="none"
+                                  stroke="none"
                 >
                   <path
                     d="M3633 5963 c-15 -16 -36 -40 -46 -55 -18 -29 -24 -108 -7 -108 6 0
@@ -476,7 +457,6 @@ m117 -91 c-3 -5 -1 -10 5 -10 7 0 10 -16 8 -42 -2 -33 -8 -45 -25 -53 -13 -5
                 </g>
               </svg>
             </g>
-            {/* </Parallax> */}
           </mask>
         </defs>
         <rect
@@ -487,8 +467,8 @@ m117 -91 c-3 -5 -1 -10 5 -10 7 0 10 -16 8 -42 -2 -33 -8 -45 -25 -53 -13 -5
           fill="white"
           mask="url('/#knockout')"
         />
-      </svg>
-    </ParallaxProvider>
+              </svg>
+              </div>
     </React.Fragment>
   )
 }
