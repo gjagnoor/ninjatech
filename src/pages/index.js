@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { Link } from "gatsby"
 import skrollr from "skrollr"
-import Masking from "../components/Masking.js";
+// import Masking from "../components/Masking.js";
 import landingimg from "../images/HTML USE IMAGE/landingimg.png"
 import { Button } from "@material-ui/core"
 import Loadable from "react-loadable"
