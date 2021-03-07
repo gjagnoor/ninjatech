@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ninjatech`,
-        short_name: `ninjatech`,
+        name: `ntech`,
+        short_name: `ntech`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
