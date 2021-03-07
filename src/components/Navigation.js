@@ -54,6 +54,8 @@ const useStyles = makeStyles(theme => ({
   drawerPaper: {
     //   width: drawerWidth,
     backgroundColor: "rgba(1,26,30,1)",
+    fontSize: "1em",
+
     color: "white",
   },
   drawerHeader: {
@@ -72,7 +74,7 @@ const useStyles = makeStyles(theme => ({
       duration: theme.transitions.duration.leavingScreen,
     }),
     margin: "auto",
-    fontSize: "1.2em",
+    fontSize: "1em",
   },
   contentShift: {
     transition: theme.transitions.create("margin", {

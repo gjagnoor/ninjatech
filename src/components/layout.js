@@ -17,6 +17,8 @@ import "./layout.css"
 import { SettingsSystemDaydreamRounded } from "@material-ui/icons"
 import { white } from "@material-ui/core/colors"
 import { Button } from "@material-ui/core"
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const useStyles = makeStyles({
   root: {
@@ -56,6 +58,11 @@ const Layout = ({ children }) => {
   return (
     <Container maxWidth="xl">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <div class="scroller" onClick={() => window.scrollTo(0, 0)}>
+        <FontAwesomeIcon icon={faChevronUp} size="2x" />
+        <FontAwesomeIcon icon={faChevronUp} size="2x"/>
+        <FontAwesomeIcon icon={faChevronUp} size="2x"/>
+      </div>
       <div>
         <main>{children}</main>
         <center
