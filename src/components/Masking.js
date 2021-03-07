@@ -1,8 +1,13 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import skrollr from "skrollr"
 // import { ParallaxProvider, Parallax } from "react-skrollr"
 
 const IndexPage = () => {
+    const [s, setS] = useState(null)
+    useEffect(() => {
+        const s_ = skrollr.init();
+        setS(s_)
+    }, [])
   return (
     // <div className="overlay">
     // <ParallaxProvider>
