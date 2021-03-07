@@ -1,14 +1,14 @@
 import React, { useEffect } from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Landing from "./home.js";
-import skrollr from "skrollr";
+// import skrollr from "skrollr";
 import landingimg from "../images/HTML USE IMAGE/landingimg.png";
 import { Button } from "@material-ui/core";
 // import TransitionLink from "gatsby-plugin-transition-link"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+const skrollr = typeof window !== `undefined` ? require("skrollr")  : null
 
 
 const IndexPage = () => {
