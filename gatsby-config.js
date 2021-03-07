@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/ntech",
+  pathPrefix: "/ninjatech",
   siteMetadata: {
     title: `Ninja Tech`,
     description: `Website for a mobile development company`,
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ntech`,
-        short_name: `ntech`,
+        name: `ninjatech`,
+        short_name: `ninjatech`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
