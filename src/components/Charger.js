@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 import Container from "@material-ui/core/Container"
 import Slide from "@material-ui/core/Slide"
 import Fade from "@material-ui/core/Fade"
-import spiderman from "../images/HTML USE IMAGE/spiderman.png"
+import charger from "../images/HTML USE IMAGE/chargerphone.png"
 import VisibilitySensor from "react-visibility-sensor"
 
 const Charger = () => {
@@ -23,32 +23,11 @@ const Charger = () => {
           timeout={1000}
         >
           <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
-            <Fade
-              direction="up"
-              in={isVisible}
-              mountOnEnter
-              unmountOnExit
-              timeout={{ enter: 3000 }}
-            >
               <h5 id="chargerheading">Hyper Charger</h5>
-            </Fade>
-            <Fade
-              direction="up"
-              in={isVisible}
-              mountOnEnter
-              unmountOnExit
-              timeout={{ enter: 3000 }}
-            >
-              <h5 id="chargersubheading">3300mAh Polymer Battery</h5>
-            </Fade>
-            <Fade
-              direction="up"
-              in={isVisible}
-              mountOnEnter
-              unmountOnExit
-              timeout={{ enter: 3000 }}
-            >
-              <center>
+            <h5 id="chargersubheading">3300mAh Polymer Battery</h5>
+            <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap" }}>
+              <img src={charger} id="chargerphone"/>
+            <center>
                 <p id="chargerp">
                   The NinjaTech Pro feature charging while discharging in
                   parallel allows 3300mAh for maximum battery output and a more
@@ -56,7 +35,8 @@ const Charger = () => {
                   effectively manages power flow battery system.
                 </p>
               </center>
-            </Fade>
+
+            </div>
           </Container>
         </Slide>
       </div>

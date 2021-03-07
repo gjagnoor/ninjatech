@@ -360,7 +360,13 @@ h1, h2, h3, h4, h4, h5, h6 {
   color: white;
   text-align: center;
   font-family: twcenmt;
-  font-size: 3em;
+  font-size: 4em;
+  font-weight: bolder;
+  -webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;	
+	background-image: url(https://media.giphy.com/media/l1BgRuUbcL5wgQLtu/giphy.gif);
+	background-size: auto;
+	background-attachment: unset;
 }
 
 #arphonesp {
@@ -381,7 +387,7 @@ h1, h2, h3, h4, h4, h5, h6 {
 #charger {
   /* background-color: rgba(0,0,0,0.7); */
   height: 53.688em;
-  background-image: url("../images/HTML\ USE\ IMAGE/charger.png");
+  background-image: url("../images/HTML\ USE\ IMAGE/chargerbackground.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1468,3 +1474,46 @@ span {
 }
 
 
+.scroller {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 4em;
+  animation: move 3s ease-out infinite;
+  z-index: 10;
+}
+
+@keyframes move {
+  from {
+    opacity: 1;
+    transform: translateY(55px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(30px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.feature-icon_ {
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+#chargerphone {
+  transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-30px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}

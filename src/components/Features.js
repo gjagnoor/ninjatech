@@ -66,10 +66,10 @@ const Features = () => {
         >
           {features.slice(0, 4).map((value, i) => (
             <Grid item xl={3} lg={3} md={3} sm={12} xs={12}>
-              <div style={{marginTop: "5em"}} className="feature-icon_">
+              <div style={{marginTop: "5em"}}>
                 <center>
                   <div>
-                    <FontAwesomeIcon icon={value[1]} size="3x" className="featureicon" /> 
+                    <FontAwesomeIcon icon={value[1]} size="3x" className="featureicon feature-icon_" /> 
                   </div>
                 </center>
 
@@ -94,7 +94,7 @@ const Features = () => {
               <div>
                 <center>
                   <div>
-<FontAwesomeIcon icon={value[1]} size="3x" className="featureicon" /> 
+<FontAwesomeIcon icon={value[1]} size="3x" className="featureicon feature-icon_" /> 
                   </div>
                 </center>
                 <p
