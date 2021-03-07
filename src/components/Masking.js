@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
-import skrollr from "skrollr"
-// import { ParallaxProvider, Parallax } from "react-skrollr"
+// import skrollr from "skrollr"
+import { ParallaxProvider, Parallax } from "react-skrollr"
 // import { Helmet } from "react-helmet"
 
 
@@ -11,16 +11,16 @@ const IndexPage = () => {
         
     //     setS(s_)
     // }, [])
-    useEffect(() => {
-        const s_ = skrollr.init();
-        setS(s_)
-    }, [])
+    // useEffect(() => {
+    //     const s_ = skrollr.init();
+    //     setS(s_)
+    // }, [])
   return (
     <React.Fragment>
            {/* <Helmet>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js" />
           </Helmet> */}
-          
+        <ParallaxProvider>
           <svg
         className="overlay"
         viewBox="0 0 100 100"
@@ -488,12 +488,8 @@ m117 -91 c-3 -5 -1 -10 5 -10 7 0 10 -16 8 -42 -2 -33 -8 -45 -25 -53 -13 -5
           mask="url('/#knockout')"
         />
       </svg>
-
+    </ParallaxProvider>
     </React.Fragment>
-    // <ParallaxProvider>
-      
-    // </ParallaxProvider>
-    // </div>
   )
 }
 
