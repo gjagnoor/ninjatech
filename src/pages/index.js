@@ -25,8 +25,12 @@ const IndexPage = () => {
           <Link to="/home" id="enterlink">
             <Button variant="contained" style={{zIndex: 1, textDecoration: "none", boxShadow: 'none'}} id="enterbutton">Enter</Button>
           </Link>
-          </center>
+        </center>
+        <center>
+
           <p id="orscroll">or scroll</p>
+          </center>
+
         </div>
 
       <svg class="overlay" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
@@ -34,10 +38,10 @@ const IndexPage = () => {
           <mask id="knockout" maskContentUnits="objectBoundingBox">
             <rect x="0" y="0" width="1" height="1" fill="white"/>
                   <g fill="black"
-              data-0="transform: translate(0.45px,0.5px) scale(0.0015) translate(-49px,-49px);"
+              data-0="transform: translate(0.49px,0.5px) scale(0.0015) translate(-49px,-49px);"
               data-50p="transform: translate(0.5px,0.5px) scale(0.2) translate(-49px,-60px);">
               <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="116.000000pt" height="118.000000pt" viewBox="0 0 980.000000 650.000000"
+ width="100%" height="100%" viewBox="0 0 980.000000 650.000000"
  preserveAspectRatio="xMidYMid meet">
 <g transform="translate(0.000000,650.000000) scale(0.100000,-0.100000)"
 fill="#000000" stroke="none">

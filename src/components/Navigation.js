@@ -157,7 +157,7 @@ export default function PersistentDrawerRight({ children }) {
         <Divider />
         <List>
           {[
-            "",
+            "Home",
             "About Us",
             "Services",
             "Products",
