@@ -20,7 +20,30 @@ const IndexPage = () => {
            {/* <Helmet>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js" />
           </Helmet> */}
-        <ParallaxProvider>
+          <ParallaxProvider>
+          <Parallax
+      data={{
+        "data-center-center": "opacity: 1;",
+        "data-bottom-top": "opacity: 0;",
+      }}
+    >
+      <div>
+        Doggo ipsum heckin good boys doggorino. Heckin good boys doggorino shibe
+        puggorino I am bekom fat doge, clouds bork I am bekom fat puggorino.
+        What a nice floof blop thicc puggo extremely cuuuuuute, doge pupperino
+        h*ck. such treat wow such tempt mlem. Snoot borking doggo extremely
+        cuuuuuute length boy borkf you are doin me a concern smol, length boy
+        dat tungg tho stop it fren noodle horse. Maximum borkdrive many pats
+        shoober, long bois. Thicc very hand that feed shibe long woofer wow very
+        biscit heckin big ol pupper I am bekom fat puggorino, long bois shibe
+        heckin good boys boofers puggo pats. Pats you are doin me a concern
+        snoot porgo what a nice floof mlem boof woofer extremely cuuuuuute,
+        shoober floofs long water shoob wow such tempt snoot long doggo such
+        treat. Heckin good boys and girls length boy ur givin me a spook stop it
+        fren, doggorino. shibe very taste wow blep. 
+       ........
+      </div>
+    </Parallax>
           <svg
         className="overlay"
         viewBox="0 0 100 100"
