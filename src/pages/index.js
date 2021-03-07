@@ -19,15 +19,15 @@ const IndexPage = () => {
     // <div id="headcontainer">
 
       <div class="container">
-              <AniLink paintDrip to="/home">
 
-        <div id="landingimg" style={{display: "flex", justifyContent: "center"}}>
-          <Link to="/home">
-            <Button variant="outlined" color="primary" style={{position: "relative", top: 550, zIndex: 1}}>Enter</Button>
+      <div id="landingimg" style={{ display: "flex", justifyContent: "space-around" }}>
+        <center>
+          <Link to="/home" id="enterlink">
+            <Button variant="contained" style={{zIndex: 1, textDecoration: "none", boxShadow: 'none'}} id="enterbutton">Enter</Button>
           </Link>
+          </center>
           <p id="orscroll">or scroll</p>
         </div>
-      </AniLink>      
 
       <svg class="overlay" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
         <defs>
