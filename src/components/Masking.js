@@ -465,7 +465,7 @@ m117 -91 c-3 -5 -1 -10 5 -10 7 0 10 -16 8 -42 -2 -33 -8 -45 -25 -53 -13 -5
           width="100"
           height="100"
           fill="white"
-          mask="url('/ninjatech#knockout')"
+          mask="url('#knockout')"
         />
               </svg>
               </div>
