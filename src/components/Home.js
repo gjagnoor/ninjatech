@@ -19,45 +19,45 @@ const Home = () => {
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
       <div id="home">
-          <center>
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                justifyContent: "center",
-              }}
-              id="home_"
+        <center>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+            id="home_"
+          >
+            <Slide
+              direction="right"
+              in={isVisible}
+              mountOnEnter
+              unmountOnExit
+              timeout={2000}
             >
-              <Slide
-                direction="right"
-                in={isVisible}
-                mountOnEnter
-                unmountOnExit
-                timeout={2000}
-              >
-                <img src={phonel} className="homephone" />
-              </Slide>
-              <Slide
-                direction="down"
-                in={isVisible}
-                mountOnEnter
-                unmountOnExit
-                timeout={1000}
-              >
-                <img src={phonemid} className="homephonemid" />
-              </Slide>
-              <Slide
-                direction="left"
-                in={isVisible}
-                mountOnEnter
-                unmountOnExit
-                timeout={2000}
-              >
-                <img src={phoner} className="homephone" />
+              <img src={phonel} className="homephone" />
+            </Slide>
+            <Slide
+              direction="down"
+              in={isVisible}
+              mountOnEnter
+              unmountOnExit
+              timeout={1000}
+            >
+              <img src={phonemid} className="homephonemid" />
+            </Slide>
+            <Slide
+              direction="left"
+              in={isVisible}
+              mountOnEnter
+              unmountOnExit
+              timeout={2000}
+            >
+              <img src={phoner} className="homephone" />
             </Slide>
           </div>
           <h4 id="heading_">Augmented Reality - The Ultimate Technology </h4>
-          </center>
+        </center>
       </div>
     </VisibilitySensor>
   )

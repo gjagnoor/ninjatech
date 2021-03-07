@@ -14,22 +14,22 @@ const PagesWallpaper = () => {
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
       <div id="wallpaper">
-          <Slide in={isVisible} timeout={{ enter: 3000 }}>
-            <p id="wallpaperp">
-              Snapdragon 821|128 GB ROM, 14.48 cm (5.7 inch) Display| 23MP Rear
-              Camera| 8MP Front Camera| 3300 mAh Polymer Battery
+        <Slide in={isVisible} timeout={{ enter: 3000 }}>
+          <p id="wallpaperp">
+            Snapdragon 821|128 GB ROM, 14.48 cm (5.7 inch) Display| 23MP Rear
+            Camera| 8MP Front Camera| 3300 mAh Polymer Battery
+            <span>
+              <br />
+              <br />
               <span>
-                <br />
-                <br />
-                <span>
                 {" "}
                 <Link to="/products#products">
                   <Button variant="contained">Learn More</Button>
                 </Link>
-                </span>
               </span>
-            </p>
-          </Slide>
+            </span>
+          </p>
+        </Slide>
       </div>
     </VisibilitySensor>
   )

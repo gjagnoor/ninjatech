@@ -111,7 +111,10 @@ export default function PersistentDrawerRight({ children }) {
       >
         <Toolbar>
           <Typography variant="h6" noWrap className={classes.title}>
-            <Link style={{ textDecoration: "none", color: "inherit" }} to={`/home`}>
+            <Link
+              style={{ textDecoration: "none", color: "inherit" }}
+              to={`/home`}
+            >
               <img id="header-logo" src={NinjaTech} />
             </Link>
           </Typography>

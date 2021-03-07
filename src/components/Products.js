@@ -85,8 +85,8 @@ const Products = () => {
                   <center>
                     <p className="productdesc">
                       Snapdragon 821 | 8 GB RAM, 128 GB ROM (Expandable Upto 2
-                      TB), 14.48 cm (5.7 inch) Quad HD Display, 23MP Real Camera,
-                      8MP Front Camera, 3300 mAh Polymer Battery,
+                      TB), 14.48 cm (5.7 inch) Quad HD Display, 23MP Real
+                      Camera, 8MP Front Camera, 3300 mAh Polymer Battery,
                     </p>
                   </center>
                 </div>

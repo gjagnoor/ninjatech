@@ -23,11 +23,17 @@ const Charger = () => {
           timeout={1000}
         >
           <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
-              <h5 id="chargerheading">Hyper Charger</h5>
+            <h5 id="chargerheading">Hyper Charger</h5>
             <h5 id="chargersubheading">3300mAh Polymer Battery</h5>
-            <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap" }}>
-              <img src={charger} id="chargerphone"/>
-            <center>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-around",
+                flexWrap: "wrap",
+              }}
+            >
+              <img src={charger} id="chargerphone" />
+              <center>
                 <p id="chargerp">
                   The NinjaTech Pro feature charging while discharging in
                   parallel allows 3300mAh for maximum battery output and a more
@@ -35,7 +41,6 @@ const Charger = () => {
                   effectively manages power flow battery system.
                 </p>
               </center>
-
             </div>
           </Container>
         </Slide>

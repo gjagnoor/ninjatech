@@ -12,7 +12,7 @@ import VisibilitySensor from "react-visibility-sensor"
 import Carousel from "react-material-ui-carousel"
 import Home from "./Home.js"
 import PagesWallpaper from "../images/HTML USE IMAGE/pageswallpaper.png"
-import PageWallpaper from "./PageWallpaper";
+import PageWallpaper from "./PageWallpaper"
 
 const PagesHome = () => {
   const [isVisible, setVisibility] = useState(false)
@@ -24,7 +24,7 @@ const PagesHome = () => {
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
       <div>
-        <Container maxWidth="xl" style={{margin: 0, padding: 0}}>
+        <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
           <Carousel>
             <center>
               <div className="slide">

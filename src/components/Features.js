@@ -5,8 +5,17 @@ import Fade from "@material-ui/core/Fade"
 import Grid from "@material-ui/core/Grid"
 import { makeStyles } from "@material-ui/core/styles"
 import signature from "../images/HTML USE IMAGE/signature.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMicrochip ,faBatteryThreeQuarters, faMobileAlt, faPercentage, faFileAlt, faThermometerHalf, faWifi, faHandPointer} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faMicrochip,
+  faBatteryThreeQuarters,
+  faMobileAlt,
+  faPercentage,
+  faFileAlt,
+  faThermometerHalf,
+  faWifi,
+  faHandPointer,
+} from "@fortawesome/free-solid-svg-icons"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -56,10 +65,14 @@ const Features = () => {
         >
           {features.slice(0, 4).map((value, i) => (
             <Grid item xl={3} lg={3} md={3} sm={12} xs={12}>
-              <div style={{marginTop: "5em"}}>
+              <div style={{ marginTop: "5em" }}>
                 <center>
                   <div>
-                    <FontAwesomeIcon icon={value[1]} size="3x" className="featureicon feature-icon_" /> 
+                    <FontAwesomeIcon
+                      icon={value[1]}
+                      size="3x"
+                      className="featureicon feature-icon_"
+                    />
                   </div>
                 </center>
 
@@ -69,7 +82,7 @@ const Features = () => {
                     textAlign: "center",
                     paddingTop: "5em",
                     margin: "2em",
-                    whiteSpace: "nowrap"
+                    whiteSpace: "nowrap",
                   }}
                   className="featuretext"
                 >
@@ -84,7 +97,11 @@ const Features = () => {
               <div>
                 <center>
                   <div>
-<FontAwesomeIcon icon={value[1]} size="3x" className="featureicon feature-icon_" /> 
+                    <FontAwesomeIcon
+                      icon={value[1]}
+                      size="3x"
+                      className="featureicon feature-icon_"
+                    />
                   </div>
                 </center>
                 <p
@@ -92,7 +109,7 @@ const Features = () => {
                     color: "white",
                     textAlign: "center",
                     paddingTop: "5em",
-                    whiteSpace: "nowrap"
+                    whiteSpace: "nowrap",
                   }}
                 >
                   {value[0]}

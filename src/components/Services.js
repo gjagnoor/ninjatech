@@ -9,8 +9,13 @@ import cybersecurity from "../images/HTML USE IMAGE/cybersecurity.png"
 import repair from "../images/HTML USE IMAGE/repair.png"
 import line from "../images/HTML USE IMAGE/line-about.png"
 import VisibilitySensor from "react-visibility-sensor"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLaptopCode, faCloud, faLock, faCogs} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faLaptopCode,
+  faCloud,
+  faLock,
+  faCogs,
+} from "@fortawesome/free-solid-svg-icons"
 
 const Services = () => {
   const [isVisible, setVisibility] = useState(false)
@@ -41,7 +46,11 @@ const Services = () => {
               }}
             >
               <div className="service">
-                <FontAwesomeIcon icon={faLaptopCode} size="2x" className="featureicon_" /> 
+                <FontAwesomeIcon
+                  icon={faLaptopCode}
+                  size="2x"
+                  className="featureicon_"
+                />
                 <div>
                   <p className="service-heading">End to End IT Services</p>
                   <p className="servicep">
@@ -57,7 +66,11 @@ const Services = () => {
                 </div>
               </div>
               <div className="service">
-              <FontAwesomeIcon icon={faCloud} size="2x" className="featureicon_" /> 
+                <FontAwesomeIcon
+                  icon={faCloud}
+                  size="2x"
+                  className="featureicon_"
+                />
                 <div>
                   <p className="service-heading">Cloud Computing</p>
                   <p className="servicep">
@@ -88,7 +101,11 @@ const Services = () => {
               }}
             >
               <div className="service">
-                <FontAwesomeIcon icon={faLock} size="2x" className="featureicon_" /> 
+                <FontAwesomeIcon
+                  icon={faLock}
+                  size="2x"
+                  className="featureicon_"
+                />
                 <div>
                   <p className="service-heading">Cyber Security</p>
                   <p className="servicep">
@@ -104,7 +121,11 @@ const Services = () => {
                 </div>
               </div>
               <div className="service">
-                <FontAwesomeIcon icon={faCogs} size="2x" className="featureicon_" /> 
+                <FontAwesomeIcon
+                  icon={faCogs}
+                  size="2x"
+                  className="featureicon_"
+                />
                 <div>
                   <p className="service-heading">Lifetime Repair</p>
                   <p className="servicep">
