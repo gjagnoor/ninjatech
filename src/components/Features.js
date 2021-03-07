@@ -1,20 +1,10 @@
 import { Link } from "gatsby"
 import React, { useEffect, useState } from "react"
 import Container from "@material-ui/core/Container"
-import Slide from "@material-ui/core/Slide"
 import Fade from "@material-ui/core/Fade"
-import battery from "../images/section-2.png"
 import Grid from "@material-ui/core/Grid"
 import { makeStyles } from "@material-ui/core/styles"
 import signature from "../images/HTML USE IMAGE/signature.png"
-import battery_ from "../images/HTML USE IMAGE/battery.png"
-import display from "../images/HTML USE IMAGE/display.png"
-import snapdragon from "../images/HTML USE IMAGE/snapdragon.png"
-import rate from "../images/HTML USE IMAGE/rate.png"
-import reportingrate from "../images/HTML USE IMAGE/reportingrate.png"
-import coolingsystem from "../images/HTML USE IMAGE/coolingsystem.png"
-import touch from "../images/HTML USE IMAGE/touch.png"
-import wifi from "../images/HTML USE IMAGE/online.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMicrochip ,faBatteryThreeQuarters, faMobileAlt, faPercentage, faFileAlt, faThermometerHalf, faWifi, faHandPointer} from '@fortawesome/free-solid-svg-icons'
 
