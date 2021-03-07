@@ -1,21 +1,14 @@
 import React, { useEffect } from "react"
 import { Link } from "gatsby"
-// import skrollr from "skrollr"
 // import Masking from "../components/Masking.js";
-import landingimg from "../images/HTML USE IMAGE/landingimg.png"
 import { Button } from "@material-ui/core"
-import Loadable from "react-loadable"
+import Loadable from "@loadable/component"
 
-const loader = () => <div>Loading about content.....</div>
-const Masking = Loadable({
-  loader: () => import("../components/Masking.js"),
-  loading: loader,
-})
+const Masking = Loadable(() => import("../components/Masking.js"))
 
 const IndexPage = () => {
   return (
     // <div id="headcontainer">
-
     <div className="container">
       <div
         id="landingimg"
