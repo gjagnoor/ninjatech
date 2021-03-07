@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/ninjatech",
+  pathPrefix: "/ntech",
   siteMetadata: {
     title: `Ninja Tech`,
     description: `Website for a mobile development company`,
@@ -15,6 +15,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

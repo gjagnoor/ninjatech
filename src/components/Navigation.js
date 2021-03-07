@@ -111,7 +111,7 @@ export default function PersistentDrawerRight({ children }) {
       >
         <Toolbar>
           <Typography variant="h6" noWrap className={classes.title}>
-            <Link style={{ textDecoration: "none", color: "inherit" }} to={`/`}>
+            <Link style={{ textDecoration: "none", color: "inherit" }} to={`/home`}>
               <img id="header-logo" src={NinjaTech} />
             </Link>
           </Typography>
@@ -157,7 +157,7 @@ export default function PersistentDrawerRight({ children }) {
         <Divider />
         <List>
           {[
-            "",
+            "Home",
             "About Us",
             "Services",
             "Products",
