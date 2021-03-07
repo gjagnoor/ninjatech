@@ -4,13 +4,13 @@ import skrollr from "skrollr"
 import Masking from "../components/Masking.js";
 import landingimg from "../images/HTML USE IMAGE/landingimg.png"
 import { Button } from "@material-ui/core"
-// import Loadable from "react-loadable"
+import Loadable from "react-loadable"
 
-// const loader = () => <div>Loading about content.....</div>
-// const Masking = Loadable({
-//   loader: () => import("../components/Masking.js"),
-//   loading: loader,
-// })
+const loader = () => <div>Loading about content.....</div>
+const Masking = Loadable({
+  loader: () => import("../components/Masking.js"),
+  loading: loader,
+})
 
 const IndexPage = () => {
   return (

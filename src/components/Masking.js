@@ -1,11 +1,11 @@
 import React, { useEffect } from "react"
-// import skrollr from "skrollr"
-import { ParallaxProvider, Parallax } from "react-skrollr"
+import skrollr from "skrollr"
+// import { ParallaxProvider, Parallax } from "react-skrollr"
 
 const IndexPage = () => {
   return (
     // <div className="overlay">
-    <ParallaxProvider>
+    // <ParallaxProvider>
       <svg
         className="overlay"
         viewBox="0 0 100 100"
@@ -473,7 +473,7 @@ m117 -91 c-3 -5 -1 -10 5 -10 7 0 10 -16 8 -42 -2 -33 -8 -45 -25 -53 -13 -5
           mask="url('/#knockout')"
         />
       </svg>
-    </ParallaxProvider>
+    // </ParallaxProvider>
     // </div>
   )
 }
