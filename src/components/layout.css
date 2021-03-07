@@ -1481,8 +1481,13 @@ html, body {
   position: fixed;
 }
 
-video {
-  width: 100%;
+#landingimg {
+  background-image: url("../images/HTML\ USE\ IMAGE/landingimg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .overlay {
@@ -1491,6 +1496,13 @@ video {
   width: 100%;
   height: 100%;
   top: 0;
+}
+
+#orscroll {
+  color: black !important;
+  z-index: 1 !important;
+  position: absolute;
+  bottom: 4em;
 }
 
 
