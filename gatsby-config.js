@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: "/nts",
   siteMetadata: {
-    title: `Ninja Tech`,
+    title: `NinjaTech`,
     description: `Website for a mobile development company`,
     author: `ninjatech`,
   },
@@ -28,8 +28,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ninjatech`,
-        short_name: `ninjatech`,
+        name: `nts`,
+        short_name: `nts`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

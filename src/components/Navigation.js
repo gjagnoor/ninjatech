@@ -173,7 +173,7 @@ export default function PersistentDrawerRight({ children }) {
                 // window.location.hostname === "localhost"
                 //   ? `/${text.split(" ")[0].toLowerCase()}`
                 //   : `/ninjatech/${text.split(" ")[0].toLowerCase()}`
-                `/ninjatech/${text.split(" ")[0].toLowerCase()}`
+                `/nts/${text.split(" ")[0].toLowerCase()}`
               }
               style={{ textDecoration: "none", color: "inherit" }}
               target={`${text === "Resume" ? "_blank" : ""}`}
