@@ -499,6 +499,7 @@ h1, h2, h3, h4, h4, h5, h6 {
   font-size: 1.5em; 
   white-space: nowrap;
   font-weight: bolder;
+  text-align: center;
 }
 
 .servicep {
@@ -868,6 +869,16 @@ h1, h2, h3, h4, h4, h5, h6 {
     margin-left: 50%;
   }
 }
+
+@media only screen and (max-width: 1167px) {
+  .service {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
 /* --------------------------------------- */
 html {
   -ms-text-size-adjust: 100%;

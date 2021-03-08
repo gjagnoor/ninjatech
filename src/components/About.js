@@ -12,7 +12,7 @@ const About = () => {
     window.addEventListener(
       "scroll",
       () => {
-        console.log('scrollin')
+        console.log("scrollin")
         document.body.style.setProperty(
           "--scroll",
           window.pageYOffset / (document.body.offsetHeight - window.innerHeight)

@@ -42,15 +42,18 @@ const Services = () => {
               style={{
                 display: "flex",
                 flexWrap: "wrap",
-                justifyContent: "center",
+                justifyContent: "space-around",
               }}
             >
               <div className="service">
-                <FontAwesomeIcon
-                  icon={faLaptopCode}
-                  size="2x"
-                  className="featureicon_"
-                />
+                <center>
+                  <FontAwesomeIcon
+                    icon={faLaptopCode}
+                    size="2x"
+                    className="featureicon_"
+                  />
+                </center>
+
                 <div>
                   <p className="service-heading">End to End IT Services</p>
                   <p className="servicep">
@@ -66,11 +69,13 @@ const Services = () => {
                 </div>
               </div>
               <div className="service">
-                <FontAwesomeIcon
-                  icon={faCloud}
-                  size="2x"
-                  className="featureicon_"
-                />
+                <center>
+                  <FontAwesomeIcon
+                    icon={faCloud}
+                    size="2x"
+                    className="featureicon_"
+                  />
+                </center>
                 <div>
                   <p className="service-heading">Cloud Computing</p>
                   <p className="servicep">
@@ -97,15 +102,18 @@ const Services = () => {
               style={{
                 display: "flex",
                 flexWrap: "wrap",
-                justifyContent: "center",
+                justifyContent: "space-around",
               }}
             >
               <div className="service">
-                <FontAwesomeIcon
-                  icon={faLock}
-                  size="2x"
-                  className="featureicon_"
-                />
+                <center>
+                  <FontAwesomeIcon
+                    icon={faLock}
+                    size="2x"
+                    className="featureicon_"
+                  />
+                </center>
+
                 <div>
                   <p className="service-heading">Cyber Security</p>
                   <p className="servicep">
@@ -121,11 +129,14 @@ const Services = () => {
                 </div>
               </div>
               <div className="service">
-                <FontAwesomeIcon
-                  icon={faCogs}
-                  size="2x"
-                  className="featureicon_"
-                />
+                <center>
+                  <FontAwesomeIcon
+                    icon={faCogs}
+                    size="2x"
+                    className="featureicon_"
+                  />
+                </center>
+
                 <div>
                   <p className="service-heading">Lifetime Repair</p>
                   <p className="servicep">

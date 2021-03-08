@@ -12,8 +12,6 @@ import Qualcomm from "../components/Qualcomm.js"
 import ARPhone from "../components/ARPhone.js"
 import Charger from "../components/Charger.js"
 
-
-
 const HomePage = () => {
   return (
     <Layout>
