@@ -167,10 +167,10 @@ export default function PersistentDrawerRight({ children }) {
           ].map((text, index) => (
             <a
               href={
-                window.location.hostname === "localhost"
-                  ? `/${text.split(" ")[0].toLowerCase()}`
-                  : `/ninjatech/${text.split(" ")[0].toLowerCase()}`
-                // `/nts/${text.split(" ")[0].toLowerCase()}`
+                // window.location.hostname === "localhost"
+                //   ? `/${text.split(" ")[0].toLowerCase()}`
+                //   : `/ninjatech/${text.split(" ")[0].toLowerCase()}`
+                `/nts/${text.split(" ")[0].toLowerCase()}`
               }
               style={{ textDecoration: "none", color: "inherit" }}
               target={`${text === "Resume" ? "_blank" : ""}`}
