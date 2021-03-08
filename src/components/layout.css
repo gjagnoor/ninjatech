@@ -93,10 +93,10 @@ h1, h2, h3, h4, h4, h5, h6 {
 
 #home {
   background-image: url("../images/HTML\ USE\ IMAGE/banner.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
   background-position: center center;
   /* height: fit-content; */
   background-repeat: no-repeat;
@@ -551,17 +551,18 @@ h1, h2, h3, h4, h4, h5, h6 {
 }
 
 #wallpaper {
-  height: 56em;
-  background-image: url("../images/HTML\ USE\ IMAGE/pageswallpaper.png");
+  /* height: 50.3em !important; */
+  background-image: url("../images/HTML\ USE\ IMAGE/pageswallpaper.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: contain;
+  background-size: "cover";
   background-position: center center;
+  /* padding: 10em; */
   /* height: fit-content; */
   background-repeat: no-repeat;
   overflow: hidden;
-  z-index: -1;
+  /* z-index: -1; */
   /* padding-top: 6em; */
   /* margin-top: -8em; */
 }
@@ -569,7 +570,7 @@ h1, h2, h3, h4, h4, h5, h6 {
 #wallpaperp {
   float: right;
   width: 30em;
-  margin-top: 23em;
+  margin-top: 10em;
 }
 
 
@@ -605,10 +606,8 @@ h1, h2, h3, h4, h4, h5, h6 {
   }
   #wallpaperp {
     position: relative;
-    top: -17em;
     font-size: 1em !important;
     width: 18em;
-    margin-top: 10em;
   }
 
   #wallpaper {
@@ -644,7 +643,7 @@ h1, h2, h3, h4, h4, h5, h6 {
   }
 
   .slide {
-    height: 30em;
+    height: 40em;
   }
 
   .homephonemid{
@@ -773,7 +772,11 @@ h1, h2, h3, h4, h4, h5, h6 {
 
 /* tablets */
 
-@media only screen and (max-device-width: 768px){
+@media only screen and (min-device-width: 768px){
+
+  #touch {
+    height: 42em;
+  }
 
   #map {
     height: 20em;
