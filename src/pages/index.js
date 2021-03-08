@@ -11,12 +11,33 @@ import Touch from "../components/Touch.js"
 import Qualcomm from "../components/Qualcomm.js"
 import ARPhone from "../components/ARPhone.js"
 import Charger from "../components/Charger.js"
-import CircularProgress from "@material-ui/core/CircularProgress"
+import loading from "../images/loading.jpg";
 
 const HomePage = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, [])
   return (
     <React.Fragment>
-        <Layout>
+      {
+        isLoading ? <div
+        key={`loader`}
+        id="___loader"
+        style={{
+          alignItems: "center",
+          backgroundColor: "black",
+          position: 'fixed',
+          top: '50%',
+          left: '50%',
+          transform: "translate('-50%',' -50%')",
+        }}
+      >
+        <center>
+        <img src={loading} alt="Loading spinner" width="auto" height="auto" />
+        </center>
+      </div> :  <Layout>
           <SEO title="Home" />
           <Home />
           <Features />
@@ -27,6 +48,7 @@ const HomePage = () => {
           <ARPhone />
           <Charger />
         </Layout>
+      }
     </React.Fragment>
   )
 }
