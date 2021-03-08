@@ -15,33 +15,29 @@ export default function HTML(props) {
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes} style={{ backgroundColor: "black" }}>
-        {props.preBodyComponents}
-        <div
+      <div
           key={`loader`}
           id="___loader"
           style={{
-            alignItems: "center",
-            backgroundColor: "black",
             position: "fixed",
-            top: "50%",
-            left: "50%",
-            transform: "translate('-50%',' -50%')",
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)'
           }}
         >
-          <center>
             <img
               src={loading}
               alt="Loading spinner"
               width="auto"
               height="auto"
             />
-          </center>
         </div>
         <div
           key={`body`}
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
+        {props.preBodyComponents}
         {props.postBodyComponents}
       </body>
     </html>

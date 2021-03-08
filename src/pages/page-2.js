@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import image from "../images/loading.gif"
 
 const IndexPage = () => (
-  <div>
+  <div id="loadingscreen">
     <img src={image} />
   </div>
 )
