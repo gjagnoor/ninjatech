@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react"
+import skroller from "skrollr";
 
 
 const IndexPage = () => {
-    const [class_, setClass] = useState("translate(0.49px,0.55px) scale(0.0015) translate(-49px,-49px)") 
-    console.log(class_, "class")
+    // const [class_, setClass] = useState("translate(0.49px,0.55px) scale(0.0015) translate(-49px,-49px)") 
+    // console.log(class_, "class")
+    useEffect(() => {
+        const s_ = skroller.init();
+    })
   return (
     <React.Fragment>
           <div>
@@ -19,8 +23,10 @@ const IndexPage = () => {
             <rect x="0" y="0" width="1" height="1" fill="white" />
                           <g
                               fill="black"
-                              style={{ transform: class_ }}
-                              className="testing"
+                                data-0="transform: translate(0.49px,0.55px) scale(0.0015) translate(-49px,-49px)"
+                                data-50p="transform: translate(0.49px,0.55px) scale(0.04) translate(-49px,-49px)"
+                            //   style={{ transform: class_ }}
+                            //   className="testing"
             >
               <svg
                 version="1.0"

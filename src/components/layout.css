@@ -1484,7 +1484,7 @@ html, body {
 }
 
 .container {
-  /* position: fixed; */
+  position: fixed;
 }
 
 #landingimg {
@@ -1493,7 +1493,7 @@ html, body {
   background-size: contain;
   background-position: center center;
   width: 100vw;
-  height: 101vh;
+  height: 100vh;
 }
 
 .overlay {

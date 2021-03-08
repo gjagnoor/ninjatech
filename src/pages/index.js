@@ -1,7 +1,10 @@
 import React, { useEffect } from "react"
 import { Link } from "gatsby"
-import Masking from "../components/Masking.js";
+// import Masking from "../components/Masking.js";
 import { Button } from "@material-ui/core"
+import loadable from '@loadable/component'
+const Masking = loadable(() => import('../components/Masking.js'));
+
 
 const IndexPage = () => {
   useEffect(() => {
