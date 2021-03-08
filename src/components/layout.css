@@ -772,6 +772,7 @@ h1, h2, h3, h4, h4, h5, h6 {
   .aboutp2 {
     width: 90%;
   }
+  
   #videodemo {
     width: auto !important;
     height: auto !important;
@@ -779,7 +780,6 @@ h1, h2, h3, h4, h4, h5, h6 {
 
   .homephonemid {
     margin-top: 5em;
-    /* padding-bottom: 2em; */
   }
   
   .homephone {
