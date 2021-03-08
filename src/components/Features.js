@@ -21,6 +21,8 @@ import line from "../images/HTML USE IMAGE/line-about.png"
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    margin: "auto",
+    width: "auto"
   },
 }))
 
@@ -37,7 +39,7 @@ const Features = () => {
   ])
   const classes = useStyles()
   return (
-    <Container maxWidth="xl" style={{ margin: 0, padding: 0 }} id="feature">
+    <Container maxWidth="xl" id="feature">
       <Fade
         direction="up"
         in={true}
@@ -54,6 +56,7 @@ const Features = () => {
         unmountOnExit
         timeout={{ enter: 7000 }}
       >
+        <center>
         <Grid
           container
           className={classes.root}
@@ -67,10 +70,11 @@ const Features = () => {
         >
           {features.slice(0, 4).map((value, i) => (
             <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
+              <center>
               <div
                 style={{
                   display: "flex",
-                  justifyContent: "space-around",
+                  justifyContent: "space-between",
                   flexWrap: "wrap",
                 }}
                 className="feature"
@@ -90,10 +94,12 @@ const Features = () => {
                 <center>
                   {i === 3 ? null : <img src={line} className="line" />}
                 </center>
-              </div>
+                </div>
+              </center>
             </Grid>
           ))}
-        </Grid>
+          </Grid>
+          </center>
       </Fade>
       <Grid
         container
@@ -111,7 +117,7 @@ const Features = () => {
             <div
               style={{
                 display: "flex",
-                justifyContent: "space-around",
+                justifyContent: "space-between",
                 flexWrap: "wrap",
               }}
               className="feature"

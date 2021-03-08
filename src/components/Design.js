@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 import Container from "@material-ui/core/Container"
 import Slide from "@material-ui/core/Slide"
 import Fade from "@material-ui/core/Fade"
-import designphone1 from "../images/HTML USE IMAGE/designphone1.png"
+import designphone1 from "../images/HTML USE IMAGE/about-phone.png"
 import designphone2 from "../images/HTML USE IMAGE/designphone2.png"
 import VisibilitySensor from "react-visibility-sensor"
 
@@ -70,7 +70,7 @@ const Design = () => {
                 justifyContent: "center",
               }}
             >
-              <img src={designphone1} className="designphone" />
+              <img src={designphone1} className="designphone" style={{ height: '40%' }}/>
               <VisibilitySensor partialVisibility onChange={onChange}>
                 <img
                   src={designphone2}

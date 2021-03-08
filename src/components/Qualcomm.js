@@ -43,7 +43,7 @@ const Qualcomm = () => {
               >
                 <span>
                   Powered by the most advance mobile platform the Qualcomm
-                  Snapdragon 835, Ninja Tech is a whole new generation of fast
+                  Snapdragon 835, NinjaTech is a whole new generation of fast
                   and intelligent. The 25% faster CPU, GPU and 100% improved
                   system enables a breathtaking experience in Augmented Reality,
                   browsing and more.

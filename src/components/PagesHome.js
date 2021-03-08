@@ -11,7 +11,7 @@ import phonemid from "../images/HTML USE IMAGE/phone-middle.png"
 import VisibilitySensor from "react-visibility-sensor"
 import Carousel from "react-material-ui-carousel"
 import Home from "./Home.js"
-import PagesWallpaper from "../images/HTML USE IMAGE/pageswallpaper.png"
+import PagesWallpaper from "../images/HTML USE IMAGE/pageswallpaper.jpg"
 import PageWallpaper from "./PageWallpaper"
 
 const PagesHome = () => {

@@ -21,7 +21,7 @@ const Touch = () => {
               Master Touch 2.O lets you set a custom touch zone,
             </p>
             <p className="touchtext2">
-              the ninja tech responds to pressure controls even on screen edge.
+              the NTech responds to pressure controls even on screen edge.
             </p>
           </div>
         </Container>
