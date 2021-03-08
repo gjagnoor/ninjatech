@@ -30,16 +30,17 @@ const IndexPage = () => {
           <Link to="/home" id="enterlink">
             <Button
               variant="contained"
-              style={{ zIndex: 1, textDecoration: "none", boxShadow: "none" }}
+              style={{ zIndex: 1, textDecoration: "none", boxShadow: "none", backgroundColor:"#3bba9c", color: "#2e3047" }}
               id="enterbutton"
             >
               Enter
             </Button>
           </Link>
-        </center>
-        <center>
+          <center>
           <p id="orscroll">or scroll</p>
         </center>
+        </center>
+        
       </div>
 
       <Masking />

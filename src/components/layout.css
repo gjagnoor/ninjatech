@@ -285,22 +285,6 @@ h1, h2, h3, h4, h4, h5, h6 {
   /* z-index: 56; */
 }
 
-.featureicon {
-  color: #3a8ea1;
-}
-
-.featureicon:hover {
-  color: white;
-}
-
-.featureicon_ {
-  color: #3a8ea1;
-  margin: 2em;
-}
-
-.featureicon_:hover {
-  color: white;
-}
 
 #touch {
   height: 90em;
@@ -567,7 +551,6 @@ h1, h2, h3, h4, h4, h5, h6 {
 }
 
 #wallpaper {
-  /* width: 200em !important; */
   height: 56em;
   background-image: url("../images/HTML\ USE\ IMAGE/pageswallpaper.png");
   -webkit-background-size: cover;
@@ -1530,9 +1513,9 @@ html, body {
   width: auto;
 	height: auto;	
 	position: fixed;
-	top: 84%;
+	top: 87%;
 	bottom: 0;
-	left: -4%;
+	left: -2%;
 	right: 0; 	
 	margin: auto;
 }
@@ -1541,10 +1524,10 @@ html, body {
   width: auto;
 	height: 3em;	
 	position: fixed;
-	top: 56%;
+	top: 65%;
 	bottom: 0;
 	left: 0;
-	right: 4%; 	
+	right: 2%; 	
 	margin: auto;
 }
 
@@ -1614,3 +1597,21 @@ html, body {
     transform: translate(0.5px,0.5px) scale(2.5) translate(-49px,-60px);
   }
 } 
+
+
+.featureicon {
+  color: #3a8ea1 !important;
+}
+
+.featureicon:hover {
+  color: white;
+}
+
+.featureicon_ {
+  color: #3a8ea1 !important;
+  margin: 2em;
+}
+
+.featureicon_:hover {
+  color: white;
+}
