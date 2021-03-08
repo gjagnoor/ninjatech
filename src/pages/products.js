@@ -9,9 +9,6 @@ import Products from "../components/Products.js"
 import ProductsSlider from "../components/ProductsSlider.js"
 
 const Products_ = () => {
-  useEffect(() => {
-    window.pageExitTime = 1000
-  }, [])
   return (
     <Layout>
       <SEO title="Home" />

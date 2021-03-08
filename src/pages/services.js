@@ -9,9 +9,6 @@ import Services from "../components/Services.js"
 import ServicePoints from "../components/ServicePoints.js"
 
 const IndexPage = () => {
-  useEffect(() => {
-    window.pageExitTime = 1000
-  }, [])
   return (
     <Layout>
       <SEO title="Home" />

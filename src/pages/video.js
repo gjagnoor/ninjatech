@@ -8,9 +8,6 @@ import PagesHome from "../components/PagesHome.js"
 import Video from "../components/Video.js"
 
 const IndexPage = () => {
-  useEffect(() => {
-    window.pageExitTime = 1000
-  }, [])
   return (
     <Layout>
       <SEO title="Home" />

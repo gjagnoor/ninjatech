@@ -9,9 +9,7 @@ import About from "../components/About.js"
 import Convince from "../components/Convince.js"
 
 const IndexPage = () => {
-  useEffect(() => {
-    window.pageExitTime = 1000
-  }, [])
+
   return (
     <React.Fragment>
         <Layout>

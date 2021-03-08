@@ -14,9 +14,6 @@ import Charger from "../components/Charger.js"
 import CircularProgress from "@material-ui/core/CircularProgress"
 
 const HomePage = () => {
-  useEffect(() => {
-    window.pageExitTime = 2000
-  }, [])
   return (
     <React.Fragment>
         <Layout>

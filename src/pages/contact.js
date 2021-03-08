@@ -6,9 +6,6 @@ import SEO from "../components/seo"
 import PagesHome from "../components/PagesHome.js"
 
 const IndexPage = () => {
-  useEffect(() => {
-    window.pageExitTime = 1000
-  }, [])
   return (
  
     <Layout>

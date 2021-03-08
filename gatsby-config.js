@@ -16,7 +16,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-transition-link`,
-    'gatsby-plugin-page-load-delay',
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
