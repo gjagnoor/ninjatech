@@ -1,52 +1,33 @@
 import React, { useEffect } from "react"
 import { Link } from "gatsby"
-// import Masking from "../components/Masking.js";
-import { Button } from "@material-ui/core"
-import loadable from "@loadable/component"
-const Masking = loadable(() => import("../components/Masking.js"))
 
-const IndexPage = () => {
-  useEffect(() => {
-    window.addEventListener(
-      "scroll",
-      () => {
-        console.log("scrollin")
-        document.body.style.setProperty(
-          "--scroll__",
-          window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
-        )
-      },
-      false
-    )
-  }, [])
+import Layout from "../components/layout"
+import Image from "../components/image"
+import SEO from "../components/seo"
+import Home from "../components/Home.js"
+import Features from "../components/Features.js"
+import Design from "../components/Design.js"
+import Touch from "../components/Touch.js"
+import Qualcomm from "../components/Qualcomm.js"
+import ARPhone from "../components/ARPhone.js"
+import Charger from "../components/Charger.js"
+
+
+
+const HomePage = () => {
   return (
-    // <div id="headcontainer">
-    <div className="container">
-      <div
-        id="landingimg"
-        style={{ display: "flex", justifyContent: "space-around"}}
-      >
-        <center>
-          <Link to="/home" id="enterlink">
-            <Button
-              variant="contained"
-              style={{ zIndex: 1, textDecoration: "none", boxShadow: "none", backgroundColor:"#3bba9c", color: "#2e3047" }}
-              id="enterbutton"
-            >
-              Enter
-            </Button>
-          </Link>
-          <center>
-          <p id="orscroll">or scroll</p>
-        </center>
-        </center>
-        
-      </div>
-
-      <Masking />
-    </div>
-    // </div>
+    <Layout>
+      <SEO title="Home" />
+      <Home />
+      <Features />
+      <br />
+      <Design />
+      <Touch />
+      <Qualcomm />
+      <ARPhone />
+      <Charger />
+    </Layout>
   )
 }
 
-export default IndexPage
+export default HomePage
