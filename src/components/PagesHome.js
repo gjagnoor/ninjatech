@@ -23,7 +23,7 @@ const PagesHome = () => {
 
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
-      <div>
+      <div id="pageshome">
         <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
           <Carousel>
             <center>
