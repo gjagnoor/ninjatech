@@ -23,7 +23,7 @@ const IndexPage = () => {
             <rect x="0" y="0" width="1" height="1" fill="white" />
                           <g
                               fill="black"
-                                data-0="transform: translate(0.49px,0.55px) scale(0.0015) translate(-49px,-49px)"
+                                data-0="transform: translate(0.49px,0.5px) scale(0.0015) translate(-49px,-49px)"
                                 data-50p="transform: translate(0.49px,0.55px) scale(0.04) translate(-49px,-49px)"
                             //   style={{ transform: class_ }}
                             //   className="testing"
