@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React, { useEffect } from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -7,7 +7,6 @@ import PagesHome from "../components/PagesHome.js"
 
 const IndexPage = () => {
   return (
- 
     <Layout>
       <SEO title="Home" />
       <h4 id="heading">Contact Us</h4>

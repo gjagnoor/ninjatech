@@ -16,6 +16,7 @@ import {
   faWifi,
   faHandPointer,
 } from "@fortawesome/free-solid-svg-icons"
+import line from "../images/HTML USE IMAGE/line-about.png"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -62,64 +63,78 @@ const Features = () => {
           md={12}
           lg={12}
           xl={12}
+          style={{ marginTop: "4em" }}
         >
           {features.slice(0, 4).map((value, i) => (
-            <Grid item xl={3} lg={3} md={12} sm={12} xs={12}>
-              <div style={{ marginTop: "5em" }}>
-                <center>
-                  <div>
+            <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-around",
+                  flexWrap: "wrap",
+                }}
+                className="feature"
+              >
+                <div>
+                  <center>
                     <FontAwesomeIcon
                       icon={value[1]}
-                      size="3x"
+                      size="2x"
                       className="featureicon feature-icon_"
                     />
-                  </div>
-                </center>
-
-                <p
-                  style={{
-                    color: "white",
-                    textAlign: "center",
-                    paddingTop: "5em",
-                    margin: "2em",
-                    whiteSpace: "nowrap",
-                  }}
-                  className="featuretext"
-                >
-                  {value[0]}
-                </p>
-              </div>
-              {i == 0 ? null : <p className="line"></p>}
-            </Grid>
-          ))}
-          {features.slice(4).map((value, i) => (
-            <Grid item xl={3} lg={3} md={12} sm={12} xs={12}>
-              <div>
+                  </center>
+                  <center>
+                    <p>{value[0]}</p>
+                  </center>
+                </div>
                 <center>
-                  <div>
-                    <FontAwesomeIcon
-                      icon={value[1]}
-                      size="3x"
-                      className="featureicon feature-icon_"
-                    />
-                  </div>
+                  {i === 3 ? null : <img src={line} className="line" />}
                 </center>
-                <p
-                  style={{
-                    color: "white",
-                    textAlign: "center",
-                    paddingTop: "5em",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  {value[0]}
-                </p>
               </div>
-              {i == 0 ? null : <p className="line"></p>}
             </Grid>
           ))}
         </Grid>
       </Fade>
+      <Grid
+        container
+        className={classes.root}
+        spacing={2}
+        xs={12}
+        sm={12}
+        md={12}
+        lg={12}
+        xl={12}
+        style={{ marginTop: "4em" }}
+      >
+        {features.slice(4).map((value, i) => (
+          <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-around",
+                flexWrap: "wrap",
+              }}
+              className="feature"
+            >
+              <div>
+                <center>
+                  <FontAwesomeIcon
+                    icon={value[1]}
+                    size="2x"
+                    className="featureicon feature-icon_"
+                  />
+                </center>
+                <center>
+                  <p>{value[0]}</p>
+                </center>
+              </div>
+              <center>
+                {i === 3 ? null : <img src={line} className="line" />}
+              </center>
+            </div>
+          </Grid>
+        ))}
+      </Grid>
       <div style={{ textAlign: "center", marginTop: "4em" }}>
         <img src={signature} />
       </div>

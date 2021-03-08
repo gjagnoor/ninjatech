@@ -271,16 +271,12 @@ h1, h2, h3, h4, h4, h5, h6 {
   height: 61em;
 }
 
-/* .line {
-  border-width: 2px;
-  border-color: rgb(90, 149, 149);
-  border-style: solid;
-  margin-top: -3em;
-  margin-left: 1em;
-  width: 0px;
-  height: 72px;
+.line {
+  transform: rotate(180deg);
+  width: 5em;
+  margin-top: 3em;
 } 
-*/
+
 
 
 #touch {
@@ -622,15 +618,6 @@ h1, h2, h3, h4, h4, h5, h6 {
     padding: 0;
     margin: 0;
   }
-
-  .feature-icon_ {
-    margin-top: 0 !important;
-  }
-
-  .feature-icon_:hover {
-    color: white;
-  }
-
   #featuresheading {
     margin-bottom: 2em;
   }
@@ -679,12 +666,12 @@ h1, h2, h3, h4, h4, h5, h6 {
   #servicepoints {
     height: 30em;
   }
-  /* .line {
+  .line {
     transform: rotate(90deg);
     justify-content: center;
-    margin-top: 0;
-    margin-left: 50%;
-  } */
+    /* flex-direction: column; */
+    /* margin-top: 0; */
+  }
   .service {
     /* width: 20rem; */
     margin-left: 0;
@@ -808,12 +795,12 @@ h1, h2, h3, h4, h4, h5, h6 {
     height: auto;
   }
 
-  /* .line {
+  .line {
     transform: rotate(90deg);
     justify-content: center;
-    margin-top: 0;
-    margin-left: 50%;
-  } */
+    flex-direction: column;
+    /* margin-top: 0; */
+  }
   .service {
     width: 20rem;
     margin-left: 0;
@@ -838,12 +825,12 @@ h1, h2, h3, h4, h4, h5, h6 {
 }
 
 @media screen and (max-width:596px){
-  /* .line {
-    transform: rotate(90deg);
+  .line {
+    transform: rotate(180deg);
     justify-content: center;
-    margin-top: 0;
-    margin-left: 50%;
-  } */
+    flex-direction: column;
+    /* margin-top: 0; */
+  }
 
   .qualcommp {
     text-align: center;
@@ -855,7 +842,6 @@ h1, h2, h3, h4, h4, h5, h6 {
     font-size: 1.18em;
   }
 }
-
 
 /* laptops */
 @media only screen and (max-device-width: 1024px){
@@ -878,15 +864,21 @@ h1, h2, h3, h4, h4, h5, h6 {
   .servicep {
     width: auto!important;
   }
+  .feature {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 1279px) {
-  /* .line {
-    transform: rotate(90deg);
+  .line {
+    transform: rotate(180deg);
     justify-content: center;
-    margin-top: 0;
-    margin-left: 50%;
-  } */
+    /* margin-top: 0; */
+  }
+
+  .feature {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 1167px) {
@@ -1636,19 +1628,10 @@ html, body {
 
 
 .featureicon {
-  color: #3a8ea1 !important;
+  color: #3a8ea1;
 }
 
 .featureicon:hover {
-  color: white;
-}
-
-.featureicon_ {
-  color: #3a8ea1 !important;
-  margin: 2em;
-}
-
-.featureicon_:hover {
   color: white;
 }
 
@@ -1657,3 +1640,4 @@ html, body {
   width: 2em;
   height: 2em;
 }
+

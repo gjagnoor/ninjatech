@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import loading from "./images/loading.jpg"
+import loading from "./images/loading.gif"
 
 export default function HTML(props) {
   return (
@@ -14,7 +14,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes} style={{backgroundColor: "black"}}>
+      <body {...props.bodyAttributes} style={{ backgroundColor: "black" }}>
         {props.preBodyComponents}
         <div
           key={`loader`}
@@ -22,14 +22,19 @@ export default function HTML(props) {
           style={{
             alignItems: "center",
             backgroundColor: "black",
-            position: 'fixed',
-            top: '50%',
-            left: '50%',
+            position: "fixed",
+            top: "50%",
+            left: "50%",
             transform: "translate('-50%',' -50%')",
           }}
         >
           <center>
-          <img src={loading} alt="Loading spinner" width="auto" height="auto" />
+            <img
+              src={loading}
+              alt="Loading spinner"
+              width="auto"
+              height="auto"
+            />
           </center>
         </div>
         <div

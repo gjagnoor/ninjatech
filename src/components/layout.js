@@ -65,10 +65,23 @@ const Layout = ({ children }) => {
             behavior: "smooth",
           })
         }
+        style={{ zIndex: 10 }}
       >
-        <FontAwesomeIcon icon={faChevronUp} size="2x" />
-        <FontAwesomeIcon icon={faChevronUp} size="2x" />
-        <FontAwesomeIcon icon={faChevronUp} size="2x" />
+        <FontAwesomeIcon
+          icon={faChevronUp}
+          size="2x"
+          style={{ cursor: "pointer" }}
+        />
+        <FontAwesomeIcon
+          icon={faChevronUp}
+          size="2x"
+          style={{ cursor: "pointer" }}
+        />
+        <FontAwesomeIcon
+          icon={faChevronUp}
+          size="2x"
+          style={{ cursor: "pointer" }}
+        />
       </div>
       <div>
         <main>{children}</main>

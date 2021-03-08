@@ -9,17 +9,17 @@ import About from "../components/About.js"
 import Convince from "../components/Convince.js"
 
 const IndexPage = () => {
-
   return (
     <React.Fragment>
-        <Layout>
-    <SEO title="Home" />
-    <h4 id="heading">About Us</h4>
-    <PagesHome />
-    <About />
-    <Convince />
-  </Layout>
+      <Layout>
+        <SEO title="Home" />
+        <h4 id="heading">About Us</h4>
+        <PagesHome />
+        <About />
+        <Convince />
+      </Layout>
     </React.Fragment>
-)}
+  )
+}
 
 export default IndexPage
