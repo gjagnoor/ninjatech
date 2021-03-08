@@ -44,6 +44,7 @@ const Services = () => {
                 flexWrap: "wrap",
                 justifyContent: "space-around",
               }}
+              id="services__"
             >
               <div className="service">
                 <center>
@@ -104,6 +105,7 @@ const Services = () => {
                 flexWrap: "wrap",
                 justifyContent: "space-around",
               }}
+              id="services__"
             >
               <div className="service">
                 <center>

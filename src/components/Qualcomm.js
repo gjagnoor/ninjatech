@@ -23,27 +23,32 @@ const Qualcomm = () => {
           <div
             style={{
               display: "flex",
-              flexWrap: "wrap",
+              // flexWrap: "wrap",
               justifyContent: "space-around",
               marginTop: "11.5em",
             }}
+            id="qualcommcontent"
           >
+            <center>
             <img
               src={qualcommphone}
-              style={{ width: "30%" }}
-              className="feature-icon_"
+              style={{ width: "50%" }}
+              className="qualcommphone feature-icon_"
             />
-            <div style={{ float: "right", marginTop: "10em", width: "55%" }}>
-              <center>
-                <span className="qualcommp">
+            </center>
+            <center>
+
+            <div style={{ float: "right", marginTop: "10em", width: "90%" }} className="qualcommp">
+                <span>
                   Powered by the most advance mobile platform the Qualcomm
                   Snapdragon 835, Ninja Tech is a whole new generation of fast
                   and intelligent. The 25% faster CPU, GPU and 100% improved
                   system enables a breathtaking experience in Augmented Reality,
                   browsing and more.
                 </span>
+              </div>
               </center>
-            </div>
+
           </div>
         </Container>
       </div>
