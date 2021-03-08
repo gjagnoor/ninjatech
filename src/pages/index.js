@@ -24,7 +24,7 @@ const IndexPage = () => {
     <div className="container">
       <div
         id="landingimg"
-        style={{ display: "flex", justifyContent: "space-around" }}
+        style={{ display: "flex", justifyContent: "space-around"}}
       >
         <center>
           <Link to="/home" id="enterlink">
