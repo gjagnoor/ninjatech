@@ -90,6 +90,7 @@ const Layout = ({ children }) => {
             top: "10em",
             position: "relative",
           }}
+          id="footercenter"
         >
           <footer>
             <center>

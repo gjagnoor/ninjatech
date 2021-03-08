@@ -596,11 +596,11 @@ h1, h2, h3, h4, h4, h5, h6 {
   }
   #heading_ {
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     font-family: twcenmt !important;
     margin-top: 2em;
     position: relative;
-    top: -7em;
+    top: -10em;
   }
   #wallpaperp {
     position: relative;
@@ -636,7 +636,7 @@ h1, h2, h3, h4, h4, h5, h6 {
   }
 
   .slide {
-    height: 40em;
+    height: 30em;
   }
 
   .homephonemid{
@@ -694,6 +694,11 @@ h1, h2, h3, h4, h4, h5, h6 {
   #aboutfeaturesimg {
     width: 16rem;
     padding-right: 2em;
+    margin-top: 1em;
+  }
+
+  #footercenter {
+    top: 3em !important;
   }
 
   #charger {
@@ -743,7 +748,7 @@ h1, h2, h3, h4, h4, h5, h6 {
 
   #home {
     background-size: contain;
-    height: 30em;
+    height: 30em !important;
   }
 
   #touch {
@@ -770,6 +775,15 @@ h1, h2, h3, h4, h4, h5, h6 {
   #videodemo {
     width: auto !important;
     height: auto !important;
+  }
+
+  .homephonemid {
+    margin-top: 5em;
+    /* padding-bottom: 2em; */
+  }
+  
+  .homephone {
+    margin-top: 5em;
   }
 }
 
