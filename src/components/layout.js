@@ -58,9 +58,14 @@ const Layout = ({ children }) => {
   return (
     <Container maxWidth="xl">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div class="scroller" onClick={() => document.getElementById("home").scrollIntoView({
-        behavior: "smooth"
-      })}>
+      <div
+        class="scroller"
+        onClick={() =>
+          document.getElementById("home").scrollIntoView({
+            behavior: "smooth",
+          })
+        }
+      >
         <FontAwesomeIcon icon={faChevronUp} size="2x" />
         <FontAwesomeIcon icon={faChevronUp} size="2x" />
         <FontAwesomeIcon icon={faChevronUp} size="2x" />

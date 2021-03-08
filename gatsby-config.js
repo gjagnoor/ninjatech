@@ -16,14 +16,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-transition-link`,
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        color: `tomato`,
-        showSpinner: true,
-        minimum: 0.4
-      }
-    },
+    'gatsby-plugin-page-load-delay',
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

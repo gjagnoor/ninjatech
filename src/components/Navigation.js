@@ -111,12 +111,9 @@ export default function PersistentDrawerRight({ children }) {
       >
         <Toolbar>
           <Typography variant="h6" noWrap className={classes.title}>
-            <Link
-              style={{ textDecoration: "none", color: "inherit" }}
-              to={`/`}
-            >
+            <Link style={{ textDecoration: "none", color: "inherit" }} to={`/`}>
               <img id="header-logo" src={NinjaTech} />
-              <p style={{color: "white", marginTop: "3em"}}>NinjaTech</p>
+              <p style={{ color: "white", marginTop: "3em" }}>NinjaTech</p>
             </Link>
           </Typography>
           <IconButton
@@ -170,10 +167,10 @@ export default function PersistentDrawerRight({ children }) {
           ].map((text, index) => (
             <a
               href={
-                // window.location.hostname === "localhost"
-                //   ? `/${text.split(" ")[0].toLowerCase()}`
-                //   : `/ninjatech/${text.split(" ")[0].toLowerCase()}`
-                `/nts/${text.split(" ")[0].toLowerCase()}`
+                window.location.hostname === "localhost"
+                  ? `/${text.split(" ")[0].toLowerCase()}`
+                  : `/ninjatech/${text.split(" ")[0].toLowerCase()}`
+                // `/nts/${text.split(" ")[0].toLowerCase()}`
               }
               style={{ textDecoration: "none", color: "inherit" }}
               target={`${text === "Resume" ? "_blank" : ""}`}

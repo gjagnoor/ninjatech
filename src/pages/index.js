@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -11,22 +11,26 @@ import Touch from "../components/Touch.js"
 import Qualcomm from "../components/Qualcomm.js"
 import ARPhone from "../components/ARPhone.js"
 import Charger from "../components/Charger.js"
-
-
+import CircularProgress from "@material-ui/core/CircularProgress"
 
 const HomePage = () => {
+  useEffect(() => {
+    window.pageExitTime = 2000
+  }, [])
   return (
-    <Layout>
-      <SEO title="Home" />
-      <Home />
-      <Features />
-      <br />
-      <Design />
-      <Touch />
-      <Qualcomm />
-      <ARPhone />
-      <Charger />
-    </Layout>
+    <React.Fragment>
+        <Layout>
+          <SEO title="Home" />
+          <Home />
+          <Features />
+          <br />
+          <Design />
+          <Touch />
+          <Qualcomm />
+          <ARPhone />
+          <Charger />
+        </Layout>
+    </React.Fragment>
   )
 }
 

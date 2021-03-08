@@ -271,19 +271,16 @@ h1, h2, h3, h4, h4, h5, h6 {
   height: 61em;
 }
 
-.line {
+/* .line {
   border-width: 2px;
   border-color: rgb(90, 149, 149);
   border-style: solid;
-  /* position: absolute; */
-  /* left: 462px; */
-  /* top: 1143px; */
   margin-top: -3em;
   margin-left: 1em;
   width: 0px;
   height: 72px;
-  /* z-index: 56; */
-}
+} 
+*/
 
 
 #touch {
@@ -678,12 +675,12 @@ h1, h2, h3, h4, h4, h5, h6 {
   #servicepoints {
     height: 30em;
   }
-  .line {
+  /* .line {
     transform: rotate(90deg);
     justify-content: center;
     margin-top: 0;
     margin-left: 50%;
-  }
+  } */
   .service {
     /* width: 20rem; */
     margin-left: 0;
@@ -807,12 +804,12 @@ h1, h2, h3, h4, h4, h5, h6 {
     height: auto;
   }
 
-  .line {
+  /* .line {
     transform: rotate(90deg);
     justify-content: center;
     margin-top: 0;
     margin-left: 50%;
-  }
+  } */
   .service {
     width: 20rem;
     margin-left: 0;
@@ -837,12 +834,12 @@ h1, h2, h3, h4, h4, h5, h6 {
 }
 
 @media screen and (max-width:596px){
-  .line {
+  /* .line {
     transform: rotate(90deg);
     justify-content: center;
     margin-top: 0;
     margin-left: 50%;
-  }
+  } */
 
   .qualcommp {
     text-align: center;
@@ -880,12 +877,12 @@ h1, h2, h3, h4, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 1279px) {
-  .line {
+  /* .line {
     transform: rotate(90deg);
     justify-content: center;
     margin-top: 0;
     margin-left: 50%;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1167px) {
@@ -1649,4 +1646,10 @@ html, body {
 
 .featureicon_:hover {
   color: white;
+}
+
+#progress {
+  margin-top: 25%;
+  width: 2em;
+  height: 2em;
 }

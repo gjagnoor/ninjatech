@@ -8,7 +8,6 @@ import lineAbout from "../images/HTML USE IMAGE/line-about.png"
 import aboutfeatures from "../images/HTML USE IMAGE/about-lines.png"
 import { Button } from "@material-ui/core"
 
-
 const About = () => {
   return (
     <div id="about">

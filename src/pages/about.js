@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -8,14 +8,20 @@ import PagesHome from "../components/PagesHome.js"
 import About from "../components/About.js"
 import Convince from "../components/Convince.js"
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = () => {
+  useEffect(() => {
+    window.pageExitTime = 1000
+  }, [])
+  return (
+    <React.Fragment>
+        <Layout>
     <SEO title="Home" />
     <h4 id="heading">About Us</h4>
     <PagesHome />
     <About />
     <Convince />
   </Layout>
-)
+    </React.Fragment>
+)}
 
 export default IndexPage
