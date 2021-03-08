@@ -23,8 +23,6 @@ const IndexPage = () => {
                 fill="black"
                 data-0="transform: translate(0.49px,0.5px) scale(0.0015) translate(-49px,-49px)"
                 data-50p="transform: translate(0.49px,0.55px) scale(0.04) translate(-49px,-49px)"
-                //   style={{ transform: class_ }}
-                //   className="testing"
               >
                 <svg
                   version="1.0"
