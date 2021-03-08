@@ -116,6 +116,7 @@ export default function PersistentDrawerRight({ children }) {
               to={`/home`}
             >
               <img id="header-logo" src={NinjaTech} />
+              <p style={{color: "white", marginTop: "3em"}}>NinjaTech</p>
             </Link>
           </Typography>
           <IconButton
