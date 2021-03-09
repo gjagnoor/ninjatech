@@ -14,42 +14,21 @@ const Design = () => {
     setVisibility(visiblity)
   }
   return (
+    <VisibilitySensor partialVisibility onChange={onChange}>
+
     <div id="design">
       <Slide
         direction="right"
         in={true}
         mountOnEnter
         unmountOnExit
-        timeout={1000}
+        timeout={{enter: 2000}}
       >
         <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
-          <Fade
-            direction="up"
-            in={true}
-            mountOnEnter
-            unmountOnExit
-            timeout={{ enter: 7000 }}
-          >
             <h5 id="symmetricaldesign">Symmetrical Design</h5>
-          </Fade>
-          <Fade
-            direction="up"
-            in={true}
-            mountOnEnter
-            unmountOnExit
-            timeout={{ enter: 7000 }}
-          >
             <p id="degree">
               360<span>°</span>
             </p>
-          </Fade>
-          <Fade
-            direction="up"
-            in={true}
-            mountOnEnter
-            unmountOnExit
-            timeout={{ enter: 7000 }}
-          >
             <div>
               <center>
                 <p id="designp">
@@ -61,7 +40,6 @@ const Design = () => {
                 </p>
               </center>
             </div>
-          </Fade>
           <center>
             <div
               style={{
@@ -71,18 +49,19 @@ const Design = () => {
               }}
             >
               <img src={designphone1} className="designphone" style={{ height: '40%' }}/>
-              <VisibilitySensor partialVisibility onChange={onChange}>
                 <img
                   src={designphone2}
                   id={isVisible ? "animate" : "stopanimation"}
                   className="designphone"
+                  style={{height: "65vh", marginBottom: "10em"}}
                 />
-              </VisibilitySensor>
             </div>
           </center>
         </Container>
       </Slide>
-    </div>
+      </div>
+      </VisibilitySensor>
+
   )
 }
 

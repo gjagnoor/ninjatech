@@ -34,8 +34,8 @@ const Home = () => {
                 direction="right"
                 in={isVisible}
                 mountOnEnter
-                unmountOnExit
-                timeout={2000}
+                // unmountOnExit
+                timeout={{enter: 2000}}
               >
                 <img src={phonel} className="homephone" />
               </Slide>
@@ -43,8 +43,8 @@ const Home = () => {
                 direction="down"
                 in={isVisible}
                 mountOnEnter
-                unmountOnExit
-                timeout={1000}
+                // unmountOnExit
+                timeout={{enter: 3000}}
               >
                 <img src={phonemid} className="homephonemid" />
               </Slide>
@@ -52,8 +52,8 @@ const Home = () => {
                 direction="left"
                 in={isVisible}
                 mountOnEnter
-                unmountOnExit
-                timeout={2000}
+                // unmountOnExit
+                timeout={{enter: 2000}}
               >
                 <img src={phoner} className="homephone" />
               </Slide>

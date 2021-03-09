@@ -17,7 +17,7 @@ import {
   faHandPointer,
 } from "@fortawesome/free-solid-svg-icons"
 import line from "../images/HTML USE IMAGE/line-about.png"
-
+import VisibilitySensor from "react-visibility-sensor";
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -38,7 +38,14 @@ const Features = () => {
     ["SA+NSA 4G WiFi6", faWifi],
   ])
   const classes = useStyles()
+  const [isVisible, setVisibility] = useState(false);
+
+  function onChange(visibility) {
+    setVisibility(visibility);
+  }
+
   return (
+    <VisibilitySensor partialVisibility onChange={onChange}>
     <Container maxWidth="xl" id="feature">
         <h5 id="featuresheading">The Ultimate AR Gaming Phone</h5>
         <center>
@@ -70,7 +77,7 @@ const Features = () => {
                     <FontAwesomeIcon
                       icon={value[1]}
                       size="3x"
-                      className="featureicon feature-icon_"
+                      className={isVisible ? "featureicon feature-icon_" : "featureicon stopfloating"}
                     />
                   </center>
                   <center>
@@ -115,7 +122,7 @@ const Features = () => {
                   <FontAwesomeIcon
                     icon={value[1]}
                     size="3x"
-                    className="featureicon feature-icon_"
+                    className={isVisible ? "featureicon feature-icon_" : "featureicon stopfloating"}
                   />
                 </center>
                 <center>
@@ -132,7 +139,8 @@ const Features = () => {
       <div style={{ textAlign: "center", marginTop: "4em" }}>
         <img src={signature} />
       </div>
-    </Container>
+      </Container>
+      </VisibilitySensor>
   )
 }
 

@@ -71,6 +71,11 @@
   }
 } 
 
+#stopanimation {
+  animation-play-state: paused;
+}
+
+
 
 @font-face {
   font-family: twcenmt;
@@ -1604,6 +1609,10 @@ html, body {
 	100% {
 		transform: translatey(0px);
 	}
+}
+
+.stopfloating {
+  animation-play-state: paused;
 }
 
 
