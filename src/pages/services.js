@@ -15,7 +15,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <h4 id="heading">Services</h4>
-      <PagesHome firstCom={<Home />} secondComp={<PagesWallpaper />}/>
+      <PagesHome firstComp={<Home />} secondComp={<PagesWallpaper />}/>
       <Services />
       <ServicePoints />
     </Layout>
