@@ -54,7 +54,7 @@ const useStyles = makeStyles(theme => ({
   drawerPaper: {
     //   width: drawerWidth,
     backgroundColor: "rgba(1,26,30,1)",
-    fontSize: "1em",
+    fontSize: "10%",
 
     color: "white",
   },
@@ -74,7 +74,7 @@ const useStyles = makeStyles(theme => ({
       duration: theme.transitions.duration.leavingScreen,
     }),
     margin: "auto",
-    fontSize: "1em",
+    fontSize: "10%",
   },
   contentShift: {
     transition: theme.transitions.create("margin", {
@@ -181,7 +181,9 @@ export default function PersistentDrawerRight({ children }) {
                     padding: "2em",
                     textAlign: "center",
                     cursor: "pointer",
+                    fontSize: "0.7em"
                   }}
+                  className="navtext"
                 >
                   Home
                 </p>
@@ -190,8 +192,11 @@ export default function PersistentDrawerRight({ children }) {
                   style={{
                     padding: "2em",
                     textAlign: "center",
-                    cursor: "pointer",
-                  }}
+                      cursor: "pointer",
+                      fontSize: "0.7em"
+
+                    }}
+                    className="navtext"
                 >
                   {text}
                 </p>

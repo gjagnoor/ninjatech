@@ -13,13 +13,13 @@ const Charger = () => {
     setVisibility(visiblity)
   }
   return (
-    <VisibilitySensor partialVisibility onChange={onChange} scrollCheck={true}>
+    <VisibilitySensor partialVisibility onChange={onChange}>
       <div id="charger">
         <Slide
           direction="right"
           in={isVisible}
           mountOnEnter
-          unmountOnExit
+          // unmountOnExit
           timeout={1000}
         >
           <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>

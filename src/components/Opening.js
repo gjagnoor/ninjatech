@@ -14,6 +14,7 @@ import ARPhone from "../components/ARPhone.js"
 import Charger from "../components/Charger.js"
 import line from "../images/HTML USE IMAGE/line-about.png"
 import { Slider } from "@material-ui/core"
+import $ from "jquery"
 
 const Opening = () => {
   const [isVisible, setVisibility] = useState(false)
@@ -26,64 +27,54 @@ const Opening = () => {
   }
 
   useEffect(() => {
-    setTimeout(() => setState(true), 3000)
+    setTimeout(() => {
+      var text = $(".text")
+      text.removeClass("hidden")
+    }, 2000)
   }, [])
+
+  useEffect(() => {
+    setTimeout(() => {
+      setState(true);
+    }, 4000)
+  }, [])
+
   return (
     <React.Fragment>
       <div id="container___">
-        <div className={!state ? "home___" : "showhome"}>
-          <Layout>
-            <SEO title="Home" />
-            <Home play={true} />
-            <Features />
-            <br />
-            <Design />
-            <Touch />
-            <Qualcomm />
-            <ARPhone />
-            <Charger />
-          </Layout>
-        </div>
-        <div id="landing" className={state ? "slide_" : ""}>
-          <div style={{ display: "flex" }} className="ninjatech___">
-            <Fade in={true} timeout={{ enter: 1000 }}>
-              <h1>N</h1>
-            </Fade>
-            <Fade in={true} timeout={{ enter: 2500 }}>
-              <h1>i</h1>
-            </Fade>
-            <Fade in={true} timeout={{ enter: 3500 }}>
-              <h1>n</h1>
-            </Fade>
-            <Fade in={true} timeout={{ enter: 4500 }}>
-              <h1>j</h1>
-            </Fade>
-            <Fade in={true} timeout={{ enter: 5500 }}>
-              <h1>a</h1>
-            </Fade>
-            <Fade in={true} timeout={{ enter: 6500 }}>
-              <h1>T</h1>
-            </Fade>
-            <Fade in={true} timeout={{ enter: 7500 }}>
-              <h1>e</h1>
-            </Fade>
-            <Fade in={true} timeout={{ enter: 8500 }}>
-              <h1>c</h1>
-            </Fade>
-            <Fade
-              in={true}
-              timeout={{ enter: 9500 }}
-              onEntered={() => setShowLine(true)}
-            >
-              <h1>h</h1>
-            </Fade>
-          </div>
-          <Slide in={showLine} timeout={{ enter: 10500 }}>
-            <div>
-              <img src={line} />
-            </div>
-          </Slide>
-        </div>
+        {!state ? (
+            <div id="landing" className="fadein2">
+              <ul className="text hidden">
+                <li>N</li>
+                <li className="ghost">I</li>
+                <li className="ghost">N</li>
+                <li className="ghost">J</li>
+                <li className="ghost">A</li>
+                <li>T</li>
+                <li>E</li>
+                <li>C</li>
+                <li>H</li>
+              </ul>
+              </div>
+        ) : (
+          <Fade in={state} timeout={{enter: 4000}}>
+
+          <div className={!state ? "home___" : "showhome"}>
+            <Layout>
+              <SEO title="Home" />
+              <Home play={true} />
+              <Features />
+              <br />
+              <Design />
+              <Touch />
+              <Qualcomm />
+              <ARPhone />
+              <Charger />
+            </Layout>
+              </div>
+              </Fade>
+
+        )}
       </div>
     </React.Fragment>
   )

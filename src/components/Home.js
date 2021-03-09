@@ -11,17 +11,16 @@ import phonemid from "../images/HTML USE IMAGE/phone-middle.png"
 import VisibilitySensor from "react-visibility-sensor"
 import CircularProgress from "@material-ui/core/CircularProgress"
 
-const Home = (props) => {
+const Home = props => {
   const [isVisible, setVisibility] = useState(false)
-  const [play, setPlay] = useState(false);
+  const [play, setPlay] = useState(false)
 
   const onChange = visiblity => {
     setVisibility(visiblity)
   }
 
   useEffect(() => {
-    props.play ? setTimeout(() => setPlay(true), 3000) : setPlay(true)
-
+    props.play ? setTimeout(() => setPlay(true), 100) : setPlay(true)
   }, [])
   return (
     <React.Fragment>

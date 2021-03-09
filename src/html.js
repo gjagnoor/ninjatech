@@ -23,6 +23,8 @@ export default function HTML(props) {
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
+            width: "30%",
+            height: "50%"
           }}
         >
           <img src={loading} alt="Loading spinner" width="auto" height="auto" />
