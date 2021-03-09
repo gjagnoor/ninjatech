@@ -14,8 +14,6 @@ const Design = () => {
     setVisibility(visiblity)
   }
   return (
-    <VisibilitySensor partialVisibility onChange={onChange}>
-
     <div id="design">
         <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
             <h5 id="symmetricaldesign">Symmetrical Design</h5>
@@ -39,20 +37,24 @@ const Design = () => {
                 display: "flex",
                 flexWrap: "wrap",
                 justifyContent: "center",
-              }}
+            }}
+            id="designimages"
             >
-              <img src={designphone1} className="designphone" style={{ height: '40%' }}/>
+            <img src={designphone1} className="designphone" style={{ height: '40%' }} />
+            <VisibilitySensor partialVisibility onChange={onChange}>
+
                 <img
                   src={designphone2}
                   id={isVisible ? "animate" : "stopanimation"}
                   className="designphone"
                   style={{height: "65vh", marginBottom: "10em"}}
-                />
+              />
+                    </VisibilitySensor>
+
             </div>
           </center>
         </Container>
       </div>
-      </VisibilitySensor>
 
   )
 }
