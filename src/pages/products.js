@@ -11,7 +11,7 @@ import PagesWallpaper from "../components/PageWallpaper"
 import Home from "../components/Home"
 
 const Products_ = () => {
-  const [isLoading, setIsLoading] = usestate(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setIsLoading(false);

@@ -40,22 +40,7 @@ const Features = () => {
   const classes = useStyles()
   return (
     <Container maxWidth="xl" id="feature">
-      <Fade
-        direction="up"
-        in={true}
-        mountOnEnter
-        unmountOnExit
-        timeout={{ enter: 7000 }}
-      >
         <h5 id="featuresheading">The Ultimate AR Gaming Phone</h5>
-      </Fade>
-      <Fade
-        direction="up"
-        in={true}
-        mountOnEnter
-        unmountOnExit
-        timeout={{ enter: 7000 }}
-      >
         <center>
         <Grid
           container
@@ -98,7 +83,6 @@ const Features = () => {
           ))}
           </Grid>
           </center>
-      </Fade>
       <center>
       <Grid
         container
