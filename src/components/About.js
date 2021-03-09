@@ -31,7 +31,7 @@ const About = () => {
         timeout={1000}
       >
         <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
-          <h5 id="aboutheading">About Ninja Tech</h5>
+          <h5 id="aboutheading">About NinjaTech</h5>
           <center>
             <img src={lineAbout} id="aboutline" />
           </center>

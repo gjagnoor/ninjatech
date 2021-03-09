@@ -9,28 +9,29 @@ import Products from "../components/Products.js"
 import ProductsSlider from "../components/ProductsSlider.js"
 import PagesWallpaper from "../components/PageWallpaper"
 import Home from "../components/Home"
-import loading from "../images/loading.gif";
-
+import loading from "../images/loading.gif"
 
 const Products_ = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    setIsLoading(false);
-  }, []);
+    setIsLoading(false)
+  }, [])
   return (
     <React.Fragment>
-      {
-        isLoading ? <div id="loadingscreen">
+      {isLoading ? (
+        <div id="loadingscreen">
           <img src={loading} />
-        </div> :     <Layout>
-        <SEO title="Home" />
-        <h4 id="heading">Products</h4>
-        <PagesHome firstComp={<PagesWallpaper />} secondComp={<Home />} />
-        <Products />
-        <ProductsSlider />
-      </Layout>
-      }
+        </div>
+      ) : (
+        <Layout>
+          <SEO title="Home" />
+          <h4 id="heading">Products</h4>
+          <PagesHome firstComp={<PagesWallpaper />} secondComp={<Home />} />
+          <Products />
+          <ProductsSlider />
+        </Layout>
+      )}
     </React.Fragment>
   )
 }

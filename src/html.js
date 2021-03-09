@@ -15,22 +15,17 @@ export default function HTML(props) {
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes} style={{ backgroundColor: "black" }}>
-      <div
+        <div
           key={`loader`}
           id="___loader"
           style={{
             position: "fixed",
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)'
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
           }}
         >
-            <img
-              src={loading}
-              alt="Loading spinner"
-              width="auto"
-              height="auto"
-            />
+          <img src={loading} alt="Loading spinner" width="auto" height="auto" />
         </div>
         <div
           key={`body`}

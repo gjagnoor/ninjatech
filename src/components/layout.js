@@ -61,13 +61,17 @@ const Layout = ({ children }) => {
       <div
         class="scroller"
         onClick={() =>
-          document.getElementById("home") ? document.getElementById("home").scrollIntoView({
-            behavior: "smooth",
-          }) : document.getElementById("pageshome") ? document.getElementById("pageshome").scrollIntoView({
-            behavior: "smooth",
-          }) : document.getElementById("videodemo").scrollIntoView({
-            behavior: "smooth",
-          })
+          document.getElementById("home")
+            ? document.getElementById("home").scrollIntoView({
+                behavior: "smooth",
+              })
+            : document.getElementById("pageshome")
+            ? document.getElementById("pageshome").scrollIntoView({
+                behavior: "smooth",
+              })
+            : document.getElementById("videodemo").scrollIntoView({
+                behavior: "smooth",
+              })
         }
         style={{ zIndex: 10 }}
       >
@@ -93,7 +97,7 @@ const Layout = ({ children }) => {
           style={{
             top: "10em",
             position: "relative",
-            height: '100vh'
+            height: "100vh",
           }}
           id="footercenter"
         >

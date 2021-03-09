@@ -11,12 +11,18 @@ import phonemid from "../images/HTML USE IMAGE/phone-middle.png"
 import VisibilitySensor from "react-visibility-sensor"
 import CircularProgress from "@material-ui/core/CircularProgress"
 
-const Home = () => {
+const Home = (props) => {
   const [isVisible, setVisibility] = useState(false)
+  const [play, setPlay] = useState(false);
 
   const onChange = visiblity => {
     setVisibility(visiblity)
   }
+
+  useEffect(() => {
+    props.play ? setTimeout(() => setPlay(true), 3000) : setPlay(true)
+
+  }, [])
   return (
     <React.Fragment>
       <VisibilitySensor partialVisibility onChange={onChange}>
@@ -32,28 +38,28 @@ const Home = () => {
             >
               <Slide
                 direction="right"
-                in={isVisible}
+                in={play}
                 mountOnEnter
                 // unmountOnExit
-                timeout={{enter: 2000}}
+                timeout={{ enter: 2000 }}
               >
                 <img src={phonel} className="homephone" />
               </Slide>
               <Slide
                 direction="down"
-                in={isVisible}
+                in={play}
                 mountOnEnter
                 // unmountOnExit
-                timeout={{enter: 3000}}
+                timeout={{ enter: 3000 }}
               >
                 <img src={phonemid} className="homephonemid" />
               </Slide>
               <Slide
                 direction="left"
-                in={isVisible}
+                in={play}
                 mountOnEnter
                 // unmountOnExit
-                timeout={{enter: 2000}}
+                timeout={{ enter: 2000 }}
               >
                 <img src={phoner} className="homephone" />
               </Slide>

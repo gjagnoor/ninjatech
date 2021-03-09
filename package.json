@@ -34,6 +34,7 @@
     "react-loadable": "^5.5.0",
     "react-material-ui-carousel": "^2.2.1",
     "react-skrollr": "^1.0.4",
+    "react-transition-group": "^4.4.1",
     "react-visibility-sensor": "^5.1.1",
     "skrollr": "^0.6.26"
   },
