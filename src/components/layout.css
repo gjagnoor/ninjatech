@@ -1638,6 +1638,10 @@ html, body {
   color: #3a8ea1;
 }
 
+.featureicon_ {
+  color: #3a8ea1;
+}
+
 .featureicon:hover {
   color: white;
 }
