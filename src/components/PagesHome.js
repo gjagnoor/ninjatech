@@ -12,8 +12,8 @@ import VisibilitySensor from "react-visibility-sensor"
 import Carousel from "react-material-ui-carousel"
 import PagesWallpaper from "../images/HTML USE IMAGE/pageswallpaper.jpg"
 
-const PagesHome = (props) => {
-  const [isVisible, setVisibility] = useState(false);
+const PagesHome = props => {
+  const [isVisible, setVisibility] = useState(false)
 
   const onChange = visiblity => {
     setVisibility(visiblity)
@@ -25,14 +25,10 @@ const PagesHome = (props) => {
         <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
           <Carousel>
             <center>
-              <div className="slide">
-                {props.firstComp}
-              </div>
+              <div className="slide">{props.firstComp}</div>
             </center>
             <center>
-              <div className="slide">
-                {props.secondComp}
-              </div>
+              <div className="slide">{props.secondComp}</div>
             </center>
           </Carousel>
         </Container>

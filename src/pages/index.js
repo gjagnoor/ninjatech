@@ -11,32 +11,24 @@ import Touch from "../components/Touch.js"
 import Qualcomm from "../components/Qualcomm.js"
 import ARPhone from "../components/ARPhone.js"
 import Charger from "../components/Charger.js"
-import loading from "../images/loading.gif";
-
+import loading from "../images/loading.gif"
+import Opening from "../components/Opening.js"
 
 const HomePage = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     setIsLoading(false)
-  }, []);
+  }, [])
   return (
     <React.Fragment>
-      {
-        isLoading ? <div id="loadingscreen">
+      {isLoading ? (
+        <div id="loadingscreen">
           <img src={loading} />
-        </div> :  <Layout>
-          <SEO title="Home" />
-          <Home />
-          <Features />
-          <br />
-          <Design />
-          <Touch />
-          <Qualcomm />
-          <ARPhone />
-          <Charger />
-      </Layout>
-      }
+        </div>
+      ) : (
+        <Opening />
+      )}
     </React.Fragment>
   )
 }

@@ -9,27 +9,29 @@ import About from "../components/About.js"
 import Convince from "../components/Convince.js"
 import Home from "../components/Home.js"
 import PageWallpaper from "../components/PageWallpaper"
-import loading from "../images/loading.gif";
+import loading from "../images/loading.gif"
 
 const IndexPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    setIsLoading(false);
-  }, []);
+    setIsLoading(false)
+  }, [])
   return (
     <React.Fragment>
-      {
-        isLoading ? <div id="loadingscreen">
+      {isLoading ? (
+        <div id="loadingscreen">
           <img src={loading} />
-        </div> :  <Layout>
-        <SEO title="Home" />
-        <h4 id="heading">About Us</h4>
-        <PagesHome firstComp={<PageWallpaper />} secondComp={ <Home />}/>
-        <About />
-        <Convince />
-      </Layout>
-      }
+        </div>
+      ) : (
+        <Layout>
+          <SEO title="Home" />
+          <h4 id="heading">About Us</h4>
+          <PagesHome firstComp={<PageWallpaper />} secondComp={<Home />} />
+          <About />
+          <Convince />
+        </Layout>
+      )}
     </React.Fragment>
   )
 }

@@ -5,18 +5,20 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    setIsLoading(false);
-  }, []);
+    setIsLoading(false)
+  }, [])
   return (
     <React.Fragment>
-      {
-        isLoading ? <div></div> :     <Layout>
-        <SEO title="Home" />
-      </Layout>
-      }
+      {isLoading ? (
+        <div></div>
+      ) : (
+        <Layout>
+          <SEO title="Home" />
+        </Layout>
+      )}
     </React.Fragment>
   )
 }
