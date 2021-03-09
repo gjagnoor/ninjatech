@@ -10,7 +10,7 @@ import { Button } from "@material-ui/core"
 
 const About = () => {
   return (
-    <div id="about video">
+    <div id="about">
       <Slide
         direction="right"
         in={true}

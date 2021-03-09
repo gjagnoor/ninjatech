@@ -7,6 +7,8 @@ import SEO from "../components/seo"
 import PagesHome from "../components/PagesHome.js"
 import About from "../components/About.js"
 import Convince from "../components/Convince.js"
+import Home from "../components/Home.js"
+import PageWallpaper from "../components/PageWallpaper"
 
 const IndexPage = () => {
   return (
@@ -14,7 +16,7 @@ const IndexPage = () => {
       <Layout>
         <SEO title="Home" />
         <h4 id="heading">About Us</h4>
-        <PagesHome />
+        <PagesHome firstComp={<PageWallpaper />} secondComp={ <Home />}/>
         <About />
         <Convince />
       </Layout>

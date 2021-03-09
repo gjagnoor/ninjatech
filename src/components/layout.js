@@ -65,7 +65,7 @@ const Layout = ({ children }) => {
             behavior: "smooth",
           }) : document.getElementById("pageshome") ? document.getElementById("pageshome").scrollIntoView({
             behavior: "smooth",
-          }) : document.getElementById("video").scrollIntoView({
+          }) : document.getElementById("videodemo").scrollIntoView({
             behavior: "smooth",
           })
         }

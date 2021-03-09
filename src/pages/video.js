@@ -11,8 +11,6 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h4 id="heading">Video</h4>
-      <PagesHome />
       <Video />
     </Layout>
   )

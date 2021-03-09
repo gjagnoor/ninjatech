@@ -60,13 +60,14 @@ const Features = () => {
         <Grid
           container
           className={classes.root}
-          spacing={2}
+          spacing={10}
           xs={12}
           sm={12}
           md={12}
           lg={12}
           xl={12}
-          style={{ marginTop: "4em" }}
+            style={{ marginTop: "10em" }}
+            className="featuregrid"
         >
           {features.slice(0, 4).map((value, i) => (
             <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
@@ -74,7 +75,7 @@ const Features = () => {
               <div
                 style={{
                   display: "flex",
-                  justifyContent: "space-between",
+                  justifyContent: "center",
                   flexWrap: "wrap",
                 }}
                 className="feature"
@@ -83,17 +84,14 @@ const Features = () => {
                   <center>
                     <FontAwesomeIcon
                       icon={value[1]}
-                      size="2x"
+                      size="3x"
                       className="featureicon feature-icon_"
                     />
                   </center>
                   <center>
-                    <p>{value[0]}</p>
+                    <p style={{textAlign: "center"}}>{value[0]}</p>
                   </center>
                 </div>
-                <center>
-                  {i === 3 ? null : <img src={line} className="line" />}
-                </center>
                 </div>
               </center>
             </Grid>
@@ -101,46 +99,52 @@ const Features = () => {
           </Grid>
           </center>
       </Fade>
+      <center>
       <Grid
         container
         className={classes.root}
-        spacing={2}
+        spacing={10}
         xs={12}
         sm={12}
         md={12}
         lg={12}
         xl={12}
-        style={{ marginTop: "4em" }}
+          style={{ marginTop: "10em" }}
+          className="featuregrid"
+
       >
         {features.slice(4).map((value, i) => (
           <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
+                                          <center>
+
             <div
               style={{
                 display: "flex",
-                justifyContent: "space-between",
-                flexWrap: "wrap",
+                justifyContent: "center",
+                  flexWrap: "wrap",
               }}
-              className="feature"
-            >
+              className="feature feature2"
+              >
+                <center>
               <div>
                 <center>
                   <FontAwesomeIcon
                     icon={value[1]}
-                    size="2x"
+                    size="3x"
                     className="featureicon feature-icon_"
                   />
                 </center>
                 <center>
-                  <p>{value[0]}</p>
+                  <p style={{textAlign: "center"}}>{value[0]}</p>
                 </center>
-              </div>
-              <center>
-                {i === 3 ? null : <img src={line} className="line" />}
-              </center>
+                  </div>
+                  </center>
             </div>
+              </center>
           </Grid>
         ))}
-      </Grid>
+        </Grid>
+        </center>
       <div style={{ textAlign: "center", marginTop: "4em" }}>
         <img src={signature} />
       </div>
