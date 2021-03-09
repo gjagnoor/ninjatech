@@ -9,6 +9,8 @@ import Products from "../components/Products.js"
 import ProductsSlider from "../components/ProductsSlider.js"
 import PagesWallpaper from "../components/PageWallpaper"
 import Home from "../components/Home"
+import loading from "../images/loading.gif";
+
 
 const Products_ = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -19,7 +21,9 @@ const Products_ = () => {
   return (
     <React.Fragment>
       {
-        isLoading ? <div></div> :     <Layout>
+        isLoading ? <div id="loadingscreen">
+          <img src={loading} />
+        </div> :     <Layout>
         <SEO title="Home" />
         <h4 id="heading">Products</h4>
         <PagesHome firstComp={<PagesWallpaper />} secondComp={<Home />} />

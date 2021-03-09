@@ -17,13 +17,6 @@ const Design = () => {
     <VisibilitySensor partialVisibility onChange={onChange}>
 
     <div id="design">
-      <Slide
-        direction="right"
-        in={true}
-        mountOnEnter
-        unmountOnExit
-        timeout={{enter: 2000}}
-      >
         <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
             <h5 id="symmetricaldesign">Symmetrical Design</h5>
             <p id="degree">
@@ -58,7 +51,6 @@ const Design = () => {
             </div>
           </center>
         </Container>
-      </Slide>
       </div>
       </VisibilitySensor>
 

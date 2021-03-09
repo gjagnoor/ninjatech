@@ -11,6 +11,8 @@ import Touch from "../components/Touch.js"
 import Qualcomm from "../components/Qualcomm.js"
 import ARPhone from "../components/ARPhone.js"
 import Charger from "../components/Charger.js"
+import loading from "../images/loading.gif";
+
 
 const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,7 +23,9 @@ const HomePage = () => {
   return (
     <React.Fragment>
       {
-        isLoading ? <div></div> :  <Layout>
+        isLoading ? <div id="loadingscreen">
+          <img src={loading} />
+        </div> :  <Layout>
           <SEO title="Home" />
           <Home />
           <Features />

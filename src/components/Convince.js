@@ -31,7 +31,7 @@ const About = () => {
           </center>
           <center>
             <p className="aboutp2">
-              We deal in Mobile Phones.Ninja tech deals with AR Phone,a
+              We deal in Mobile Phones. NinjaTech deals with AR Phone,a
               technology which is unique and interesting. Ninja Logo represents
               the Skilled Fighter.Then lines are knows as traces which also
               represents the technology.
@@ -39,7 +39,7 @@ const About = () => {
           </center>
           <center>
             <p className="aboutp2">
-              Ninja Tech is a whole new generation of fast and intelligent. The
+              NinjaTech is a whole new generation of fast and intelligent. The
               25% faster CPU, GPU and 100% improved system enables a
               breathtaking experience in Augmented Reality, browsing and more.
             </p>
