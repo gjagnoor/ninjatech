@@ -3,8 +3,11 @@
   "main.js.map": "render-page.js.map",
   "static/900plus.png": "static/900plus-4d8ac6cfe8124990746e51cee73bb32a.png",
   "static/about-phone.png": "static/about-phone-1876fd6dbb5d904b926b1bd4c295df8c.png",
+  "static/banner.jpg": "static/banner-de097b16a139950dafb06454f129e084.jpg",
+  "static/chargerbackground.png": "static/chargerbackground-1b7fdd671979a63ade93bbe93ef3042c.png",
   "static/chargerphone.png": "static/chargerphone-5c8a8bac4d4e20fe789eaab37c3a1c27.png",
   "static/coolingsystem.png": "static/coolingsystem-ba8e60a04d4b99ae94ec79fb40b99083.png",
+  "static/design.png": "static/design-1da00e31739cf14ceee7a71bed330f29.png",
   "static/designphone1.png": "static/designphone1-6c644a5297af54d51a39a999184c923f.png",
   "static/designphone2.png": "static/designphone2-f64c83e105c6daf1ffe722959e5407c6.png",
   "static/home-background-bright.png": "static/home-background-bright-fee776b8220460edacb2a52187d14d2c.png",
@@ -23,6 +26,7 @@
   "static/phonel.png": "static/phonel-aa6e22cce9ed97e4b553a024de02204b.png",
   "static/phoner.png": "static/phoner-f3f6f5cd76f65129973d7fb353c0ef27.png",
   "static/products.png": "static/products-1e4d3c7ee3466c44e2a806c451f84307.png",
+  "static/qualcomm.jpg": "static/qualcomm-a22104a34d3f8499326c7bf39ecfb6eb.jpg",
   "static/qualcommphone.png": "static/qualcommphone-e1d8138d21cd2de8c513d7e5bd9ecdd1.png",
   "static/rate.png": "static/rate-4ad97abbd54a50a5193a00f4538469c2.png",
   "static/repair.png": "static/repair-11c713af63178558f013593b095cc27a.png",
@@ -32,5 +36,6 @@
   "static/setup.png": "static/setup-786d253a41fbc4192adee612545c9cd1.png",
   "static/snapdragon.png": "static/snapdragon-36e251981b41dfeb94e4c660df921aa2.png",
   "static/spiderman.png": "static/spiderman-8e2b8f7e76fbc38761de46effc63e662.png",
+  "static/touch-background.jpg": "static/touch-background-85e235e43ec84a63f05e172d1a566a0d.jpg",
   "static/touch.png": "static/touch-e9ebf1d74eaadec7d46b93b3a6349a1d.png"
 }
