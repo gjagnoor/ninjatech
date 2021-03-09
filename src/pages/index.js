@@ -13,9 +13,15 @@ import ARPhone from "../components/ARPhone.js"
 import Charger from "../components/Charger.js"
 
 const HomePage = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setIsLoading(false)
+  }, []);
   return (
     <React.Fragment>
-        <Layout>
+      {
+        isLoading ? <div></div> :  <Layout>
           <SEO title="Home" />
           <Home />
           <Features />
@@ -25,7 +31,8 @@ const HomePage = () => {
           <Qualcomm />
           <ARPhone />
           <Charger />
-        </Layout>
+      </Layout>
+      }
     </React.Fragment>
   )
 }
