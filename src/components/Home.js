@@ -25,7 +25,7 @@ const Home = props => {
   return (
     <React.Fragment>
       <VisibilitySensor partialVisibility onChange={onChange}>
-        <div>
+        <div id="home__">
           <center>
             <div
             >
