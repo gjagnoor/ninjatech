@@ -15,6 +15,36 @@ import Charger from "../components/Charger.js"
 import line from "../images/HTML USE IMAGE/line-about.png"
 import { Slider } from "@material-ui/core"
 import $ from "jquery"
+import { render } from "react-dom";
+import { Parallax, Background } from "react-parallax";
+import banner from "../images/HTML USE IMAGE/banner.jpg";
+import features from "../images/section-2.png";
+import touchb from "../images/HTML USE IMAGE/touch-background.jpg";
+import designb from "../images/HTML USE IMAGE/design.png";
+import qualcommb from "../images/HTML USE IMAGE/qualcomm.jpg";
+import charger from "../images/HTML USE IMAGE/chargerbackground.png";
+
+const styles = {
+  // fontFamily: "sans-serif",
+  textAlign: "center"
+};
+const insideStyles = {
+  background: "white",
+  padding: 20,
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%,-50%)"
+};
+const image1 =
+  banner;
+const image2 =
+  features;
+const image3 = designb;
+const image4 = touchb;
+const image5 = qualcommb;
+const image6 = "black";
+const image7 = charger;
 
 const Opening = () => {
   const [isVisible, setVisibility] = useState(false)
@@ -60,17 +90,47 @@ const Opening = () => {
           <Fade in={state} timeout={{enter: 4000}}>
 
           <div className={!state ? "home___" : "showhome"}>
-            <Layout>
-              <SEO title="Home" />
-              <Home play={true} />
-              <Features />
-              <br />
-              <Design />
-              <Touch />
-              <Qualcomm />
-              <ARPhone />
-              <Charger />
-            </Layout>
+          <Layout>
+  <div style={styles}>
+    <Parallax bgImage={image1} strength={500}>
+      <div style={{ height: 'auto' }}>
+        {/* <div style={insideStyles}> */}
+          <Home />
+        {/* </div> */}
+      </div>
+    </Parallax>
+    <Parallax bgImage={image2} blur={{ min: -1, max: 3 }}>
+      <div style={{ height: "auto" }}>
+        <Features />
+      </div>
+    </Parallax>
+    <Parallax bgImage={image3} strength={-100}>
+      <div style={{ height: "auto" }}>
+        <Design />
+      </div>
+    </Parallax>
+    <Parallax bgImage={image4} strength={-100}>
+      <div style={{ height: "100vh" }}>
+        <Touch />
+      </div>
+    </Parallax>
+    <Parallax bgImage={image5} strength={-100}>
+      <div style={{ height: "auto" }}>
+        <Qualcomm />
+      </div>
+    </Parallax>
+    <Parallax bgImage={image6} strength={-100}>
+      <div style={{ height: "auto" }}>
+        <ARPhone />
+      </div>
+    </Parallax>
+    <Parallax bgImage={image7} strength={-100}>
+      <div style={{ height: "auto" }}>
+        <Charger />
+      </div>
+    </Parallax>
+    </div>
+    </Layout>
               </div>
               </Fade>
 

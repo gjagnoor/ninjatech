@@ -25,15 +25,9 @@ const Home = props => {
   return (
     <React.Fragment>
       <VisibilitySensor partialVisibility onChange={onChange}>
-        <div id="home">
+        <div>
           <center>
             <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                justifyContent: "center",
-              }}
-              id="home_"
             >
               <Slide
                 direction="right"
