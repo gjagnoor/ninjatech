@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -11,14 +11,24 @@ import Home from "../components/Home"
 import PagesWallpaper from "../components/PageWallpaper"
 
 const IndexPage = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
+
   return (
-    <Layout>
-      <SEO title="Home" />
-      <h4 id="heading">Services</h4>
-      <PagesHome firstComp={<Home />} secondComp={<PagesWallpaper />}/>
-      <Services />
-      <ServicePoints />
-    </Layout>
+    <React.Fragment>
+      {
+        isLoading ? <div></div> :     <Layout>
+        <SEO title="Home" />
+        <h4 id="heading">Services</h4>
+        <PagesHome firstComp={<Home />} secondComp={<PagesWallpaper />}/>
+        <Services />
+        <ServicePoints />
+      </Layout>
+      }
+    </React.Fragment>
   )
 }
 

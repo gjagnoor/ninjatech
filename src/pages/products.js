@@ -11,14 +11,23 @@ import PagesWallpaper from "../components/PageWallpaper"
 import Home from "../components/Home"
 
 const Products_ = () => {
+  const [isLoading, setIsLoading] = usestate(true);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
   return (
-    <Layout>
-      <SEO title="Home" />
-      <h4 id="heading">Products</h4>
-      <PagesHome firstComp={<PagesWallpaper />} secondComp={<Home />} />
-      <Products />
-      <ProductsSlider />
-    </Layout>
+    <React.Fragment>
+      {
+        isLoading ? <div></div> :     <Layout>
+        <SEO title="Home" />
+        <h4 id="heading">Products</h4>
+        <PagesHome firstComp={<PagesWallpaper />} secondComp={<Home />} />
+        <Products />
+        <ProductsSlider />
+      </Layout>
+      }
+    </React.Fragment>
   )
 }
 

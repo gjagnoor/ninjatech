@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -8,11 +8,20 @@ import PagesHome from "../components/PagesHome.js"
 import Video from "../components/Video.js"
 
 const IndexPage = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
   return (
-    <Layout>
-      <SEO title="Home" />
-      <Video />
-    </Layout>
+    <React.Fragment>
+      {
+        isLoading ? <div></div> :     <Layout>
+        <SEO title="Home" />
+        <Video />
+      </Layout>
+      }
+    </React.Fragment>
   )
 }
 

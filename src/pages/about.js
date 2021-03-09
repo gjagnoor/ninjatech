@@ -11,15 +11,22 @@ import Home from "../components/Home.js"
 import PageWallpaper from "../components/PageWallpaper"
 
 const IndexPage = () => {
+  const [isLoading, setIsLoading] = usestate(true);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
   return (
     <React.Fragment>
-      <Layout>
+      {
+        isLoading ? <div></div> :  <Layout>
         <SEO title="Home" />
         <h4 id="heading">About Us</h4>
         <PagesHome firstComp={<PageWallpaper />} secondComp={ <Home />}/>
         <About />
         <Convince />
       </Layout>
+      }
     </React.Fragment>
   )
 }
