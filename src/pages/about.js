@@ -11,7 +11,7 @@ import Home from "../components/Home.js"
 import PageWallpaper from "../components/PageWallpaper"
 
 const IndexPage = () => {
-  const [isLoading, setIsLoading] = usestate(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setIsLoading(false);
