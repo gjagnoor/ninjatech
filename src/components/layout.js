@@ -97,12 +97,12 @@ const Layout = ({ children }) => {
           style={{
             top: "10em",
             position: "relative",
-            height: "43em",
+            height: "65em",
             overflowY: "hidden",
           }}
           id="footercenter"
         >
-          <footer style={{ height: "40em", overflowY: "hidden" }}>
+          <footer style={{ height: "65em", overflowY: "hidden" }}>
             <center>
               <h5
                 style={{
