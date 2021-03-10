@@ -597,6 +597,14 @@ h1, h2, h3, h4, h4, h5, h6 {
     left: 45% !important;
   }
 
+  .next {
+    left: 44% !important;
+  }
+
+  .next li {
+    font-size: 1em !important;
+  }
+
   #map {
     /* position: fixed; */
     animation: 2s infinite alternate circle;
@@ -807,6 +815,11 @@ h1, h2, h3, h4, h4, h5, h6 {
 /* tablets */
 
 @media only screen and (min-device-width: 768px){
+
+
+  .next li {
+    font-size: 2em !important;
+  }
 
   .text li {
     font-size: 4em !important;
