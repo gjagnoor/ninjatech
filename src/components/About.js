@@ -21,6 +21,7 @@ const About = () => {
       false
     )
   }, [])
+  // about section starts here
   return (
     <div id="about">
       <Slide
@@ -56,5 +57,8 @@ const About = () => {
     </div>
   )
 }
+// about section ends here
 
 export default About
+
+

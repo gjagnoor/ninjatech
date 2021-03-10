@@ -12,6 +12,7 @@ const ARPhone = () => {
   const onChange = visiblity => {
     setVisibility(visiblity)
   }
+  // AR Phone section for homepage starts here 
   return (
     <div id="ARPhone">
       <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
@@ -53,5 +54,7 @@ const ARPhone = () => {
     </div>
   )
 }
+
+// AR Phone section for homepage ends here
 
 export default ARPhone
