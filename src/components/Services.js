@@ -58,14 +58,12 @@ const Services = () => {
                 <div>
                   <p className="service-heading">End to End IT Services</p>
                   <p className="servicep">
-                    We handle all the activities involved to meet your
-                    requirements of hardware, software and systems keeping in
-                    mind the demands of your growing business. Our End-to-end
-                    solution eliminates hassles, reduces the costs, resources
-                    and time involved in the solution installation,
-                    integrationand setup. Trend with the leader for achieving
-                    effective everyday business management with a wide range of
-                    benefits
+                    We handle all the services involved to meet your
+                    requirements of hardware, software, and systems. Our
+                    End-to-end solution eliminates hassles, reduces the costs,
+                    resources and time involved in solution installation,
+                    integration, and setup. Achieve effective everyday
+                    management with a wide range of benefits.
                   </p>
                 </div>
               </div>
@@ -80,13 +78,16 @@ const Services = () => {
                 <div>
                   <p className="service-heading">Cloud Computing</p>
                   <p className="servicep">
-                    AR cloud technology enables the unification of the physical
-                    and digital world to create immersive experiences like the
-                    one just described. This technology uses a common interface
-                    to deliver persistent, collaborative and contextual digital
-                    content overlaid onto people, objects and locations. This
-                    provides users with information and services directly tied
-                    to every aspect of their physical surroundings.{" "}
+                    AR cloud is a real time 3d map of the world, overlays
+                    the real world, and combines the physical
+                    and digital world to create immersive experience. Imagine
+                    you're walking in an unfamiliar city and decide to stop for
+                    lunch. You put your AR-enabled glasses and search a
+                    restaurant. After you select a place, you put the glasses
+                    on once again and a virtual menu appears on the table. This
+                    technology uses a common interface to deliver persistent,
+                    collaborative and contextual digital content overlaid onto
+                    people, objects and locations.{" "}
                   </p>
                 </div>
               </div>
@@ -119,14 +120,14 @@ const Services = () => {
                 <div>
                   <p className="service-heading">Cyber Security</p>
                   <p className="servicep">
-                    A cyber liability insurance helps an organisation mitigate
-                    the financial loss to business due to data breach or any
+                    A cyber liability insurance helps an organization mitigate
+                    the financial loss due to data breach or any
                     cyber risk. It also covers for legal costs and damages
-                    resulting from the data breach.Also called as “Cyber
-                    Security insurance” or “Cyber risk Insurance” this is an
+                    resulting from the data breach. Also called the “Cyber
+                    Security Insurance” or “Cyber Risk Insurance”, this is an
                     insurance policy that pays for both first and third party
                     losses as a result of a phones-based attack or malfunction
-                    of information technology systems.{" "}
+                    of information technology system.{" "}
                   </p>
                 </div>
               </div>
@@ -142,8 +143,8 @@ const Services = () => {
                 <div>
                   <p className="service-heading">Lifetime Repair</p>
                   <p className="servicep">
-                    Every repair done by NTech comes with a lifetime warranty on
-                    all parts and labor associated with the preceding repair.{" "}
+                    Every repair done by NinjaTech comes with a lifetime warranty on
+                    all parts and labor associated with the preceeding repair.{" "}
                   </p>
                 </div>
               </div>

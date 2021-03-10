@@ -18,10 +18,10 @@ const Touch = () => {
           <h5 id="touchheading">Master Touch 2.0</h5>
           <div>
             <p className="touchtext">
-              Master Touch 2.O lets you set a custom touch zone,
+              NTech's Master Touch 2.O lets you set a custom touch zone,
             </p>
             <p className="touchtext2">
-              the NTech responds to pressure controls even on screen edge.
+              allowing you to respond to pressure controls even on screen edges.
             </p>
           </div>
         </Container>

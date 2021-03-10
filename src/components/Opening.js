@@ -58,8 +58,8 @@ const Opening = () => {
     setTimeout(() => {
       var text = $(".text")
       text.removeClass("hidden")
-      var next = $(".next");
-      next.removeClass("hidden");
+      var next = $(".next")
+      next.removeClass("hidden")
     }, 2000)
   }, [])
 
@@ -86,26 +86,26 @@ const Opening = () => {
               <li>H</li>
             </ul>
             <div>
-            <ul className="hidden next">
-              <li className="ghost">S</li>
-              <li className="ghost">e</li>
-              <li className="ghost">m</li>
-              <li className="ghost">p</li>
-              <li className="ghost">e</li>
-              <li className="ghost">r</li>
-              <li className="spaced ghost">E</li>
-              <li className="ghost">n</li>
-              <li className="ghost">g</li>
-              <li className="ghost">i</li>
-              <li className="ghost">n</li>
-              <li className="ghost">e</li>
-              <li className="ghost">e</li>
-              <li className="ghost">r</li>
-              <li className="ghost">i</li>
-              <li className="ghost">n</li>
-              <li className="ghost">g</li>
+              <ul className="hidden next">
+                <li className="ghost">S</li>
+                <li className="ghost">e</li>
+                <li className="ghost">m</li>
+                <li className="ghost">p</li>
+                <li className="ghost">e</li>
+                <li className="ghost">r</li>
+                <li className="spaced ghost">E</li>
+                <li className="ghost">n</li>
+                <li className="ghost">g</li>
+                <li className="ghost">i</li>
+                <li className="ghost">n</li>
+                <li className="ghost">e</li>
+                <li className="ghost">e</li>
+                <li className="ghost">r</li>
+                <li className="ghost">i</li>
+                <li className="ghost">n</li>
+                <li className="ghost">g</li>
               </ul>
-              </div>
+            </div>
           </div>
         ) : (
           <Fade in={state} timeout={{ enter: 4000 }}>

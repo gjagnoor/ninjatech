@@ -31,17 +31,17 @@ const About = () => {
           </center>
           <center>
             <p className="aboutp2">
-              We deal in Mobile Phones. NinjaTech deals with AR Phone,a
+              We deal in Mobile Phones. NinjaTech deals with AR Phones, a
               technology which is unique and interesting. Ninja Logo represents
-              the Skilled Fighter.Then lines are knows as traces which also
-              represents the technology.
+              the Skilled Fighter. The lines are known as traces which also
+              represent technology.
             </p>
           </center>
           <center>
             <p className="aboutp2">
-              NinjaTech is a whole new generation of fast and intelligent. The
-              25% faster CPU, GPU and 100% improved system enables a
-              breathtaking experience in Augmented Reality, browsing and more.
+              NinjaTech is a whole new generation of fast and intelligent
+              devices. The 25% faster CPU, GPU and, 100% improved system enables
+              a breathtaking experience in Augmented Reality, browsing and more.
             </p>
           </center>
           <Slide

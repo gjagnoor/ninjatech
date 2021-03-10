@@ -26,15 +26,14 @@ const ARPhone = () => {
           }}
         >
           <p id="arphonesp">
-            Augmented reality is used to enhance natural environments or
-            situations and offer perceptually enriched experiences. With the
-            help of advanced AR Technologies . The information about the
-            surrounding real world of the user becomes interactive and digitally
-            manipulated. The AR phone can create a virtual environment with a
-            projection technology giving a feel of futuristic entertainment.
-            NinjaTech specializes in new-age technology, it designs, develops,
-            manufactures, and sells Tech enabled smartphones. Working with the
-            ethos of ‘Smarter Technology' for All
+            Augmented Reality is used to enhance your natural environment and
+            offer a perceptually enriched experience with the help of advanced
+            AR Technology. The information about the surrounding real world
+            becomes interactive. The AR phone can create a virtual environment
+            with a projection technology, giving a feel of futuristic
+            entertainment. NinjaTech specializes in new-age technology. It
+            designs, develops, manufactures, and sells Tech enabled smartphones.
+            Working with the ethos of ‘Smarter Technology' for All.
           </p>
           <VisibilitySensor
             partialVisibility

@@ -36,8 +36,8 @@ const Charger = () => {
               <center>
                 <p id="chargerp">
                   The NinjaTech Pro feature charging while discharging in
-                  parallel allows 3300mAh for maximum battery output and a more
-                  stable battery life. A NinjaTech+ specialized charging chipset
+                  parallel allows 3300mAh of maximum battery output and a more
+                  stable battery life. NinjaTech+ specialized charging chipset
                   effectively manages power flow battery system.
                 </p>
               </center>

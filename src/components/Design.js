@@ -23,11 +23,8 @@ const Design = () => {
         <div>
           <center>
             <p id="designp">
-              Grip and control better with two diamond shaped on back
-            </p>
-            <p id="designp2">
-              of phone, improving your handling however you used your phone.
-              Symmetrical and even, the NINJATECH.
+              Grip and control better with an ergonomic back. Improved handling.
+              Symmetrical and even!
             </p>
           </center>
         </div>

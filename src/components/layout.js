@@ -102,7 +102,7 @@ const Layout = ({ children }) => {
           }}
           id="footercenter"
         >
-          <footer style={{height: "40em", overflowY: "hidden"}}>
+          <footer style={{ height: "40em", overflowY: "hidden" }}>
             <center>
               <h5
                 style={{
@@ -129,7 +129,7 @@ const Layout = ({ children }) => {
               </div>
               <div style={{ marginLeft: "3%" }}>
                 <p style={{ textAlign: "center", marginBottom: 0 }}>
-                  leave your contact details we will contact you
+                  Leave your contact details with us. We will contact you
                 </p>
                 <p style={{ textAlign: "center" }}>
                   within an hour for a detailed consultation.
