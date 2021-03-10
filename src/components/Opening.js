@@ -94,9 +94,7 @@ const Opening = () => {
   <div style={styles}>
     <Parallax bgImage={image1} strength={500}>
       <div style={{ height: 'auto' }}>
-        {/* <div style={insideStyles}> */}
           <Home />
-        {/* </div> */}
       </div>
     </Parallax>
     <Parallax bgImage={image2} blur={{ min: -1, max: 3 }}>
@@ -110,7 +108,7 @@ const Opening = () => {
       </div>
     </Parallax>
     <Parallax bgImage={image4} strength={-100}>
-      <div style={{ height: "100vh" }}>
+      <div style={{ height: "100vh" }} id="touchpar">
         <Touch />
       </div>
     </Parallax>

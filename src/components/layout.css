@@ -585,6 +585,10 @@ h1, h2, h3, h4, h4, h5, h6 {
 /* mobile phones */
 @media screen and (max-width:480px){
 
+  #touchpar {
+    height: 20em !important;
+  }
+
   .text li {
     font-size: 1.5em !important;
     text-align: center !important;
