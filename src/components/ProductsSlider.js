@@ -32,9 +32,11 @@ const PagesHome = () => {
                 i === 0 ? "aqua" : i === 1 ? "greyhound" : "black beauty"
               )
             }
-            changeOnFirstRender={false}
+            changeOnFirstRender={true}
             indicators={false}
             className="productsslider"
+            navButtonsAlwaysInvisible
+            autoPlay
           >
             <center>
               <div>
