@@ -43,7 +43,7 @@ const Features = () => {
   function onChange(visibility) {
     setVisibility(visibility)
   }
-
+// features section for homepage starts here
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
       <Container maxWidth="xl" id="feature">
@@ -149,5 +149,7 @@ const Features = () => {
     </VisibilitySensor>
   )
 }
+
+// features section for homepage ends here
 
 export default Features

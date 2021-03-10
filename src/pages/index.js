@@ -20,6 +20,7 @@ const HomePage = () => {
   useEffect(() => {
     setIsLoading(false)
   }, [])
+  // landing page starts here
   return (
     <React.Fragment>
       {isLoading ? (
@@ -32,5 +33,6 @@ const HomePage = () => {
     </React.Fragment>
   )
 }
+// landing page ends here
 
 export default HomePage

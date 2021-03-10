@@ -68,7 +68,7 @@ const Opening = () => {
       setState(true)
     }, 4000)
   }, [])
-
+// opening page starts here
   return (
     <React.Fragment>
       <div id="container___">
@@ -156,5 +156,7 @@ const Opening = () => {
     </React.Fragment>
   )
 }
+
+// opening page ends here 
 
 export default Opening

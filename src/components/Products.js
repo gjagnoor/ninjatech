@@ -28,6 +28,7 @@ const Products = () => {
     setVisibility(visiblity)
   }
   const classes = useStyles()
+  // products page starts here 
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
       <div id="products">
@@ -107,5 +108,5 @@ const Products = () => {
     </VisibilitySensor>
   )
 }
-
+// products page sends here
 export default Products

@@ -54,7 +54,7 @@ const Layout = ({ children }) => {
   function handleSignUp() {
     alert(" Thank you for contacting us! We will get back to you shortly")
   }
-
+// wrapper component starts here
   return (
     <Container maxWidth="xl">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
@@ -207,6 +207,8 @@ const Layout = ({ children }) => {
     </Container>
   )
 }
+
+// wrapper component ends here
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

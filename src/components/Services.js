@@ -23,6 +23,7 @@ const Services = () => {
   const onChange = visiblity => {
     setVisibility(visiblity)
   }
+  // Services section starts here
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
       <div id="services">
@@ -156,5 +157,7 @@ const Services = () => {
     </VisibilitySensor>
   )
 }
+
+// services section for services page ends here
 
 export default Services

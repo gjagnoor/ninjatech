@@ -17,6 +17,7 @@ const IndexPage = () => {
   useEffect(() => {
     setIsLoading(false)
   }, [])
+  // about page starts here
   return (
     <React.Fragment>
       {isLoading ? (
@@ -35,5 +36,6 @@ const IndexPage = () => {
     </React.Fragment>
   )
 }
+// about page ends here
 
 export default IndexPage

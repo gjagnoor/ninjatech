@@ -17,6 +17,7 @@ const Products_ = () => {
   useEffect(() => {
     setIsLoading(false)
   }, [])
+  // products page starts here
   return (
     <React.Fragment>
       {isLoading ? (
@@ -35,5 +36,7 @@ const Products_ = () => {
     </React.Fragment>
   )
 }
+
+// products page ends here 
 
 export default Products_

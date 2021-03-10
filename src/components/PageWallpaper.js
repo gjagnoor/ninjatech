@@ -10,7 +10,7 @@ const PagesWallpaper = () => {
   const onChange = visiblity => {
     setVisibility(visiblity)
   }
-
+// carousel slide starts here
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
       <div id="wallpaper">
@@ -34,5 +34,6 @@ const PagesWallpaper = () => {
     </VisibilitySensor>
   )
 }
+// carousel slide ends here 
 
 export default PagesWallpaper

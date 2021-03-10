@@ -9,6 +9,7 @@ import aboutfeatures from "../images/HTML USE IMAGE/about-lines.png"
 import { Button } from "@material-ui/core"
 
 const About = () => {
+  // Video section for video page starts here
   return (
     <div id="about">
       <Slide
@@ -42,5 +43,7 @@ const About = () => {
     </div>
   )
 }
+
+// video section for video page ends here
 
 export default About

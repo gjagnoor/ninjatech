@@ -11,6 +11,7 @@ const Touch = () => {
   const onChange = visiblity => {
     setVisibility(visiblity)
   }
+  // touch section starts here for homepage
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
       <div className={isVisible ? "fadein" : ""}>
@@ -29,5 +30,7 @@ const Touch = () => {
     </VisibilitySensor>
   )
 }
+
+// touch section for homepage ends here
 
 export default Touch

@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import loading from "./images/loading.gif"
 
 export default function HTML(props) {
+  // html page starts here
   return (
     <html {...props.htmlAttributes}>
       <head>
@@ -40,7 +41,7 @@ export default function HTML(props) {
     </html>
   )
 }
-
+// html page ends here
 HTML.propTypes = {
   htmlAttributes: PropTypes.object,
   headComponents: PropTypes.array,

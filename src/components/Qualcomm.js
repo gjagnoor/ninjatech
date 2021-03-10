@@ -12,6 +12,8 @@ const Qualcomm = () => {
   const onChange = visiblity => {
     setVisibility(visiblity)
   }
+
+  // Qualcomm section starts here for homepage 
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
       <div id="qualcomm">
@@ -56,5 +58,7 @@ const Qualcomm = () => {
     </VisibilitySensor>
   )
 }
+
+// Qualcomm section ends here
 
 export default Qualcomm

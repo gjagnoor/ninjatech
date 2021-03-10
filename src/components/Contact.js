@@ -43,7 +43,7 @@ const Contact = ({ children }) => {
   function handleSignUp() {
     alert(" Thank you for contacting us! We will get back to you shortly")
   }
-
+// contact section starts here
   return (
     <Container maxWidth="xl">
       <div>
@@ -153,5 +153,7 @@ const Contact = ({ children }) => {
     </Container>
   )
 }
+
+// contact section ends here
 
 export default Contact

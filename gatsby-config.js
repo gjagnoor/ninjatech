@@ -1,3 +1,5 @@
+// gatsby config file 
+
 module.exports = {
   pathPrefix: "/nts",
   siteMetadata: {

@@ -18,7 +18,7 @@ const PagesHome = props => {
   const onChange = visiblity => {
     setVisibility(visiblity)
   }
-
+// pages carousel starts here 
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
       <div id="pageshome">
@@ -36,5 +36,7 @@ const PagesHome = props => {
     </VisibilitySensor>
   )
 }
+
+// pages carousel ends here
 
 export default PagesHome

@@ -22,6 +22,8 @@ const Home = props => {
   useEffect(() => {
     props.play ? setTimeout(() => setPlay(true), 100) : setPlay(true)
   }, [])
+
+  // homepage top section starts here
   return (
     <React.Fragment>
       <VisibilitySensor partialVisibility onChange={onChange}>
@@ -63,5 +65,7 @@ const Home = props => {
     </React.Fragment>
   )
 }
+
+// Homepage top section ends here
 
 export default Home

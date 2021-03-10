@@ -36,6 +36,7 @@ const image5 = qualcommb
 const image6 = "black"
 const image7 = charger
 
+// page 2 page starts here
 const App = () => (
   <Layout>
     <div style={styles}>
@@ -79,5 +80,7 @@ const App = () => (
     </div>
   </Layout>
 )
+
+// page-2 page ends here
 
 export default App

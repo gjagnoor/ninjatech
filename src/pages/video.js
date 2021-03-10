@@ -14,6 +14,7 @@ const IndexPage = () => {
   useEffect(() => {
     setIsLoading(false)
   }, [])
+  // video page starts here 
   return (
     <React.Fragment>
       {isLoading ? (
@@ -29,5 +30,6 @@ const IndexPage = () => {
     </React.Fragment>
   )
 }
+// vide page ends here
 
 export default IndexPage

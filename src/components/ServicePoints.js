@@ -13,6 +13,8 @@ const ServicePoints = () => {
   const onChange = visiblity => {
     setVisibility(visiblity)
   }
+
+  // Service Points section starts here
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
       <div id="servicepoints">
@@ -37,5 +39,7 @@ const ServicePoints = () => {
     </VisibilitySensor>
   )
 }
+
+// Service points section ends here
 
 export default ServicePoints

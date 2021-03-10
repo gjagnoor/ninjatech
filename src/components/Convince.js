@@ -17,6 +17,8 @@ const About = () => {
   const onChange = visiblity => {
     setVisibility(visiblity)
   }
+
+  // convince section for about us starts here
   return (
     <VisibilitySensor
       partialVisibility
@@ -87,5 +89,7 @@ const About = () => {
     </VisibilitySensor>
   )
 }
+
+//convince section ends here for about us
 
 export default About

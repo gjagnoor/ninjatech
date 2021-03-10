@@ -7,6 +7,8 @@ const IndexPage = () => {
   useEffect(() => {
     const s_ = skroller.init()
   })
+
+  // masking component starts here
   return (
     <React.Fragment>
       <div>
@@ -472,5 +474,7 @@ m117 -91 c-3 -5 -1 -10 5 -10 7 0 10 -16 8 -42 -2 -33 -8 -45 -25 -53 -13 -5
     </React.Fragment>
   )
 }
+
+// masking component ends here
 
 export default IndexPage

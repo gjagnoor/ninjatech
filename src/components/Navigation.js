@@ -97,7 +97,7 @@ export default function PersistentDrawerRight({ children }) {
   const handleDrawerClose = () => {
     setOpen(false)
   }
-
+// navigation component starts here
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -207,3 +207,4 @@ export default function PersistentDrawerRight({ children }) {
     </div>
   )
 }
+// navigation component ends here

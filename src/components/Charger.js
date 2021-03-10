@@ -12,6 +12,7 @@ const Charger = () => {
   const onChange = visiblity => {
     setVisibility(visiblity)
   }
+  // Charger section for homepage starts here
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
       <div id="charger">
@@ -48,5 +49,7 @@ const Charger = () => {
     </VisibilitySensor>
   )
 }
+
+// charger section for homepage ends here
 
 export default Charger

@@ -13,6 +13,7 @@ const Design = () => {
   const onChange = visiblity => {
     setVisibility(visiblity)
   }
+  // design page for homepage starts here
   return (
     <div id="design">
       <Container maxWidth="xl" style={{ margin: 0, padding: 0 }}>
@@ -56,5 +57,5 @@ const Design = () => {
     </div>
   )
 }
-
+// design page for homepage ends here
 export default Design

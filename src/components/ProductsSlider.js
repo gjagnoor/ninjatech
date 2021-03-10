@@ -22,6 +22,8 @@ const PagesHome = () => {
     setVisibility(visiblity)
   }
 
+  // products section slider starts here
+
   return (
     <VisibilitySensor partialVisibility onChange={onChange}>
       <div style={{ marginTop: "5em" }} id="productsslider">
@@ -71,5 +73,7 @@ const PagesHome = () => {
     </VisibilitySensor>
   )
 }
+
+// products section slider ends here
 
 export default PagesHome

@@ -10,6 +10,7 @@ const IndexPage = () => {
   useEffect(() => {
     setIsLoading(false)
   }, [])
+  // contact page starts here
   return (
     <React.Fragment>
       {isLoading ? (
@@ -22,5 +23,6 @@ const IndexPage = () => {
     </React.Fragment>
   )
 }
+// contact page ends here
 
 export default IndexPage
