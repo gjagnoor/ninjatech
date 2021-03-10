@@ -117,7 +117,7 @@ const Contact = ({ children }) => {
                       Phone : +91-945-5568-341{" "}
                     </p>
                     <p style={{ textAlign: "left" }}>
-                      Location : DLF Promenade 62 street
+                      Address: DLF Promenade 62 Street, New Delhi, India 160087
                     </p>
                     <p style={{ textAlign: "left" }}>
                       Open hours : Daily , 8:00am - 9:00 pm
