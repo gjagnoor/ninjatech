@@ -78,16 +78,16 @@ const Services = () => {
                 <div>
                   <p className="service-heading">Cloud Computing</p>
                   <p className="servicep">
-                    AR cloud is a real time 3d map of the world, overlays
-                    the real world, and combines the physical
-                    and digital world to create immersive experience. Imagine
-                    you're walking in an unfamiliar city and decide to stop for
-                    lunch. You put your AR-enabled glasses and search a
-                    restaurant. After you select a place, you put the glasses
-                    on once again and a virtual menu appears on the table. This
-                    technology uses a common interface to deliver persistent,
-                    collaborative and contextual digital content overlaid onto
-                    people, objects and locations.{" "}
+                    AR cloud is a real time 3d map of the world, overlays the
+                    real world, and combines the physical and digital world to
+                    create immersive experience. Imagine you're walking in an
+                    unfamiliar city and decide to stop for lunch. You put your
+                    AR-enabled glasses and search a restaurant. After you select
+                    a place, you put the glasses on once again and a virtual
+                    menu appears on the table. This technology uses a common
+                    interface to deliver persistent, collaborative and
+                    contextual digital content overlaid onto people, objects and
+                    locations.{" "}
                   </p>
                 </div>
               </div>
@@ -121,13 +121,13 @@ const Services = () => {
                   <p className="service-heading">Cyber Security</p>
                   <p className="servicep">
                     A cyber liability insurance helps an organization mitigate
-                    the financial loss due to data breach or any
-                    cyber risk. It also covers for legal costs and damages
-                    resulting from the data breach. Also called the “Cyber
-                    Security Insurance” or “Cyber Risk Insurance”, this is an
-                    insurance policy that pays for both first and third party
-                    losses as a result of a phones-based attack or malfunction
-                    of information technology system.{" "}
+                    the financial loss due to data breach or any cyber risk. It
+                    also covers for legal costs and damages resulting from the
+                    data breach. Also called the “Cyber Security Insurance” or
+                    “Cyber Risk Insurance”, this is an insurance policy that
+                    pays for both first and third party losses as a result of a
+                    phones-based attack or malfunction of information technology
+                    system.{" "}
                   </p>
                 </div>
               </div>
@@ -143,8 +143,9 @@ const Services = () => {
                 <div>
                   <p className="service-heading">Lifetime Repair</p>
                   <p className="servicep">
-                    Every repair done by NinjaTech comes with a lifetime warranty on
-                    all parts and labor associated with the preceeding repair.{" "}
+                    Every repair done by NinjaTech comes with a lifetime
+                    warranty on all parts and labor associated with the
+                    preceeding repair.{" "}
                   </p>
                 </div>
               </div>
