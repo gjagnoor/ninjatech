@@ -928,6 +928,7 @@ body {
   background-color: rgb(0, 0, 0, 1) !important;
   color: white !important;
   margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);

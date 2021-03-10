@@ -29,7 +29,7 @@ const PagesHome = () => {
           <Carousel
             onChange={i =>
               setColor(
-                i === 0 ? "greyhound" : i === 1 ? "black beauty" : "aqua"
+                i === 0 ? "aqua" : i === 1 ? "greyhound" : "black beauty"
               )
             }
             changeOnFirstRender={false}

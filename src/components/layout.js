@@ -62,10 +62,10 @@ const Layout = ({ children }) => {
         class="scroller"
         onClick={() =>
           document.getElementById("home__")
-            ? document.getElementById("home").scrollIntoView({
+            ? document.getElementById("home__").scrollIntoView({
                 behavior: "smooth",
               })
-            : document.getElementById("pageshome__")
+            : document.getElementById("pageshome")
             ? document.getElementById("pageshome").scrollIntoView({
                 behavior: "smooth",
               })
@@ -97,17 +97,19 @@ const Layout = ({ children }) => {
           style={{
             top: "10em",
             position: "relative",
-            height: "100vh",
+            height: "43em",
+            overflowY: "hidden",
           }}
           id="footercenter"
         >
-          <footer>
+          <footer style={{height: "40em", overflowY: "hidden"}}>
             <center>
               <h5
                 style={{
                   textAlign: "center",
                   fontSize: "2em",
                   fontFamily: "twcenmt",
+                  height: "fit-content",
                 }}
               >
                 How to Contact Us
