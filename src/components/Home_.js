@@ -27,8 +27,7 @@ const Home = props => {
       <VisibilitySensor partialVisibility onChange={onChange}>
         <div id="home">
           <center>
-            <div
-            >
+            <div>
               <Slide
                 direction="right"
                 in={play}

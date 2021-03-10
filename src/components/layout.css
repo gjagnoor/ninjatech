@@ -1760,3 +1760,77 @@ html, body {
 .navtext {
   font-size: 1.2em !important;
 }
+
+.text.hidden li.spaced {
+  padding-left: 0;
+}
+.text li.spaced {
+  padding-left: 0.5em;
+}
+
+
+.next {
+  position: fixed;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  list-style: none;
+}
+
+.next.hidden {
+  border-bottom: 0;
+}
+
+.next li {
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 50;
+  font-size: 5em;
+  color: #fff;
+  transition: all 1s ease-in;
+}
+
+.next.hidden li.spaced {
+  padding-left: 0;
+}
+
+.next.hidden li.ghost {
+  opacity: 0;
+  max-width: 0;
+}
+
+.fadeout {
+  animation: fadeout 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+    z-index: 9;
+    /* visibility: visible; */
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+    /* visibility: hidden; */
+  }
+}
+
+.showHome {
+  z-index: 1;
+  position: initial;
+}
+
+.navtext {
+  font-size: 1.2em !important;
+}
+
+.next.hidden li.spaced {
+  padding-left: 0;
+}
+.next li.spaced {
+  padding-left: 0.5em;
+}

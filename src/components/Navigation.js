@@ -181,7 +181,7 @@ export default function PersistentDrawerRight({ children }) {
                     padding: "2em",
                     textAlign: "center",
                     cursor: "pointer",
-                    fontSize: "0.7em"
+                    fontSize: "0.7em",
                   }}
                   className="navtext"
                 >
@@ -192,11 +192,10 @@ export default function PersistentDrawerRight({ children }) {
                   style={{
                     padding: "2em",
                     textAlign: "center",
-                      cursor: "pointer",
-                      fontSize: "0.7em"
-
-                    }}
-                    className="navtext"
+                    cursor: "pointer",
+                    fontSize: "0.7em",
+                  }}
+                  className="navtext"
                 >
                   {text}
                 </p>
