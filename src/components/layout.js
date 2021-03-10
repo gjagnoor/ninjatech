@@ -97,7 +97,7 @@ const Layout = ({ children }) => {
           style={{
             top: "10em",
             position: "relative",
-            height: "65em",
+            height: "fit-content",
             overflowY: "hidden",
           }}
           id="footercenter"
