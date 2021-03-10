@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import PagesHome from "../components/PagesHome.js"
 import About from "../components/About.js"
 import Convince from "../components/Convince.js"
-import Home from "../components/Home.js"
+import Home from "../components/Home_.js"
 import PageWallpaper from "../components/PageWallpaper"
 import loading from "../images/loading.gif"
 

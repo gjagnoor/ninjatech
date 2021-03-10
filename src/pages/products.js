@@ -8,7 +8,7 @@ import PagesHome from "../components/PagesHome.js"
 import Products from "../components/Products.js"
 import ProductsSlider from "../components/ProductsSlider.js"
 import PagesWallpaper from "../components/PageWallpaper"
-import Home from "../components/Home"
+import Home from "../components/Home_"
 import loading from "../images/loading.gif"
 
 const Products_ = () => {

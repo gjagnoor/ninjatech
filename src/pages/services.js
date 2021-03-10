@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import PagesHome from "../components/PagesHome.js"
 import Services from "../components/Services.js"
 import ServicePoints from "../components/ServicePoints.js"
-import Home from "../components/Home"
+import Home from "../components/Home_.js"
 import PagesWallpaper from "../components/PageWallpaper"
 import loading from "../images/loading.gif"
 
