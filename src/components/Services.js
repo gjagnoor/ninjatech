@@ -47,6 +47,7 @@ const Services = () => {
               }}
               id="services__"
             >
+              <center>
               <div className="service">
                 <center>
                   <FontAwesomeIcon
@@ -55,7 +56,7 @@ const Services = () => {
                     className="featureicon_"
                   />
                 </center>
-
+                <center>
                 <div>
                   <p className="service-heading">End to End IT Services</p>
                   <p className="servicep">
@@ -66,8 +67,11 @@ const Services = () => {
                     integration, and setup. Achieve effective everyday
                     management with a wide range of benefits.
                   </p>
-                </div>
+                  </div>
+                  </center>
               </div>
+              </center>
+              <center>
               <div className="service">
                 <center>
                   <FontAwesomeIcon
@@ -91,7 +95,8 @@ const Services = () => {
                     locations.{" "}
                   </p>
                 </div>
-              </div>
+                </div>
+                </center>
             </div>
           </Slide>
           <Slide
@@ -109,6 +114,7 @@ const Services = () => {
               }}
               id="services__"
             >
+              <center>
               <div className="service">
                 <center>
                   <FontAwesomeIcon
@@ -131,7 +137,9 @@ const Services = () => {
                     system.{" "}
                   </p>
                 </div>
-              </div>
+                </div>
+              </center>
+              <center>
               <div className="service">
                 <center>
                   <FontAwesomeIcon
@@ -149,7 +157,8 @@ const Services = () => {
                     preceeding repair.{" "}
                   </p>
                 </div>
-              </div>
+                </div>
+                </center>
             </div>
           </Slide>
         </Container>

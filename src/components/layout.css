@@ -816,6 +816,22 @@ h1, h2, h3, h4, h4, h5, h6 {
   }
 }
 
+@media only screen and (max-width: 1170px){
+  #services__ {
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+
+  .servicep {
+    width: 20em !important;
+  }
+
+  .service {
+    text-align: center !important;
+  }
+
+}
+
 /* tablets */
 
 @media only screen and (min-device-width: 768px){
@@ -922,13 +938,6 @@ h1, h2, h3, h4, h4, h5, h6 {
   }
   .featuregrid {
     margin-top: 0 !important;
-  }
-}
-
-@media only screen and (max-width: 1167px) {
-  .service {
-    flex-direction: column;
-    text-align: center;
   }
 }
 
